@@ -1,7 +1,7 @@
 # Breast Cancer Wisconsin
 
 ![Breast Cancer](http://www.explodyfull.com/wp-content/uploads/2017/12/Breast-Cancer-1.jpg)
-En este proyecto se va a realizar un estudio sobre el dataset [Breast Cancer Wisconsin](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Original%29) dataset obtenido de [UCI](https://archive.ics.uci.edu/ml/index.php).
+En este proyecto se va a realizar un estudio sobre el dataset [Breast Cancer Wisconsin](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Original%29), obtenido de [UCI](https://archive.ics.uci.edu/ml/index.php).
 ## Introducción 
 Las celulas cancerigenas se crean cuando los genes responsables por la divison celular estan dañados. La carcinogénesis (conjunto de fenómenos que determinan la aparición y desarrollo de un cáncer) es causada por mutación y epimutación (cambio en la estructura química del ADN que no altera la secuencia de codificación del ADN) del material genético en las células normales, las cuales desequilibran el balance del material genético en las células normales entre la proliferación y muerte de las células. Esto resulta en una division celular fuera de control y la evolución de esas células por selección natural. La descontrolada y en la mayoría de los casos, rápida proliferación de las céulas puede llevar a tumores benignos o malignos (cancer). Los tumores benignos no invaden otras partes del cuerpo o otros tejidos, mientras que los tumores malignos pueden invadir otros organos y llegar a lugares lejanos en el cuerpo (metastasis), conviertiendose asi, en una amenaza le.
 <!--
@@ -19,6 +19,7 @@ Las muestras llegaban periodicamente mientras el Dr. Wolberg reportaba sus casos
 This dataset was created by Dr. WIlliam H. Wolberg (physician)  at the University of Wisconsin Hospitals (Madison, Wisconsin, USA).
 Samples arrive periodically as Dr. Wolberg reports his clinical cases. The database therefore reflects this chronological grouping of the data. The data groups were collected between January 1989 and November 1991. 
 -->
+
 | Grupo  | Instancias | Mes       | Año  |
 |--------|------------|-----------|------|
 | 1      | 367        | Enero     | 1989 |
