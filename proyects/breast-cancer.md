@@ -38,6 +38,7 @@ Los datos ya fueron limpiados en dos ocasiones.
 Aunque se encuentran missing values en Bare Nuclei.
 
 Un total de 699 instancias.
+
 <!--
 * Group 1: 367 instances (January 1989)  
 * Group 2: 70 instances (October 1989)  
@@ -50,12 +51,13 @@ Un total de 699 instancias.
 
 A total of 699 instances.
 -->
+
 ## Problema
 
 El problema consiste en predecir si una muestra de células recolectada mediante ​FNA​ es benigna o no en base a una serie de atributos.
 
 ## Estudio de atributos
-| Atributo                    | Valor Minimo | Valor Maximo  | 
+| Atributo                    | Valor Minimo | Valor Maximo  |
 |-----------------------------|--------------|---------------|
 | Sample code number          | 61634        | 13454352      |
 | Clump Thickness             | 1            | 10            |

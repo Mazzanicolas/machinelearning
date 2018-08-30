@@ -6,4 +6,4 @@ relative_links:
 include:
   - README.md
 theme: jekyll-theme-cayman
-markdown: kramdown
+markdown: kramdown 
