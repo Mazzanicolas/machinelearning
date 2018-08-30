@@ -57,6 +57,7 @@ A total of 699 instances.
 El problema consiste en predecir si una muestra de células recolectada mediante ​FNA​ es benigna o no en base a una serie de atributos.
 
 ## Estudio de atributos
+
 | Atributo                    | Valor Minimo | Valor Maximo  |
 |-----------------------------|--------------|---------------|
 | Sample code number          | 61634        | 13454352      |
