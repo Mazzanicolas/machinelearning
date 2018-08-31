@@ -498,5 +498,57 @@ sns.boxplot(ax=ax, data=dataset.iloc[:, 5:9])
 Notar que no se realizo un diagrama para la variable de salida ya que en este caso son dos salidas y el diagrama no aportaria informacion relevante.
 
 
+Vamos a analizar los outliers detectados
+
+
+```python
+marginal_adhesion_outlyers = dataset[dataset['Marginal Adhesion']>9]
+single_ephithelial_cell_size_outlyers = dataset[dataset['Single Epithelial Cell Size']>8]
+bland_chromatin_outlyers = dataset[dataset['Bland Chromatin']>9]
+normal_nucleoli_outlyers = dataset[dataset['Normal Nucleoli']>8]
+mitosis_outlyers = dataset[dataset['Mitoses']>1]
+```
+
+
+```python
+print(
+    (len(marginal_adhesion_outlyers)*100)/len(dataset),
+    (len(single_ephithelial_cell_size_outlyers)*100)/len(dataset),
+    (len(bland_chromatin_outlyers)*100)/len(dataset),
+    (len(normal_nucleoli_outlyers)*100)/len(dataset),
+    (len(mitosis_outlyers)*100)/len(dataset))
+```
+
+    8.052708638360176 4.831625183016105 2.9282576866764276 10.980966325036603 17.569546120058565
+
+
+|               | Marginal Adhesion | Single Epithelial Cell Size |  Bland Chromatin | Normal Nucleoli | Mitoses |
+|---------------|:-----------------:|:---------------------------:|:----------------:|:---------------:|:-------:|
+|**Porcentaje** | 8.052 %           | 4.31 %                      | 2.928 %          | 10.980 %        | 17.569 %|
+|**Valores > a**| 9                 | 8                           | 9                | 8               | 1       |
+
+### Correlacion en los datos
+
+
+```python
+data_correlation = dataset.corr()
+mask = np.zeros_like(data_correlation, dtype=np.bool)
+mask[np.triu_indices_from(mask)] = True
+f, ax = plt.subplots(figsize=(11, 9))
+cmap = sns.diverging_palette(220, 10, as_cmap=True)
+sns.heatmap(data_correlation, mask=mask, cmap=cmap,  center=0,
+            square=True, linewidths=.5)
+```
+
+
+
+
+    <matplotlib.axes._subplots.AxesSubplot at 0x1a1c9092b0>
+
+
+
+
+![png](img/output_20_1.png)
+
 <!-- Correlacion en mitosis? -->
 ## Analizando el Dataset (RapidMiner)
