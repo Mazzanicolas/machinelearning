@@ -163,7 +163,7 @@ dataset.info()
 missing_values = dataset[dataset['Bare Nuclei']=='?']
 ```
 
-### Podemos verque la variable `Bare Nuclei` tiene por lo menos una ocurrencia con un tipo de dato extraño.
+Podemos verque la variable `Bare Nuclei` tiene por lo menos una ocurrencia con un tipo de dato extraño.
 
 ```python
 missing_values
@@ -415,7 +415,7 @@ missing_values
 </table>
 </div>
 
-
+Confirmamos que tiene missing values asi que vamos a averiguar cuantos missing values son y en base a eso podriamos tener una idea que medida tomar.
 
 ### Averiguando el impacto del missing value
 
@@ -468,24 +468,19 @@ missing_values['Class'].value_counts()
     0.8298755186721992
 
 
-
+Para los casos benignos (458) tenemos un `3.056%` de missing values mientras que para los casos malignos (241) tenemos un total de `0.829%` missing values.
 
 ```python
 dataset = dataset.drop(dataset.index[missing_values.index])
 ```
+### Outlyers
 
+Para poder analizar los outliers vamos a utilizar diagramas de caja, una tecnica muy popular para analizar variables univariantes.
 
 ```python
 fig, ax = plt.subplots(figsize=(12,8))
 sns.boxplot(ax=ax, data=dataset.iloc[:, : 5])
 ```
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0xeba1550>
-
-
 
 
 ![png](./img/output_13_1.png)
@@ -498,20 +493,10 @@ sns.boxplot(ax=ax, data=dataset.iloc[:, 5:9])
 ```
 
 
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0xa6c2a30>
-
-
-
-
 ![png](./img/output_14_1.png)
 
+Notar que no se realizo un diagrama para la variable de salida ya que en este caso son dos salidas y el diagrama no aportaria informacion relevante.
 
 
-
-
-
-
-
+<!-- Correlacion en mitosis? -->
 ## Analizando el Dataset (RapidMiner)
