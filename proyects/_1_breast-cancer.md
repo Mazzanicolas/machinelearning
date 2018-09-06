@@ -1,7 +1,9 @@
 # Breast Cancer Wisconsin
 
-![Breast Cancer](http://www.explodyfull.com/wp-content/uploads/2017/12/Breast-Cancer-1.jpg)
+![Breast Cancer](./_1_img/banner.jpg)
+
 En este proyecto se va a realizar un estudio sobre el dataset [Breast Cancer Wisconsin](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Original%29), obtenido de [UCI](https://archive.ics.uci.edu/ml/index.php).
+
 ## Introducción 
 Las celulas cancerigenas se crean cuando los genes responsables por la divison celular estan dañados. La carcinogénesis (conjunto de fenómenos que determinan la aparición y desarrollo de un cáncer) es causada por mutación y epimutación (cambio en la estructura química del ADN que no altera la secuencia de codificación del ADN) del material genético en las células normales, las cuales desequilibran el balance del material genético en las células normales entre la proliferación y muerte de las células. Esto resulta en una division celular fuera de control y la evolución de esas células por selección natural. La descontrolada y en la mayoría de los casos, rápida proliferación de las céulas puede llevar a tumores benignos o malignos (cancer). Los tumores benignos no invaden otras partes del cuerpo o otros tejidos, mientras que los tumores malignos pueden invadir otros organos y llegar a lugares lejanos en el cuerpo (metastasis), conviertiendose asi, en una amenaza le.
 <!--
@@ -9,7 +11,7 @@ Cancer cells are created when the genes responsible for regulating [cell divisio
 -->
 El dataset ser estudiado esta compuesto por los resultados obtenidos mediante biopsias de ​FNA​ (fine needle aspiration), contiene 699 instancias con 10 atributos y una clase de salida (benigno o malicioso).
 En una biopsia FNA, el doctor usa una aguja muy fina y hueca con una jeringa para poder aspirar una pequeña cantidad de tejido o fluido de un area sospechosa. La muestra recolectada es revisada para ver si hay celulas cancerigenas.
-![FNA](https://www.cancer.org/cancer/breast-cancer/screening-tests-and-early-detection/breast-biopsy/fine-needle-aspiration-biopsy-of-the-breast/_jcr_content/par/image.img.gif/1507921878230.gif)
+![FNA](./_1_img/fna.gif)
 <!--
 In an FNA biopsy, the doctor uses a very thin, hollow needle attached to a syringe to withdraw (aspirate) a small amount of tissue or fluid from a suspicious area. The biopsy sample is then checked to see if there are cancer cells in it.
 -->
@@ -76,7 +78,7 @@ La variable objetivo de este dataset es “Class” la cual determina si un tumo
 
 A simple vista podemos descartar el atributo id ya que no aporta valor y causa ruido. 
 
-![Normal cell vs Cancer cell](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Normal_and_cancer_cells_structure.jpg/1920px-Normal_and_cancer_cells_structure.jpg)
+![Normal cell vs Cancer cell](./_1_img/cell_structure.jpg)
 
 A continuación una breve descripción de las definiciones  para los atributos del dataset y porque pueden ser relevantes.
 
@@ -483,7 +485,7 @@ sns.boxplot(ax=ax, data=dataset.iloc[:, : 5])
 ```
 
 
-![png](./img/output_13_1.png)
+![png](./_1_img/output_13_1.png)
 
 
 
@@ -493,7 +495,7 @@ sns.boxplot(ax=ax, data=dataset.iloc[:, 5:9])
 ```
 
 
-![png](./img/output_14_1.png)
+![png](./_1_img/output_14_1.png)
 
 Notar que no se realizo un diagrama para la variable de salida ya que en este caso son dos salidas y el diagrama no aportaria informacion relevante.
 
@@ -542,7 +544,7 @@ sns.heatmap(data_correlation, mask=mask, cmap=cmap,  center=0,
 
 
 
-![png](img/output_20_1.png)
+![png](_1_img/output_20_1.png)
 
 ```python
 data_correlation['Class'].sort_values(ascending=False)
