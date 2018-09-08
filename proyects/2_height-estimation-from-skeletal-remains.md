@@ -18,21 +18,36 @@ Analizandolo rapidamente en un editor de texto podemos ver que contiene caratere
 ![UTF-8 Error](./2_img/utf8Error.png)
 
 Ahora ya podemos cargarlo con `pandas`
-<style>
-    .internal {
-        width: 100%;
-        height: 100%;
-    }
-    .container {
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 1000; 
-    }
-</style>
-<div class='container'>
-    <object class='internal' data="./2_src/pf_overview.html"> 
-        Your browser doesn’t support the object tag. 
-    </object>
-</div>
+
+[Overview del dataset](./2_src/pf_overview.html)
+
+
+
+```python
+import missingno as msno
+import pandas as pd
+import pandas_profiling as pf
+```
+
+
+```python
+data = pd.read_csv('../dataindsamling.csv')
+```
+
+
+```python
+msno.matrix(data)
+```
+
+
+![png](./2_img/output_2_1.png)
+
+
+
+```python
+msno.bar(data)
+```
+
+
+![png](./2_img/output_3_1.png)
+
