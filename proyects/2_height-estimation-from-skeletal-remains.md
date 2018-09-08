@@ -49,11 +49,88 @@ El dataset cuenta con 23 atributos:
 * Hyperplasia `Bool`
 * Teeth Scorable `Bool`
 
-Estamos frente a un problema de regresion ya que la salida es un numero real. La variable objetivo es la altura de la persona, en este caso "Height in grave"
+Estamos frente a un problema de regresión ya que la salida es un numero real. La variable objetivo es la altura de la persona, en este caso "Height in grave"
 
 A continuación una breve descripción de las definiciones  para los atributos del dataset y porque pueden ser relevantes.
 
-A simple vista podemos descartar el atributo id ya que no aporta valor y causa ruido. 
+A simple vista podemos descartar el atributo id ya que no aporta valor y causa ruido.
+
+**Location:** `Ubicación` *Este atributo toma dos valores `Ribe` y `G216`.*
+
+Varias excavaciones y sitios se les ha dado diferentes nombres en el transcurso del tiempo (por ejemplo, Tirup es el mismo lugar que Bygholm) por lo cual tenemos que tener ciertas consideraciones con los datos. Aunque en este caso solo contamos contamos con un sitio, como veremos mas adelante.
+
+`Ribe` es un puebo de Dinamarca establecido en la primera década del siglo VIII y atestiguado por primera vez en un documento fechado en 854, Ribe es la ciudad más antigua existente en Dinamarca (y en Escandinavia). Recientes excavaciones arqueológicas realizadas entre 2008 y 2012 en han llevado al descubrimiento de entre 2.000 y 3.000 tumbas cristianas.
+
+![Ribe Town](./2_src/img/ribe.jpg)
+
+`G216` es un valor desconocido.
+
+####  Ocurrencias de los atributos
+
+| Ribe | G216 |
+|:----:|:----:|
+| 116  | 1    |
+
+Podemos ver que G216 tiene una gran probabilidad de ser un error en la recolección de los datos y lo analizaremos mas adelante
+
+**Site_Number:** `Numero del sitio` *Este atributo toma un solo valor `ASR1015`*
+
+`ASR1015El` es el número de sitio en el cual la autoridad de excavación registro de la excavación real. Este atributo es relevante para usar cuando varios las excavaciones, dispersas en el tiempo, han tenido lugar en el mismo sitio.
+
+####  Ocurrencias de los atributos
+
+| ASR1015 |
+|:-------:|
+| 117     |
+
+**Age_Minumum:** `Edad Mínimo` *Este atributo toma*
+
+
+####  Ocurrencias de los atributos
+
+**Age_Maximum:** `Edad Máximo` *Este atributo toma*
+
+####  Ocurrencias de los atributos
+
+**Sex** `Sexo` *Este atributo toma*
+
+####  Ocurrencias de los atributos
+
+**Grave Number:** `Numero de Tumba` *Este atributo toma*
+
+####  Ocurrencias de los atributos
+
+**Canine number:** `Float64` *Este atributo toma*
+
+####  Ocurrencias de los atributos
+
+**Canine largest age:** `Float64` *Este atributo toma*
+
+**Canine 2nd largest age:** `Float64` *Este atributo toma*
+
+**Incisor number:** `Float64` *Este atributo toma*
+
+**Incisor largest age:** `Float64` *Este atributo toma*
+
+**Incisor 2nd largest age:** `Float64` *Este atributo toma*
+
+**Height in grave:** `Float64` *Este atributo toma*
+
+**Abnormalities Vertebras:** `?` *Este atributo toma*
+
+**Femur left:** `Float64` *Este atributo toma*
+
+**Femur right:** `Float64` *Este atributo toma*
+
+**Abnormalities Femur:** `?` *Este atributo toma*
+
+**Notes:** `Notas` *Este atributo toma*
+
+**Date:** `Fecha` *Este atributo toma*
+
+**Signature:** `?` *Este atributo toma*
+
+**Hyperplasia:** `Bool` *Este atributo toma*
 
 
 ### Analizando el Dataset (código)
@@ -71,12 +148,13 @@ Ahora ya podemos cargarlo con `pandas`
 [Vista detallada del dataset ➡](./2_src/pf_overview.html)
 
 
+### Importando librerias
 
 ```python
 import missingno as msno
 import pandas as pd
 ```
-
+### Cargando el dataset
 
 ```python
 data = pd.read_csv('../dataindsamling.csv')
@@ -102,3 +180,5 @@ msno.bar(data)
 
 # References
 [ADBOU](http://www.adbou.dk/fileadmin/adbou/projektopgaver/ADBOU_linear_regression_Mette_Wodx.pdf)
+
+[Human Osteological Methods](http://www.adbou.dk/fileadmin/adbou/manualer/humostman2015.pdf)
