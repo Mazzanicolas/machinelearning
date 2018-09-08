@@ -67,7 +67,6 @@ pf.ProfileReport(data)
 <meta charset="UTF-8">
 
 <style>
-
         .variablerow {
             border: 1px solid #e1e1e8;
             border-top: hidden;
@@ -347,8 +346,7 @@ pf.ProfileReport(data)
             </tbody>
         </table>
     </div>
-    <div class="col-md-12" style="padding-left: 1em;">
-        
+    <div class="col-md-12" style="padding-left: 1em;">  
         <p class="h4">Warnings</p>
         <ul class="list-unstyled"><li><a href="#pp_var_Abnormalities Femur"><code>Abnormalities Femur</code></a> has 106 / 90.6% missing values <span class="label label-default">Missing</span></li><li><a href="#pp_var_Abnormalities Vertebras"><code>Abnormalities Vertebras</code></a> has 104 / 88.9% missing values <span class="label label-default">Missing</span></li><li><a href="#pp_var_Age_Maximum"><code>Age_Maximum</code></a> is highly correlated with <a href="#pp_var_Age_Minumum"><code>Age_Minumum</code></a> (ρ = 0.94228) <span class="label label-primary">Rejected</span></li><li><a href="#pp_var_Canine 2nd largest age"><code>Canine 2nd largest age</code></a> has 38 / 32.5% zeros <span class="label label-info">Zeros</span></li><li><a href="#pp_var_Canine 2nd largest age"><code>Canine 2nd largest age</code></a> has 41 / 35.0% missing values <span class="label label-default">Missing</span></li><li><a href="#pp_var_Canine largest age"><code>Canine largest age</code></a> has 38 / 32.5% zeros <span class="label label-info">Zeros</span></li><li><a href="#pp_var_Canine largest age"><code>Canine largest age</code></a> has 34 / 29.1% missing values <span class="label label-default">Missing</span></li><li><a href="#pp_var_Canine number"><code>Canine number</code></a> has 44 / 37.6% zeros <span class="label label-info">Zeros</span></li><li><a href="#pp_var_Canine number"><code>Canine number</code></a> has 28 / 23.9% missing values <span class="label label-default">Missing</span></li><li><a href="#pp_var_Date"><code>Date</code></a> has 3 / 2.6% missing values <span class="label label-default">Missing</span></li><li><a href="#pp_var_Femur left"><code>Femur left</code></a> has 7 / 6.0% zeros <span class="label label-info">Zeros</span></li><li><a href="#pp_var_Femur left"><code>Femur left</code></a> has 25 / 21.4% missing values <span class="label label-default">Missing</span></li><li><a href="#pp_var_Femur right"><code>Femur right</code></a> has 11 / 9.4% zeros <span class="label label-info">Zeros</span></li><li><a href="#pp_var_Femur right"><code>Femur right</code></a> has 27 / 23.1% missing values <span class="label label-default">Missing</span></li><li><a href="#pp_var_Grave Number"><code>Grave Number</code></a> has a high cardinality: 116 distinct values  <span class="label label-warning">Warning</span></li><li><a href="#pp_var_Height in grave"><code>Height in grave</code></a> has 2 / 1.7% zeros <span class="label label-info">Zeros</span></li><li><a href="#pp_var_Hyperplasia"><code>Hyperplasia</code></a> is highly correlated with <a href="#pp_var_Canine largest age"><code>Canine largest age</code></a> (ρ = 0.90091) <span class="label label-primary">Rejected</span></li><li><a href="#pp_var_Incisor 2nd largest age"><code>Incisor 2nd largest age</code></a> is highly correlated with <a href="#pp_var_Incisor largest age"><code>Incisor largest age</code></a> (ρ = 0.90384) <span class="label label-primary">Rejected</span></li><li><a href="#pp_var_Incisor largest age"><code>Incisor largest age</code></a> has 42 / 35.9% zeros <span class="label label-info">Zeros</span></li><li><a href="#pp_var_Incisor largest age"><code>Incisor largest age</code></a> has 42 / 35.9% missing values <span class="label label-default">Missing</span></li><li><a href="#pp_var_Incisor number"><code>Incisor number</code></a> has 44 / 37.6% zeros <span class="label label-info">Zeros</span></li><li><a href="#pp_var_Incisor number"><code>Incisor number</code></a> has 40 / 34.2% missing values <span class="label label-default">Missing</span></li><li><a href="#pp_var_Notes"><code>Notes</code></a> has 52 / 44.4% missing values <span class="label label-default">Missing</span></li><li><a href="#pp_var_Notes"><code>Notes</code></a> has a high cardinality: 55 distinct values  <span class="label label-warning">Warning</span></li><li><a href="#pp_var_Sex"><code>Sex</code></a> has 2 / 1.7% missing values <span class="label label-default">Missing</span></li><li><a href="#pp_var_Signature"><code>Signature</code></a> has 3 / 2.6% missing values <span class="label label-default">Missing</span></li><li><a href="#pp_var_Site_Number"><code>Site_Number</code></a> has constant value ASR1015 <span class="label label-primary">Rejected</span></li><li><a href="#pp_var_Teeth Scorable"><code>Teeth Scorable</code></a> is highly correlated with <a href="#pp_var_Canine largest age"><code>Canine largest age</code></a> (ρ = 0.90509) <span class="label label-primary">Rejected</span></li> </ul>
     </div>
@@ -757,7 +755,6 @@ pf.ProfileReport(data)
                     <td>0</td>
                 </tr>
             </table>
-
         </div>
         <div class="col-sm-6">
             <table class="stats ">
@@ -803,9 +800,7 @@ pf.ProfileReport(data)
                                    role="tab" data-toggle="tab">Common Values</a></li>
         <li role="presentation"><a href="#extreme-5190896101747871022" aria-controls="extreme-5190896101747871022"
                                    role="tab" data-toggle="tab">Extreme Values</a></li>
-
     </ul>
-
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane active row" id="quantiles-5190896101747871022">
             <div class="col-md-4 col-md-offset-1">
@@ -1165,9 +1160,7 @@ pf.ProfileReport(data)
                                    role="tab" data-toggle="tab">Common Values</a></li>
         <li role="presentation"><a href="#extreme3052661021054984646" aria-controls="extreme3052661021054984646"
                                    role="tab" data-toggle="tab">Extreme Values</a></li>
-
     </ul>
-
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane active row" id="quantiles3052661021054984646">
             <div class="col-md-4 col-md-offset-1">
@@ -1481,11 +1474,9 @@ pf.ProfileReport(data)
                     <td>0</td>
                 </tr>
             </table>
-
         </div>
         <div class="col-sm-6">
             <table class="stats ">
-
                 <tr>
                     <th>Mean</th>
                     <td>2.0241</td>
@@ -1527,9 +1518,7 @@ pf.ProfileReport(data)
                                    role="tab" data-toggle="tab">Common Values</a></li>
         <li role="presentation"><a href="#extreme7523693738087770258" aria-controls="extreme7523693738087770258"
                                    role="tab" data-toggle="tab">Extreme Values</a></li>
-
     </ul>
-
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane active row" id="quantiles7523693738087770258">
             <div class="col-md-4 col-md-offset-1">
@@ -1875,9 +1864,7 @@ pf.ProfileReport(data)
                                    role="tab" data-toggle="tab">Common Values</a></li>
         <li role="presentation"><a href="#extreme6867184384696783866" aria-controls="extreme6867184384696783866"
                                    role="tab" data-toggle="tab">Extreme Values</a></li>
-
     </ul>
-
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane active row" id="quantiles6867184384696783866">
             <div class="col-md-4 col-md-offset-1">
@@ -1966,8 +1953,7 @@ pf.ProfileReport(data)
         <div role="tabpanel" class="tab-pane col-md-8 col-md-offset-2" id="histogram6867184384696783866">
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAGQCAYAAAByNR6YAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAPYQAAD2EBqD%2BnaQAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMi4zLCBodHRwOi8vbWF0cGxvdGxpYi5vcmcvIxREBQAAIABJREFUeJzt3X9U1fXhx/HXDeRqBCSoIIGNTNNEnYErzMrUKPJHzVPa/BGmtSwiCS1/sBW1BGeZ1SwXVtpyDuuUZmdlYit/HOYUkvxRx2w2xQTRzfjh9KLw%2Bf7h17vu0HTxxg8f7vNxzj1n93Ph9ronOz73uR8uLsuyLAEAAMCYC%2BweAAAA0NIQWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYF2j3AH9TX12v//v0KCQmRy%2BWyew4AAH7BsixVV1crOjpaF1xwfs8pEVjnwf79%2BxUbG2v3DAAA/FJpaaliYmLO6z%2BTwDoPQkJCJJ38FxwaGmrzGgAA/ENVVZViY2O9fw%2BfTwTWeXDqbcHQ0FACCwCA88yOy3O4yB0AAMAwAgsAAMAwAgsAAMAwAgsAAMAwAgsAAMAwAgsAAMAwAgsAAMAwAgsAAMAwAgsAAMAwAgsAAMAwAgsAAMAwAgsAAMAwftmzwyVmrbJ7wjkrmnWL3RMAADgvOIMFAABgGIEFAABgGIEFAABgGIEFAABgGIEFAABgGIEFAABgGIEFAABgGIEFAABgGIEFAABgGIEFAABgGIEFAABgGIEFAABgGIEFAABgGIEFAABgGIEFAABgGIEFAABgGIEFAABgGIEFAABgGIEFAABgGIEFAABgGIEFAABgGIEFAABgGIH1Pbm5uXK5XMrIyPAe83g8Sk9PV7t27RQcHKzhw4dr3759Nq4EAADNHYH1/zZv3qy8vDz16tXL53hGRoaWL1%2Bu/Px8bdiwQTU1NRo6dKjq6upsWgoAAJo7AktSTU2NxowZo4ULF6pt27be45WVlXrttdc0d%2B5cDR48WH369NGSJUu0bds2rVmzxsbFAACgOSOwJKWlpWnIkCEaPHiwz/Hi4mIdP35cycnJ3mPR0dGKj49XYWHh%2BZ4JAAAcItDuAXbLz89XcXGxioqKGjxWXl6uoKAgn7NakhQZGany8vIzPqfH45HH4/Her6qqMjcYAAA0e359Bqu0tFSTJ0/WH//4R7Vu3fqcv8%2ByLLlcrjM%2Bnpubq7CwMO8tNjbWxFwAAOAQfh1YxcXFqqioUEJCggIDAxUYGKi1a9fqxRdfVGBgoCIjI1VbW6vDhw/7fF9FRYUiIyPP%2BLwzZsxQZWWl91ZaWtrULwUAADQjfv0W4aBBg7Rt2zafY/fcc4%2B6deumadOmKTY2Vq1atVJBQYFGjhwpSSorK9P27ds1Z86cMz6v2%2B2W2%2B1u0u0AAKD58uvACgkJUXx8vM%2Bx4OBgRUREeI9PnDhRU6ZMUUREhMLDwzV16lT17NmzwQXxAAAAp/h1YJ2LefPmKTAwUCNHjtTRo0c1aNAgLV68WAEBAXZPAwAAzZTLsizL7hEtXVVVlcLCwlRZWanQ0FCjz52Ytcro8zWlolm32D0BAOBHmvLv37Px64vcAQAAmgKBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYJjfB9aCBQvUq1cvhYaGKjQ0VElJSfrwww%2B9j3s8HqWnp6tdu3YKDg7W8OHDtW/fPhsXAwCA5s7vAysmJkazZ89WUVGRioqKNHDgQN12223asWOHJCkjI0PLly9Xfn6%2BNmzYoJqaGg0dOlR1dXU2LwcAAM2Vy7Isy%2B4RzU14eLieeeYZ3XHHHWrfvr3efPNNjRo1SpK0f/9%2BxcbG6oMPPtDNN998Ts9XVVWlsLAwVVZWKjQ01OjWxKxVRp%2BvKRXNusXuCQAAP9KUf/%2Bejd%2Bfwfq%2Buro65efn68iRI0pKSlJxcbGOHz%2Bu5ORk79dER0crPj5ehYWFZ3wej8ejqqoqnxsAAPAfBJakbdu26aKLLpLb7dakSZO0fPlyXXnllSovL1dQUJDatm3r8/WRkZEqLy8/4/Pl5uYqLCzMe4uNjW3qlwAAAJoRAkvSFVdcoZKSEm3cuFEPPPCAUlNT9cUXX5zx6y3LksvlOuPjM2bMUGVlpfdWWlraFLMBAEAzFWj3gOYgKChIl19%2BuSQpMTFRmzdv1gsvvKBRo0aptrZWhw8f9jmLVVFRoX79%2Bp3x%2Bdxut9xud5PvBgAAzRNnsE7Dsix5PB4lJCSoVatWKigo8D5WVlam7du3/2BgAQAA/%2Bb3Z7BmzpyplJQUxcbGqrq6Wvn5%2Bfr000%2B1atUqhYWFaeLEiZoyZYoiIiIUHh6uqVOnqmfPnho8eLDd0wEAQDPl94F14MABjRs3TmVlZQoLC1OvXr20atUq3XTTTZKkefPmKTAwUCNHjtTRo0c1aNAgLV68WAEBATYvBwAAzRWfg3Ue8DlYJ/E5WACA84nPwQIAAGhBCCwAAADDCCwAAADDCCwAAADDCCwAAADDCCwAAADDCCwAAADDHBtYS5Ys0bFjx%2ByeAQAA0IBjAyszM1NRUVG6//77tWnTJrvnAAAAeDk2sPbv36/XX39dZWVl6t%2B/v3r06KG5c%2Bfq4MGDdk8DAAB%2BzrGBFRgYqBEjRmjlypXau3evUlNT9frrrysmJkYjRozQn//8Z/FbgAAAgB0cG1jfFxUVpUGDBmnAgAFyuVwqKirS6NGj1aVLF61fv97ueQAAwM84OrAOHTqk559/Xr1799a1116riooKrVixQnv27NG3336roUOH6u6777Z7JgAA8DOBdg/4sX7%2B85/rgw8%2BUFxcnO69916lpqaqffv23scvuugiPfbYY3rxxRdtXAkAAPyRYwMrNDRUa9as0XXXXXfGr%2BnYsaN27dp1HlcBAAA4OLDeeOONs36Ny%2BVS586dz8MaAACA/3DsNViPPPKI5s%2Bf3%2BD4Sy%2B9pClTptiwCAAA4CTHBtbbb7%2Bta665psHxpKQkLVu2zIZFAAAAJzk2sA4dOqS2bds2OB4aGqpDhw7ZsAgAAOAkxwZW586d9dFHHzU4/tFHHykuLs6GRQAAACc59iL3jIwMZWRk6J///KcGDhwoSfr44481Z84cPfvsszavAwAA/syxgXXffffp2LFjysnJ0RNPPCFJiomJ0YsvvqgJEybYvA4AAPgzxwaWJKWnpys9PV1lZWVq06aNLr74YrsnAQAAODuwTunYsaPdEwAAALwce5H7wYMHdc8996hTp05q3bq1goKCfG4AAAB2cewZrPHjx%2Bvvf/%2B7Hn30UXXs2FEul8vuSQAAAJIcHFjr1q3TunXr1KdPH7unAAAA%2BHDsW4QxMTGctQIAAM2SYwNr3rx5mjFjhvbt22f3FAAAAB%2BOfYtw3Lhxqq6u1qWXXqrQ0FC1atXK5/GKigqblgEAAH/n2MCaPXu23RMAAABOy7GBNXHiRLsnAAAAnJZjr8GSpH/84x/Kzs7WuHHjvG8Jrl69Wl9%2B%2BaXNywAAgD9zbGCtX79ePXr00Nq1a/XWW2%2BppqZGkvTZZ5/p8ccft3kdAADwZ44NrGnTpik7O1uffPKJzye3Dxw4UBs3brRxGQAA8HeODaytW7fqjjvuaHC8Q4cOOnjwoA2LAAAATnJsYF188cUqLy9vcLykpESXXHKJDYsAAABOcmxg3XXXXZo%2BfboOHjzo/UT3v/3tb5o6darGjh1r8zoAAODPHBtYOTk5ioqKUseOHVVTU6Mrr7xS/fr1U9%2B%2BffXrX//a7nkAAMCPOfZzsIKCgrRs2TJ99dVX%2Buyzz1RfX6%2BrrrpK3bp1s3saAADwc44NrFO6du2qrl272j0DAADAy7GB9ctf/vIHH8/LyztPSwAAAHw5NrDKysp87h8/flw7duxQdXW1rr/%2BeptWAQAAODiw3n///QbHTpw4oQceeEDdu3e3YREAAMBJjv0pwtMJDAzU1KlT9cwzz9g9BQAA%2BLEWFViStHv3bh0/ftzuGQAAwI859i3Cxx57zOe%2BZVkqKyvTypUrNWbMGJtWAQAAODiw/vrXv/rcv%2BCCC9S%2BfXvNnj1b9913n02rAAAAHBxY69evt3sCAADAabW4a7AAAADs5tgzWH379vX%2Bkuez2bRpUxOvAQAA%2BA/HBtaNN96oV155RV27dlVSUpIkaePGjdq5c6fuv/9%2Bud1umxcCAAB/5djA%2Bu6775SWlqacnByf41lZWTpw4IBeffVVm5YBAAB/59hrsN566y3dc889DY6PHz9eb7/9tg2LAAAATnJsYLndbhUWFjY4XlhYyNuDAADAVo59i/Dhhx/WpEmTtGXLFl1zzTWSTl6DtXDhQs2cOdPmdQAAwJ85NrCysrIUFxenF154Qa%2B//rokqXv37lq4cKFGjx5t8zoAAODPHBtYkjR69GhiCgAANDuOvQZLkqqqqrR48WI9/vjjOnz4sCTp888/V1lZ2Tk/R25urvr27auQkBB16NBBt99%2Bu3bu3OnzNR6PR%2Bnp6WrXrp2Cg4M1fPhw7du3z%2BhrAQAALYdjA2v79u3q2rWrnnrqKeXm5noD66233tL06dPP%2BXnWrl2rtLQ0bdy4UQUFBTpx4oSSk5N15MgR79dkZGRo%2BfLlys/P14YNG1RTU6OhQ4eqrq7O%2BOsCAADO59i3CB955BGNHj1ac%2BfOVWhoqPf4kCFDNGbMmHN%2BnlWrVvncX7RokTp06KDi4mJdf/31qqys1GuvvaY333xTgwcPliQtWbJEsbGxWrNmjW6%2B%2BWYzLwgAALQYjj2DtXnzZj344IMNfl3OJZdc8j%2B9RfjfKisrJUnh4eGSpOLiYh0/flzJycner4mOjlZ8fPxpPyZCOvmWYlVVlc8NAAD4D8cGVlBQkGpqahoc37Vrl9q1a/ejntOyLGVmZqp///6Kj4%2BXJJWXlysoKEht27b1%2BdrIyEiVl5ef9nlyc3MVFhbmvcXGxv6oPQAAwJkcG1jDhw/Xb37zG504cUKS5HK59O2332r69OkaMWLEj3rOhx56SFu3btWf/vSns36tZVln/GXTM2bMUGVlpfdWWlr6o/YAAABncmxgzZ07V/v371dUVJSOHj2qgQMH6rLLLlPr1q0b/H7Cc5Genq6VK1fqk08%2BUUxMjPd4VFSUamtrvRfRn1JRUaHIyMjTPpfb7VZoaKjPDQAA%2BA/HXuQeFhamwsJCFRQU6LPPPlN9fb2uuuoq3XzzzWc8s3Q6lmUpPT1dy5cv16effqq4uDifxxMSEtSqVSsVFBRo5MiRkqSysjJt375dc%2BbMMfqaAABAy%2BDIwDp%2B/LhuvfVWvfzyy0pOTva5AP1/lZaWpqVLl%2Bq9995TSEiI97qqsLAwtWnTRmFhYZo4caKmTJmiiIgIhYeHa%2BrUqerZs6f3pwoBAAC%2Bz5GB1apVK23ZsuV/OlN1JgsWLJAkDRgwwOf4okWLNH78eEnSvHnzFBgYqJEjR%2Bro0aMaNGiQFi9erICAgEb/8wEAQMvjsizLsnvEj5GRkaHg4GDNmjXL7ilnVVVVpbCwMFVWVhq/Hisxa9XZv6iZKJp1i90TAAB%2BpCn//j0bR57BOmX%2B/Plas2aNEhMTFRwc7PMY10cBAAC7ODawiouL1atXL0nS1q1bfR4z8dYhAADAj%2BW4wNq9e7fi4uK0fv16u6cAAACcluM%2BB6tLly46ePCg9/6oUaN04MABGxcBAAD4clxg/fc1%2BR988IGOHDli0xoAAICGHBdYAAAAzZ3jAsvlcjW4iJ2L2gEAQHPiuIvcLcvS%2BPHj5Xa7JUnHjh3TpEmTGnxMw7vvvmvHPAAAAOcFVmpqqs/9sWPH2rQEAADg9BwXWIsWLbJ7AgAAwA9y3DVYAAAAzR2BBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYBiBBQAAYFig3QMAoLlLzFpl94T/SdGsW%2ByeAPg9zmABAAAYRmABAAAYRmABAAAYRmABAAAYRmABAAAYRmABAAAYxsc0AC2Ekz5KgI8RANDScQYLAADAML8PrHXr1mnYsGGKjo6Wy%2BXSihUrfB63LEvZ2dmKjo5WmzZtNGDAAO3YscOmtQAAwAn8PrCOHDmi3r17a/78%2Bad9fM6cOXruuec0f/58bd68WVFRUbrppptUXV19npcCAACn8PtrsFJSUpSSknLaxyzL0vPPP6%2BsrCyNGDFCkvTGG28oMjJSS5cu1f33338%2BpwIAAIfw%2BzNYP%2BSbb75ReXm5kpOTvcfcbrduuOEGFRYW2rgMAAA0Z35/BuuHlJeXS5IiIyN9jkdGRmrPnj1n/D6PxyOPx%2BO9X1VV1TQDAQBAs0RgnQOXy%2BVz37KsBse%2BLzc3V08%2B%2BWRTz0ITc9LHHgAAmhfeIvwBUVFRkv5zJuuUioqKBme1vm/GjBmqrKz03kpLS5t0JwAAaF4IrB8QFxenqKgoFRQUeI/V1tZq7dq16tev3xm/z%2B12KzQ01OcGAAD8h9%2B/RVhTU6Ovv/7ae/%2Bbb75RSUmJwsPD1alTJ2VkZCgnJ0ddunRRly5dlJOTowsvvFCjR4%2B2cTUAAGjO/D6wioqKdOONN3rvZ2ZmSpJSU1O1ePFiPfbYYzp69KgefPBBHT58WFdffbVWr16tkJAQuyYDAIBmzu8Da8CAAbIs64yPu1wuZWdnKzs7%2B/yNAgAAjsY1WAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYRWAAAAIYF2j0A/iMxa5XdEwAAOC84gwUAAGAYgQUAAGAYgQUAAGAYgQUAAGAYgQUAAGAYgQUAAGAYgQUAAGAYgQUAAGAYgQUAAGAYgQUAAGAYgQUAAGAYgQUAAGAYgQUAAGAYgQUAAGAYgQUAAGAYgQUAAGAYgQUAAGAYgQUAAGAYgQUAAGAYgQUAAGAYgQUAAGAYgQUAAGAYgQUAAGAYgQUAAGAYgQUAAGAYgQUAAGBYoN0DAABmJWatsnvCOSuadYvdE4AmwRksAAAAwwgsAAAAwwgsAAAAwwgsAAAAwwgsAAAAwwgsAAAAwwgsAAAAwwgsAAAAwwgsAAAAwwgsAAAAwwgsAAAAwwgsAAAAwwgsAAAAwwLtHgAAgFMkZq2ye0KLVTTrFrsnGMUZLAAAAMMILAAAAMMIrHP08ssvKy4uTq1bt1ZCQoLWr19v9yQAANBMEVjnYNmyZcrIyFBWVpa2bNmi6667TikpKdq7d6/d0wAAQDNEYJ2D5557ThMnTtS9996r7t276/nnn1dsbKwWLFhg9zQAANAM8VOEZ1FbW6vi4mJNnz7d53hycrIKCwtP%2Bz0ej0cej8d7v7KyUpJUVVVlfF%2Bd54jx5wSaWlP8t9CU%2BO%2Bs6fBnAac0xZ%2BFU89pWZbx5z4bAussDh06pLq6OkVGRvocj4yMVHl5%2BWm/Jzc3V08%2B%2BWSD47GxsU2yEXCasLl2L0BzwZ8FnNKUfxaqq6sVFhbWdP%2BA0yCwzpHL5fK5b1lWg2OnzJgxQ5mZmd779fX1%2Bte//qWIiIgzfs%2BPUVVVpdjYWJWWlio0NNTY89qtpb4uqeW%2Btpb6uiRemxO11NcltdzX1lSvy7IsVVdXKzo62thznisC6yzatWungICABmerKioqGpzVOsXtdsvtdvscu/jii5tsY2hoaIv6D%2B2Ulvq6pJb72lrq65J4bU7UUl%2BX1HJfW1O8rvN95uoULnI/i6CgICUkJKigoMDneEFBgfr162fTKgAA0JxxBuscZGZmaty4cUpMTFRSUpLy8vK0d%2B9eTZo0ye5pAACgGQrIzs7OtntEcxcfH6%2BIiAjl5OTo2Wef1dGjR/Xmm2%2Bqd%2B/edk9TQECABgwYoMDAltXKLfV1SS33tbXU1yXx2pyopb4uqeW%2Btpb2ulyWHT%2B7CAAA0IJxDRYAAIBhBBYAAIBhBBYAAIBhBBYAAIBhBJZDvfzyy4qLi1Pr1q2VkJCg9evX2z2p0datW6dhw4YpOjpaLpdLK1assHuSMbm5uerbt69CQkLUoUMH3X777dq5c6fdsxptwYIF6tWrl/fDAZOSkvThhx/aPcu43NxcuVwuZWRk2D2l0bKzs%2BVyuXxuUVFRds8y5ttvv9XYsWMVERGhCy%2B8UD/96U9VXFxs96xG%2BclPftLg35nL5VJaWprd0xrtxIkT%2BtWvfqW4uDi1adNGl112mZ566inV19fbPa3RCCwHWrZsmTIyMpSVlaUtW7bouuuuU0pKivbu3Wv3tEY5cuSIevfurfnz59s9xbi1a9cqLS1NGzduVEFBgU6cOKHk5GQdOeLsXxwbExOj2bNnq6ioSEVFRRo4cKBuu%2B027dixw%2B5pxmzevFl5eXnq1auX3VOM6dGjh8rKyry3bdu22T3JiMOHD%2Bvaa69Vq1at9OGHH%2BqLL77Q3Llzm/Q3aZwPmzdv9vn3deqDr%2B%2B8806blzXeb3/7W/3%2B97/X/Pnz9eWXX2rOnDl65pln9Lvf/c7uaY1nwXF%2B9rOfWZMmTfI51q1bN2v69Ok2LTJPkrV8%2BXK7ZzSZiooKS5K1du1au6cY17ZtW%2BvVV1%2B1e4YR1dXVVpcuXayCggLrhhtusCZPnmz3pEZ74oknrN69e9s9o0lMmzbN6t%2B/v90zmtzkyZOtzp07W/X19XZPabQhQ4ZYEyZM8Dk2YsQIa%2BzYsTYtMoczWA5TW1ur4uJiJScn%2BxxPTk5WYWGhTavwv6qsrJQkhYeH27zEnLq6OuXn5%2BvIkSNKSkqye44RaWlpGjJkiAYPHmz3FKN27dql6OhoxcXF6a677tLu3bvtnmTEypUrlZiYqDvvvFMdOnRQnz59tHDhQrtnGVVbW6slS5ZowoQJcrlcds9ptP79%2B%2Bvjjz/WV199JUn6/PPPtWHDBt166602L2u8lvFxqX7k0KFDqqura/CLpiMjIxv8Qmo0T5ZlKTMzU/3791d8fLzdcxpt27ZtSkpK0rFjx3TRRRdp%2BfLluvLKK%2B2e1Wj5%2BfkqLi5WUVGR3VOMuvrqq/WHP/xBXbt21YEDB/T000%2BrX79%2B2rFjhyIiIuye1yi7d%2B/WggULlJmZqZkzZ2rTpk16%2BOGH5Xa7dffdd9s9z4gVK1bou%2B%2B%2B0/jx4%2B2eYsS0adNUWVmpbt26KSAgQHV1dZo1a5Z%2B8Ytf2D2t0Qgsh/rv/%2BdiWVaL%2BH8z/uChhx7S1q1btWHDBrunGHHFFVeopKRE3333nd555x2lpqZq7dq1jo6s0tJSTZ48WatXr1br1q3tnmNUSkqK93/37NlTSUlJ6ty5s9544w1lZmbauKzx6uvrlZiYqJycHElSnz59tGPHDi1YsKDFBNZrr72mlJQURUdH2z3FiGXLlmnJkiVaunSpevTooZKSEmVkZCg6Olqpqal2z2sUAsth2rVrp4CAgAZnqyoqKhqc1ULzk56erpUrV2rdunWKiYmxe44RQUFBuvzyyyVJiYmJ2rx5s1544QW98sorNi/78YqLi1VRUaGEhATvsbq6Oq1bt07z58%2BXx%2BNRQECAjQvNCQ4OVs%2BePbVr1y67pzRax44dG4R99%2B7d9c4779i0yKw9e/ZozZo1evfdd%2B2eYsyjjz6q6dOn66677pJ0Mvr37Nmj3NxcxwcW12A5TFBQkBISErw/RXJKQUGB%2BvXrZ9MqnI1lWXrooYf07rvv6i9/%2BYvi4uLsntRkLMuSx%2BOxe0ajDBo0SNu2bVNJSYn3lpiYqDFjxqikpKTFxJUkeTweffnll%2BrYsaPdUxrt2muvbfDxJ1999ZUuvfRSmxaZtWjRInXo0EFDhgyxe4ox//73v3XBBb4pEhAQ0CI%2BpoEzWA6UmZmpcePGKTExUUlJScrLy9PevXs1adIku6c1Sk1Njb7%2B%2Bmvv/W%2B%2B%2BUYlJSUKDw9Xp06dbFzWeGlpaVq6dKnee%2B89hYSEeM9AhoWFqU2bNjav%2B/FmzpyplJQUxcbGqrq6Wvn5%2Bfr000%2B1atUqu6c1SkhISIPr44KDgxUREeH46%2BamTp2qYcOGqVOnTqqoqNDTTz%2Btqqoqx58tkKRHHnlE/fr1U05OjkaOHKlNmzYpLy9PeXl5dk9rtPr6ei1atEipqakKDGw5f3UPGzZMs2bNUqdOndSjRw9t2bJFzz33nCZMmGD3tMaz94cY8WO99NJL1qWXXmoFBQVZV111VYv4cf8U2jByAAABEUlEQVRPPvnEktTglpqaave0Rjvd65JkLVq0yO5pjTJhwgTvn8P27dtbgwYNslavXm33rCbRUj6mYdSoUVbHjh2tVq1aWdHR0daIESOsHTt22D3LmPfff9%2BKj4%2B33G631a1bNysvL8/uSUZ89NFHliRr586ddk8xqqqqypo8ebLVqVMnq3Xr1tZll11mZWVlWR6Px%2B5pjeayLMuyJ%2B0AAABaJq7BAgAAMIzAAgAAMIzAAgAAMIzAAgAAMIzAAgAAMIzAAgAAMIzAAgAAMIzAAgAAMIzAAgAAMIzAAgAAMIzAAgAAMIzAAgAAMIzAAgAAMIzAAgAAMIzAAgAAMIzAAgAAMIzAAgAAMIzAAgAAMOz/APqO9oyNCexUAAAAAElFTkSuQmCC"/>
         </div>
-        <div role="tabpanel" class="tab-pane col-md-12" id="common6867184384696783866">
-            
+        <div role="tabpanel" class="tab-pane col-md-12" id="common6867184384696783866">    
 <table class="freq table table-hover">
     <thead>
     <tr>
@@ -2351,9 +2337,7 @@ pf.ProfileReport(data)
                                    role="tab" data-toggle="tab">Common Values</a></li>
         <li role="presentation"><a href="#extreme507595831772605039" aria-controls="extreme507595831772605039"
                                    role="tab" data-toggle="tab">Extreme Values</a></li>
-
     </ul>
-
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane active row" id="quantiles507595831772605039">
             <div class="col-md-4 col-md-offset-1">
@@ -2720,9 +2704,7 @@ pf.ProfileReport(data)
                                    role="tab" data-toggle="tab">Common Values</a></li>
         <li role="presentation"><a href="#extreme-5526005910680823130" aria-controls="extreme-5526005910680823130"
                                    role="tab" data-toggle="tab">Extreme Values</a></li>
-
     </ul>
-
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane active row" id="quantiles-5526005910680823130">
             <div class="col-md-4 col-md-offset-1">
@@ -3252,9 +3234,7 @@ pf.ProfileReport(data)
                                    role="tab" data-toggle="tab">Common Values</a></li>
         <li role="presentation"><a href="#extreme1138865514347627407" aria-controls="extreme1138865514347627407"
                                    role="tab" data-toggle="tab">Extreme Values</a></li>
-
     </ul>
-
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane active row" id="quantiles1138865514347627407">
             <div class="col-md-4 col-md-offset-1">
@@ -3584,11 +3564,9 @@ pf.ProfileReport(data)
                     <td>0</td>
                 </tr>
             </table>
-
         </div>
         <div class="col-sm-6">
             <table class="stats ">
-
                 <tr>
                     <th>Mean</th>
                     <td>61.778</td>
@@ -3630,9 +3608,7 @@ pf.ProfileReport(data)
                                    role="tab" data-toggle="tab">Common Values</a></li>
         <li role="presentation"><a href="#extreme3971479117883528351" aria-controls="extreme3971479117883528351"
                                    role="tab" data-toggle="tab">Extreme Values</a></li>
-
     </ul>
-
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane active row" id="quantiles3971479117883528351">
             <div class="col-md-4 col-md-offset-1">
@@ -3962,11 +3938,9 @@ pf.ProfileReport(data)
                     <td>0</td>
                 </tr>
             </table>
-
         </div>
         <div class="col-sm-6">
             <table class="stats ">
-
                 <tr>
                     <th>Mean</th>
                     <td>1.24</td>
@@ -4008,9 +3982,7 @@ pf.ProfileReport(data)
                                    role="tab" data-toggle="tab">Common Values</a></li>
         <li role="presentation"><a href="#extreme-4332127071032318910" aria-controls="extreme-4332127071032318910"
                                    role="tab" data-toggle="tab">Extreme Values</a></li>
-
     </ul>
-
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane active row" id="quantiles-4332127071032318910">
             <div class="col-md-4 col-md-offset-1">
@@ -4296,11 +4268,9 @@ pf.ProfileReport(data)
                     <td>0</td>
                 </tr>
             </table>
-
         </div>
         <div class="col-sm-6">
             <table class="stats ">
-
                 <tr>
                     <th>Mean</th>
                     <td>1.5844</td>
@@ -4342,9 +4312,7 @@ pf.ProfileReport(data)
                                    role="tab" data-toggle="tab">Common Values</a></li>
         <li role="presentation"><a href="#extreme3539603168765053218" aria-controls="extreme3539603168765053218"
                                    role="tab" data-toggle="tab">Extreme Values</a></li>
-
     </ul>
-
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane active row" id="quantiles3539603168765053218">
             <div class="col-md-4 col-md-offset-1">
