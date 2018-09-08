@@ -24,7 +24,6 @@ Ahora ya podemos cargarlo con `pandas`
         height: 100%;
     }
     .container {
-        position: absolute;
         top: 0;
         left: 0;
         right: 0;
