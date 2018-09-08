@@ -28,6 +28,7 @@ Ahora ya podemos cargarlo con `pandas`
         left: 0;
         right: 0;
         bottom: 0;
+        height: 1000; 
     }
 </style>
 <div class='container'>
