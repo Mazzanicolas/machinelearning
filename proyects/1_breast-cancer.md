@@ -1,6 +1,6 @@
 # Breast Cancer Wisconsin
 
-![Breast Cancer](./1_img/banner.jpg)
+![Breast Cancer](./1_src/img/banner.jpg)
 
 En este proyecto se va a realizar un estudio sobre el dataset [Breast Cancer Wisconsin](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Original%29), obtenido de [UCI](https://archive.ics.uci.edu/ml/index.php).
 
@@ -11,7 +11,7 @@ Cancer cells are created when the genes responsible for regulating [cell divisio
 -->
 El dataset ser estudiado esta compuesto por los resultados obtenidos mediante biopsias de ​FNA​ (fine needle aspiration), contiene 699 instancias con 10 atributos y una clase de salida (benigno o malicioso).
 En una biopsia FNA, el doctor usa una aguja muy fina y hueca con una jeringa para poder aspirar una pequeña cantidad de tejido o fluido de un area sospechosa. La muestra recolectada es revisada para ver si hay celulas cancerígenas.
-![FNA](./1_img/fna.gif)
+![FNA](./1_src/img/fna.gif)
 <!--
 In an FNA biopsy, the doctor uses a very thin, hollow needle attached to a syringe to withdraw (aspirate) a small amount of tissue or fluid from a suspicious area. The biopsy sample is then checked to see if there are cancer cells in it.
 -->
@@ -78,7 +78,7 @@ La variable objetivo de este dataset es “Class” la cual determina si un tumo
 
 A simple vista podemos descartar el atributo id ya que no aporta valor y causa ruido. 
 
-![Normal cell vs Cancer cell](./1_img/cell_structure.jpg)
+![Normal cell vs Cancer cell](./1_src/img/cell_structure.jpg)
 
 A continuación una breve descripción de las definiciones  para los atributos del dataset y porque pueden ser relevantes.
 
@@ -115,6 +115,8 @@ Estos últimos dos atributos también parecen ser importantes al momento de re
 * *4 para maligno*
 
 ## Analizando el Dataset (código)
+
+[Vista detallada del dataset ➡](./1_src/pf_overview.html)
 
 ### Importando librerias
 
@@ -485,7 +487,7 @@ sns.boxplot(ax=ax, data=dataset.iloc[:, : 5])
 ```
 
 
-![png](./1_img/output_13_1.png)
+![png](./1_src/img/output_13_1.png)
 
 
 
@@ -495,7 +497,7 @@ sns.boxplot(ax=ax, data=dataset.iloc[:, 5:9])
 ```
 
 
-![png](./1_img/output_14_1.png)
+![png](./1_src/img/output_14_1.png)
 
 Notar que no se realizo un diagrama para la variable de salida ya que en este caso son dos salidas y el diagrama no aportaria informacion relevante.
 
@@ -544,7 +546,7 @@ sns.heatmap(data_correlation, mask=mask, cmap=cmap,  center=0,
 
 
 
-![png](1_img/output_20_1.png)
+![png](./1_src/img/output_20_1.png)
 
 ```python
 data_correlation['Class'].sort_values(ascending=False)

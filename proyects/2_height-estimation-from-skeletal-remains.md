@@ -7,7 +7,11 @@ El objetivo de este proyecto es poder estimar la altura de un ser humano en base
 
 ## Introducción
 
-Utilizar restos óseos para estimar la altura de una persona es una herramienta muy util en la medicina forense y antropología biológica. Muchas veces solo unos pocos huesos se encuentran en excavaciones arqueológicas. Pero con unos pocos huesos podemos estimar la altura de una persona, esto es posible por la relación de tamaño entre los huesos. Se ha determinado que existe una relación entre el fémur, tibia, humero y el radio con la altura de una persona. A continuación se muestran las imágenes de los huesos mencionados para una referencia visual.
+Utilizar restos óseos para estimar la altura de una persona es una herramienta muy util en la medicina forense y antropología biológica. Muchas veces solo unos pocos huesos se encuentran en excavaciones arqueológicas. Pero con unos pocos huesos podemos estimar la altura de una persona, esto es posible por la relación de tamaño entre los huesos.
+
+## Problema
+
+ Se ha determinado que existe una relación entre el fémur, tibia, humero y el radio con la altura de una persona. A continuación se muestran las imágenes de los huesos mencionados para una referencia visual.
 
 | Fémur | Tibia |
 | :---: | :---: |
@@ -16,10 +20,6 @@ Utilizar restos óseos para estimar la altura de una persona es una herramienta 
 | Humero | Radio |
 | :---: | :---: |
 |![Humero](./2_src/img/humerus.gif)|![Radio](./2_src/img/radius.gif)|
-
-## Problema
-
-
 
 ## Estudio de atributos
 
@@ -49,6 +49,11 @@ El dataset cuenta con 23 atributos:
 * Hyperplasia `Bool`
 * Teeth Scorable `Bool`
 
+Estamos frente a un problema de regresion ya que la salida es un numero real. La variable objetivo es la altura de la persona, en este caso "Height in grave"
+
+A continuación una breve descripción de las definiciones  para los atributos del dataset y porque pueden ser relevantes.
+
+A simple vista podemos descartar el atributo id ya que no aporta valor y causa ruido. 
 
 
 ### Analizando el Dataset (código)
@@ -70,14 +75,13 @@ Ahora ya podemos cargarlo con `pandas`
 ```python
 import missingno as msno
 import pandas as pd
-import pandas_profiling as pf
 ```
 
 
 ```python
 data = pd.read_csv('../dataindsamling.csv')
 ```
-
+### Missing Values
 
 ```python
 msno.matrix(data)
