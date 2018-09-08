@@ -19,9 +19,6 @@ Analizandolo rapidamente en un editor de texto podemos ver que contiene caratere
 
 Ahora ya podemos cargarlo con `pandas`
 
-[Overview](./2_src/pf_overview.html)
-
-<section data-html="./_src/pf_overview.html"></section>
 <object data="./2_src/pf_overview.html"> 
     Your browser doesn’t support the object tag. 
 </object>
