@@ -279,25 +279,135 @@ La longitud del esqueleto se mide en la tumba (usando las definiciones presentad
 | **Total**   | 117         |             |             |
 
 
-**Abnormalities Vertebras:** `?` *Este atributo toma*
+**Abnormalities Vertebras:** `Anomalias en las vertebras` *Este atributo toma 13 valores diferentes*
 
 ####  Ocurrencias de los atributos
 
-**Femur left:** `Float64` *Este atributo toma*
+Anomalias registradas en las vertebras (en danés).
+
+| ID  | Anomalia (Danés) | Anomalia (Español, Google Translate) |
+|:---:|:---|:---|
+| 46  | En enkelt hvirvel lidt sammentrykket. Intet voldsomt    | Un solo remolino un poco de compresión. Nada feroz |
+| 14  | Udvoksninger, men intet der påvirker højden             | Expansiones, pero nada que afecte la altura |
+| 2   | To hvirvler fusioneret - har ingen betydning for højden | Dos remolinos fusionados: no tienen relación con la altura |
+| 33  | Læbedannelse | La formación de labio |
+| 43  | Læbedannelse | La formación de labio |
+| 58  | Læbedannelse | La formación de labio |
+| 42  | Læbedannelse men ingen sammenfald | La formación de labio pero no es coincidencia |
+| 21  | Nogle hvirvler lettere trykkede | Algunos remolinos se presionan con mayor facilidad |
+| 93  | Ryg lidt sammenklemt | Espalda ligeramente exprimida |
+| 31  | Em smule læbedannelse | Espalda ligeramente exprimida |
+| 82  | Et par hvirvler sammenklemte. Nok pga af alder. Har indvirkning på højden | Un par de remolinos se arracimaron. Suficiente por la edad. Tiene un impacto en la altura |
+| 63  | Læbedanelse og ser lidt sammentrykkede ud | Formación de labios y se ve un poco comprimido |
+| 77  | To ryghvirvler fusioneret, men har ingen betydning for højden | Dos vértebras se fusionaron pero no tienen importancia para la altura |
+
+Nombre de los huesos en danés para una mejor referencia.
+
+![Danish Bones](./2_src/img/danish_bones.png)
+
+
+| ![Vertebrae](./2_src/img/vertebrae.png) |
+| :-: |
+|_(Læbedannelse) Formación de labios: se ve a lo largo del borde de los extremos del hueso y en el edema de la vértebra._|
+
+Podemos ver que en la `id 82` hay comentario en el cual una anomalia en las vertebras tiene un impacto en la altura.
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ID</th>
+      <th>Location</th>
+      <th>Site_Number</th>
+      <th>Age_Minumum</th>
+      <th>Age_Maximum</th>
+      <th>Sex</th>
+      <th>Grave Number</th>
+      <th>Canine number</th>
+      <th>Canine largest age</th>
+      <th>Canine 2nd largest age</th>
+      <th>...</th>
+      <th>Height in grave</th>
+      <th>Abnormalities Vertebras</th>
+      <th>Femur left</th>
+      <th>Femur right</th>
+      <th>Abnormalities Femur</th>
+      <th>Notes</th>
+      <th>Date</th>
+      <th>Signature</th>
+      <th>Hyperplasia</th>
+      <th>Teeth Scorable</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>78</th>
+      <td>82</td>
+      <td>Ribe</td>
+      <td>ASR1015</td>
+      <td>35</td>
+      <td>45.0</td>
+      <td>Female</td>
+      <td>G818</td>
+      <td>3.0</td>
+      <td>2.5</td>
+      <td>3.5</td>
+      <td>...</td>
+      <td>144.0</td>
+      <td>NaN</td>
+      <td>41.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>5/28/2008</td>
+      <td>MWOD</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+**Femur left:** `Femur izquierdo` *Este atributo toma*
 
 ####  Ocurrencias de los atributos
 
-**Femur right:** `Float64` *Este atributo toma*
+**Femur right:** `Femur derecho` *Este atributo toma*
 
 ####  Ocurrencias de los atributos
 
 **Abnormalities Femur:** `?` *Este atributo toma*
 
+####  Ocurrencias de los atributos
+
 **Notes:** `Notas` *Este atributo toma*
+
+####  Ocurrencias de los atributos
 
 **Date:** `Fecha` *Este atributo toma*
 
+####  Ocurrencias de los atributos
+
 **Signature:** `?` *Este atributo toma*
+
+####  Ocurrencias de los atributos
 
 **Hyperplasia:** `Bool` *Este atributo toma*
 
@@ -351,3 +461,4 @@ msno.bar(data)
 [ADBOU](http://www.adbou.dk/fileadmin/adbou/projektopgaver/ADBOU_linear_regression_Mette_Wodx.pdf)
 
 [Human Osteological Methods](http://www.adbou.dk/fileadmin/adbou/manualer/humostman2015.pdf)
+[Skeletterne Fortæller](http://www.adbou.dk/fileadmin/user_upload/skeletter_fortaeller.pdf)
