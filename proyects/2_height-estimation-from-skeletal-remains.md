@@ -236,9 +236,48 @@ Los valores fueron tomados siguiendo esta tabla
 
 ####  Ocurrencias de los atributos
 
-**Height in grave:** `Float64` *Este atributo toma*
+**Height in grave:** `Altura en la tumba` *Este atributo toma valores reales entre 0 y 185*
+
+La longitud del esqueleto se mide en la tumba (usando las definiciones presentadas en Boldsen, 1984). Las mediciones se toman sobre esqueletos encontrados sin ser molestados en las tumbas y la longitud del esqueleto se mide desde la parte superior del cráneo a el punto mas distante del talo. El método de medir la altura como se describe arriba no se usó en todas las  excavaciones. La altura está dada en centímetros.
+
+| Frontal Bone | Talus       |
+|:------------:|:-----------:|
+| ![Frontal Bone](./2_src/img/frontal_bone.gif) | ![Os Talus](./2_src/img/talus.gif) |
+
 
 ####  Ocurrencias de los atributos
+
+| Altura (cm) | Ocurrencias | Altura (cm) | Ocurrencias |
+|:-----------:|:-----------:|:-----------:|:-----------:|
+| 170.0       | 5           | 144.0       | 2           |
+| 159.0       | 5           | 177.0       | 2           |
+| 154.0       | 5           | 158.5       | 1           |
+| 161.0       | 4           | 150.0       | 1           |
+| 157.0       | 4           | 182.0       | 1           |
+| 160.0       | 4           | 185.0       | 1           |
+| 155.0       | 4           | 183.0       | 1           |
+| 164.0       | 4           | 154.3       | 1           |
+| 174.0       | 3           | 168.0       | 1           |
+| 167.0       | 3           | 166.5       | 1           |
+| 153.0       | 3           | 167.5       | 1           |
+| 156.0       | 3           | 170.5       | 1           |
+| 169.0       | 3           | 150.5       | 1           |
+| 173.0       | 3           | 156.5       | 1           |
+| 163.0       | 3           | 174.5       | 1           |
+| 175.0       | 3           | 149.5       | 1           |
+| 152.0       | 3           | 168.5       | 1           |
+| 157.5       | 3           | 162.0       | 1           |
+| 158.0       | 3           | 142.0       | 1           |
+| 166.0       | 3           | 171.0       | 1           |
+| 165.0       | 3           | 151.0       | 1           |
+| 171.5       | 3           | 179.5       | 1           |
+| 149.0       | 3           | 180.0       | 1           |
+| 148.0       | 2           | 184.0       | 1           |
+| 179.0       | 2           | 151.5       | 1           |
+| 0.0         | 2           | 172.5       | 1           |
+| 152.5       | 2           | 173.5       | 1           |
+| **Total**   | 117         |             |             |
+
 
 **Abnormalities Vertebras:** `?` *Este atributo toma*
 
