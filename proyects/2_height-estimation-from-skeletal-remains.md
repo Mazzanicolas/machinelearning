@@ -72,6 +72,7 @@ Varias excavaciones y sitios se les ha dado diferentes nombres en el transcurso 
 | Ribe      | 116         |
 | G216      | 1           |
 | **Total** | 117         |
+
 Podemos ver que G216 tiene una gran probabilidad de ser un error en la recolección de los datos y lo analizaremos mas adelante
 
 
@@ -92,25 +93,17 @@ Edad mínima estimada al momento de la muerte, verificado a través de metodolog
 
 ####  Ocurrencias de los atributos
 
-| Edad       | Ocurrencias |
-|:----------:|:-----------:|
-| 35         | 26          |
-| 50         | 16          |
-| 30         | 15          |
-| 20         | 15          |
-| 25         | 11          |
-| 45         | 9           |
-| 40         | 9           |
-| 21         | 4           |
-| 60         | 3           |
-| 36         | 3           |
-| 55         | 1           |
-| 43         | 1           |
-| 34         | 1           |
-| 27         | 1           |
-| 22         | 1           |
-| 18         | 1           |
-| **Total**  | 117         |
+| Edad       | Ocurrencias | Edad       | Ocurrencias |
+|:----------:|:-----------:|:----------:|:-----------:|
+| 35         | 26          | 60         | 3           |
+| 50         | 16          | 36         | 3           |
+| 30         | 15          | 55         | 1           |
+| 20         | 15          | 43         | 1           |
+| 25         | 11          | 34         | 1           |
+| 45         | 9           | 27         | 1           |
+| 40         | 9           | 22         | 1           |
+| 21         | 4           | 18         | 1           |
+| **Total**  | 117         |            |             |
 
 
 **Age_Maximum:** `Edad Máximo` *Este atributo toma 22 valores*
@@ -119,30 +112,20 @@ Edad máxima estimada al momento de la muerte, verificado a través de metodolog
 
 ####  Ocurrencias de los atributos
 
-| Edad       | Ocurrencias |
-|:----------:|:-----------:|
-| 45.0       |    17       |
-| 40.0       |    15       |
-| 60.0       |    14       |
-| 50.0       |    13       |
-| 35.0       |     8       |
-| 24.0       |     7       |
-| 25.0       |     5       |
-| 30.0       |     5       |
-| 55.0       |     5       |
-| 29.0       |     4       |
-| 44.0       |     3       |
-| 34.0       |     2       |
-| 39.0       |     2       |
-| 65.0       |     2       |
-| 59.0       |     2       |
-| 26.0       |     1       |
-| 49.0       |     1       |
-| 70.0       |     1       |
-| 46.0       |     1       |
-| 20.0       |     1       |
-| 58.0       |     1       |
-| **Total**  | 110         |
+| Edad       | Ocurrencias | Edad       | Ocurrencias |
+|:----------:|:-----------:|:----------:|:-----------:|
+| 45.0       |    17       | 34.0       |     2       |
+| 40.0       |    15       | 39.0       |     2       |
+| 60.0       |    14       | 65.0       |     2       |
+| 50.0       |    13       | 59.0       |     2       |
+| 35.0       |     8       | 26.0       |     1       |
+| 24.0       |     7       | 49.0       |     1       |
+| 25.0       |     5       | 70.0       |     1       |
+| 30.0       |     5       | 46.0       |     1       |
+| 55.0       |     5       | 20.0       |     1       |
+| 29.0       |     4       | 58.0       |     1       |
+| 44.0       |     3       | -          | -           |
+| **Total**  | 110         |            |             |
 
 Podemos ver que tiene menos ocurrencia que los otros atributos por lo cual tiene valores faltantes, esto lo veremos mas adelante.
 
@@ -167,6 +150,7 @@ Podemos ver que tiene menos ocurrencia que los otros atributos por lo cual tiene
 La numeración de las tumbas y los esqueletos en ellos a menudo no es consistente. Muchos cementerios fueron excavados durante el curso de varias excavaciones independientes y por lo tanto pueden tener diferentes sistemas de numeración para cada excavación. Como regla principal, un esqueleto encontrado en una tumba debe obtener un número que comienza con 'G' seguido de un número (1, 2, ... etc.). Ambos en el campo y en el laboratorio antropológico, no es raro encontrar restos de esqueletos adicionales entremezclados con los huesos del esqueleto primario de la tumba. Si los huesos adicionales se pueden asignar al esqueleto de una tumba vecina, son transferidos. Si este no es el caso, se realiza un registro independiente de los huesos adicionales.
 
 ####  Ocurrencias de los atributos
+
 | Grave Number | Ocurrencias | Grave Number | Ocurrencias | Grave Number | Ocurrencias |
 |:------------:|:-----------:|:------------:|:-----------:|:------------:|:-----------:|
 | G818         | 2           | G864         | 1           | G41          | 1           |
@@ -207,32 +191,66 @@ La numeración de las tumbas y los esqueletos en ellos a menudo no es consistent
 | G214         | 1           | G210         | 1           | G400         | 1           |
 | G432         | 1           | G99          | 1           | G421         | 1           |
 | G257         | 1           | G808         | 1           | G29          | 1           | 
-| G802         | 1           | G138         | 1           |              |             |
+| G802         | 1           | G138         | 1           | -            | -           |
 | **Total**    | 117         |              |             |              |             |
 
 Podemos ver que `G818` tiene dos ocurrencias, este valor tiene una gran probabilidad de ser un error en la recolección de los datos o puede que dos esqueletos se encontraran en la misma tumba.
 
-**Canine number:** `Float64` *Este atributo toma*
+**Canine number:** `Numero Canino` *Este atributo toma 9 valores diferentes*
+
+Los valores fueron tomados siguiendo esta tabla
+
+| Score | Description                                                |
+|:-----:|:-----------------------------------------------------------|
+| 0     | Unworn tooth                                               |
+| 1     | Attrition only in enamel                                   |
+| 2     | Attrition has exposed the dentine in one cusp              |
+| 3     | Attrition has exposed the dentine in two cusp              |
+| 4     | Attrition has exposed the dentine in three cusp            |
+| 5     | Attrition has exposed the dentine in four cusp             |
+| 6     | Attrition has exposed the dentine so the dentine is visible|
+| 6     | Interconnected in two or more cusps                        |
+| 7     | Attrition has removed the enamel of the mastical surface   |
+| 8     | Attrition has removed the entire crown of the tooth        |
+
 
 ####  Ocurrencias de los atributos
 
 **Canine largest age:** `Float64` *Este atributo toma*
 
+####  Ocurrencias de los atributos
+
 **Canine 2nd largest age:** `Float64` *Este atributo toma*
+
+####  Ocurrencias de los atributos
 
 **Incisor number:** `Float64` *Este atributo toma*
 
+####  Ocurrencias de los atributos
+
 **Incisor largest age:** `Float64` *Este atributo toma*
+
+####  Ocurrencias de los atributos
 
 **Incisor 2nd largest age:** `Float64` *Este atributo toma*
 
+####  Ocurrencias de los atributos
+
 **Height in grave:** `Float64` *Este atributo toma*
+
+####  Ocurrencias de los atributos
 
 **Abnormalities Vertebras:** `?` *Este atributo toma*
 
+####  Ocurrencias de los atributos
+
 **Femur left:** `Float64` *Este atributo toma*
 
+####  Ocurrencias de los atributos
+
 **Femur right:** `Float64` *Este atributo toma*
+
+####  Ocurrencias de los atributos
 
 **Abnormalities Femur:** `?` *Este atributo toma*
 
