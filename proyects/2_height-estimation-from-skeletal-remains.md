@@ -130,6 +130,7 @@ Edad máxima estimada al momento de la muerte, verificado a través de metodolog
 | 29.0       |     4       | 58.0       |     1       |
 | 44.0       |     3       | -          | -           |
 | **Total**  | 110         |            |             |
+| **NaN**    | 7           |            |             |
 
 Podemos ver que tiene menos ocurrencia que los otros atributos por lo cual tiene valores faltantes, esto lo veremos mas adelante.
 
@@ -145,6 +146,7 @@ En este atributo, sexo es la estimación subjetiva final del sexo del individuo.
 | Male       | 67          |
 | Female     | 48          |
 | **Total**  | 115         |
+| **NaN**    | 2           |
 
 Podemos ver que tiene menos ocurrencia que los otros atributos por lo cual tiene valores faltantes, esto lo veremos mas adelante.
 
@@ -429,6 +431,7 @@ La longitud máxima de los fémures derecho e izquierdo se mide en la mesa de me
 | 47.5            | 2          | 42.0            |  1          | 51.4            | 1           |
 | 51.3            | 2          | 45.3            |  1          | 44.3            | 1           |
 | **Total**       | 91         |                 |             |                 |             |
+| **NaN**   | 26           | | | |
 
 Podemos ver que tenemos 7 ocurrencias de `0.0` tendremos que ver mas adelante si para estas ocurrencias existen medidas del femur derecho y si podemos remplazar los valores faltantes por estas medidas.
 
@@ -469,24 +472,25 @@ La longitud máxima de los fémures derecho e izquierdo se mide en la mesa de me
 | 48.0            | 2          | 43.8            |  1          | 42.1            | 1           |
 |                 |            | 43.9            |  1          | 50.0            | 1           |
 | **Total**       | 91         |                 |             |                 |             |
+| **NaN**   | 26           | | | |
 
 Podemos ver que tenemos 11 ocurrencias de `0.0` tendremos que ver mas adelante si para estas ocurrencias existen medidas del femur izquierdo y si podemos remplazar los valores faltantes por estas medidas.
 
 ####  Ocurrencias de los atributos
 
-| Femur izquierdo | ID  |
-|:---------------:|:---:|
-| 0.0             | 50  | 
-| 0.0             | 57  | 
-| 0.0             | 59  | 
-| 0.0             | 73  | 
-| 0.0             | 82  | 
-| 0.0             | 87  | 
-| 0.0             | 88  | 
-| 0.0             | 89  | 
-| 0.0             | 95  | 
-| 0.0             | 96  | 
-| 0.0             | 112 |
+| Femur derecho | ID  |
+|:-------------:|:---:|
+| 0.0           | 50  | 
+| 0.0           | 57  | 
+| 0.0           | 59  | 
+| 0.0           | 73  | 
+| 0.0           | 82  | 
+| 0.0           | 87  | 
+| 0.0           | 88  | 
+| 0.0           | 89  | 
+| 0.0           | 95  | 
+| 0.0           | 96  | 
+| 0.0           | 112 |
 
 
 **Abnormalities Femur:** `Anomalias en el femur` *Este atributo toma 12 valores diferentes*
@@ -519,6 +523,8 @@ Podemos ver que en las `id 13`, `id 103`, `id 9`, `id 14` y `id 15` hay comentar
 **Notes:** `Notas` *Este atributo toma 55 valores diferentes*
 
 Notas documentadas al momento del registro.
+
+####  Ocurrencias de los atributos
 
 | ID  | Notas (Danés) | Notas (Español, Google Translate) |
 | :-- | :-- | :--|
@@ -589,42 +595,68 @@ Notas documentadas al momento del registro.
 | 87  | Subperiale eksostoser. Ingen lepra forandringer i kranie. | Exostosis subperiales. No hay cambios de lepra en el cráneo |
 
 
-6
+Podemos ver que en la `id 6` el fémur derecho no se puede medir, se tiene que evaluar la posiblidad de remplazar el valor por le izquierdo.
+
+La `id 16`, `id 22`, `id 54`, `id 55` y la `id 57` dicen que falta el creano y el craneo es necesario para medir la altura de la persona, lo cual hace cuestionable la altura medida en la tumba.
 
 
+**Date:** `Fecha` *Este atributo toma 6 valores diferentes*
 
+Fecha en la cual se realizo el registro.
 
+####  Ocurrencias de los atributos
+| Fecha     | Ocurrencias |
+|:---------:|:-----------:|
+| 5/28/2008 | 46          |
+| 5/27/2008 | 35          |
+| 5/8/2008  | 14          |
+| 5/19/2008 | 11          |
+| 5/5/2008  | 8           |
+| **Total** | 114         |
+| **NaN**   | 3           |
 
+**Signature:** `?` *Este atributo toma 4 valores diferentes*
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Firma de la persona que registro los datos.
 
 ####  Ocurrencias de los atributos
 
-**Date:** `Fecha` *Este atributo toma*
+| Firma     | Ocurrencias |
+|:---------:|:-----------:|
+| MWOD      | 112         |
+| MEWOD     | 1           | 
+| Mwod      | 1           |
+| **Total** | 114         |
+| **NaN**   | 3           |
+
+Parece ser la misma persona con un error de typeo en `MEWOD`.
+
+
+**Hyperplasia:** `Hipoplasia` *Este atributo toma dos valores diferentes*
+
+La hipoplasia es una irregularidades en el esmalte dental visto como una banda impresa en el diente. La hipoplasia es causada por disturbios fisiológicos y se forma mientras
+diente se está desarrollando. La hipoplasia del esmalte solo se puntúa en los caninos permanentes. Se suele utilizar el canino superior izquierdo, pero si falta, se marca el canino derecho en lugar. Solo se puntúa la hipoplasia visible a simple vista.
 
 ####  Ocurrencias de los atributos
 
-**Signature:** `?` *Este atributo toma*
+| Hipoplasia  | Ocurrencias |
+|:-----------:|:-----------:|
+| False       | 63          |
+| True        | 54          | 
+| **Total**   | 117         |
+
+
+**Teeth Scorable:** `Dientes puntuables`
+
+Indica si los dientes son puntiagudos o no. Un diente es considerado no puntuable cuando se desgasta más de un tercio del diente. Cuando un diente está tan gastado,existe la posibilidad de que varias hipoplasias ya no estén presentes y el diente no sea utilizable. Los dientes no deben puntuarse si hay una cantidad sustancial de sarro, ya que esto podría ocultar posibles hipoplasias. El examinador no puede quitar el sarro.
 
 ####  Ocurrencias de los atributos
 
-**Hyperplasia:** `Bool` *Este atributo toma*
+| Dientes puntuables  | Ocurrencias |
+|:-------------------:|:-----------:|
+| True                | 61          |
+| False               | 56          | 
+| **Total**           | 117         |
 
 
 ### Analizando el Dataset (código)
