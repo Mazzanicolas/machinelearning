@@ -67,38 +67,150 @@ Varias excavaciones y sitios se les ha dado diferentes nombres en el transcurso 
 
 ####  Ocurrencias de los atributos
 
-| Ribe | G216 |
-|:----:|:----:|
-| 116  | 1    |
-
+| Location  | Ocurrencias |
+|:---------:|:-----------:|
+| Ribe      | 116         |
+| G216      | 1           |
+| **Total** | 117         |
 Podemos ver que G216 tiene una gran probabilidad de ser un error en la recolección de los datos y lo analizaremos mas adelante
+
 
 **Site_Number:** `Numero del sitio` *Este atributo toma un solo valor `ASR1015`*
 
-`ASR1015El` es el número de sitio en el cual la autoridad de excavación registro de la excavación real. Este atributo es relevante para usar cuando varios las excavaciones, dispersas en el tiempo, han tenido lugar en el mismo sitio.
+`ASR1015` es el número de sitio en el cual la autoridad de excavación registro de la excavación real. Este atributo es relevante para usar cuando varios las excavaciones, dispersas en el tiempo, han tenido lugar en el mismo sitio.
 
 ####  Ocurrencias de los atributos
 
-| ASR1015 |
-|:-------:|
-| 117     |
+| Site Number | Ocurrencias |
+|:-----------:|:-----------:|
+| ASR1015     | 117         |
+| **Total**   | 117         |
 
-**Age_Minumum:** `Edad Mínimo` *Este atributo toma*
+**Age_Minumum:** `Edad Mínimo` *Este atributo toma 16 valores*
 
-
-####  Ocurrencias de los atributos
-
-**Age_Maximum:** `Edad Máximo` *Este atributo toma*
+Edad mínima estimada al momento de la muerte, verificado a través de metodologias osteológicas estándar. Con respecto a los niños, es posible estimar la edad dentro de un intervalo estrecho utilizando la dentición y las mediciones de la longitud huesos. La edad se da como una fracción decimal de un año (por ejemplo, un niño con un la edad al morir de uno y medio a dos se escribe como '1.5 - 2'). Con respecto a los adultos, un intervalo apropiado de años se da. La edad se presenta como el año entero más cercano y no para el próximo cumpleaños (el intervalo de 30 a 35 años es un lapso de 6 años desde 30.00 - 35.99 años). En este caso contamos solo con valores enteros para la edad mínima.
 
 ####  Ocurrencias de los atributos
 
-**Sex** `Sexo` *Este atributo toma*
+| Edad       | Ocurrencias |
+|:----------:|:-----------:|
+| 35         | 26          |
+| 50         | 16          |
+| 30         | 15          |
+| 20         | 15          |
+| 25         | 11          |
+| 45         | 9           |
+| 40         | 9           |
+| 21         | 4           |
+| 60         | 3           |
+| 36         | 3           |
+| 55         | 1           |
+| 43         | 1           |
+| 34         | 1           |
+| 27         | 1           |
+| 22         | 1           |
+| 18         | 1           |
+| **Total**  | 117         |
+
+
+**Age_Maximum:** `Edad Máximo` *Este atributo toma 22 valores*
+
+Edad máxima estimada al momento de la muerte, verificado a través de metodologias osteológicas estándar. Con respecto a los niños, es posible estimar la edad dentro de un intervalo estrecho utilizando la dentición y las mediciones de la longitud huesos. La edad se da como una fracción decimal de un año (por ejemplo, un niño con un la edad al morir de uno y medio a dos se escribe como '1.5 - 2'). Con respecto a los adultos, un intervalo apropiado de años se da. La edad se presenta como el año entero más cercano y no para el próximo cumpleaños (el intervalo de 30 a 35 años es un lapso de 6 años desde 30.00 - 35.99 años). En este caso contamos solo con valores enteros para la edad mínima.
 
 ####  Ocurrencias de los atributos
 
-**Grave Number:** `Numero de Tumba` *Este atributo toma*
+| Edad       | Ocurrencias |
+|:----------:|:-----------:|
+| 45.0       |    17       |
+| 40.0       |    15       |
+| 60.0       |    14       |
+| 50.0       |    13       |
+| 35.0       |     8       |
+| 24.0       |     7       |
+| 25.0       |     5       |
+| 30.0       |     5       |
+| 55.0       |     5       |
+| 29.0       |     4       |
+| 44.0       |     3       |
+| 34.0       |     2       |
+| 39.0       |     2       |
+| 65.0       |     2       |
+| 59.0       |     2       |
+| 26.0       |     1       |
+| 49.0       |     1       |
+| 70.0       |     1       |
+| 46.0       |     1       |
+| 20.0       |     1       |
+| 58.0       |     1       |
+| **Total**  | 110         |
+
+Podemos ver que tiene menos ocurrencia que los otros atributos por lo cual tiene valores faltantes, esto lo veremos mas adelante.
+
+
+**Sex** `Sexo` *Este atributo toma dos valores `Male` y `Female`*
+
+En este atributo, sexo es la estimación subjetiva final del sexo del individuo. 
 
 ####  Ocurrencias de los atributos
+
+| Sexo       | Ocurrencias |
+|:----------:|:-----------:|
+| Male       | 67          |
+| Female     | 48          |
+| **Total**  | 115         |
+
+Podemos ver que tiene menos ocurrencia que los otros atributos por lo cual tiene valores faltantes, esto lo veremos mas adelante.
+
+
+**Grave Number:** `Numero de Tumba` *Este atributo toma 116 valores*
+
+La numeración de las tumbas y los esqueletos en ellos a menudo no es consistente. Muchos cementerios fueron excavados durante el curso de varias excavaciones independientes y por lo tanto pueden tener diferentes sistemas de numeración para cada excavación. Como regla principal, un esqueleto encontrado en una tumba debe obtener un número que comienza con 'G' seguido de un número (1, 2, ... etc.). Ambos en el campo y en el laboratorio antropológico, no es raro encontrar restos de esqueletos adicionales entremezclados con los huesos del esqueleto primario de la tumba. Si los huesos adicionales se pueden asignar al esqueleto de una tumba vecina, son transferidos. Si este no es el caso, se realiza un registro independiente de los huesos adicionales.
+
+####  Ocurrencias de los atributos
+| Grave Number | Ocurrencias | Grave Number | Ocurrencias | Grave Number | Ocurrencias |
+|:------------:|:-----------:|:------------:|:-----------:|:------------:|:-----------:|
+| G818         | 2           | G864         | 1           | G41          | 1           |
+| G828         | 1           | G314         | 1           | G846         | 1           |
+| G885         | 1           | G132         | 1           | G104         | 1           |
+| G841         | 1           | G119         | 1           | G48          | 1           |
+| G58          | 1           | G865         | 1           | G303         | 1           |
+| G326         | 1           | G74          | 1           | G246         | 1           |
+| G40          | 1           | G192         | 1           | G923         | 1           |
+| G305         | 1           | G117         | 1           | G261         | 1           |
+| G73          | 1           | G282         | 1           | G851         | 1           | 
+| G341         | 1           | G173         | 1           | G160         | 1           |
+| G897         | 1           | G33          | 1           | G206         | 1           |
+| G248         | 1           | G898         | 1           | G368         | 1           |
+| G166         | 1           | G419         | 1           | G856         | 1           |
+| G194         | 1           | G35          | 1           | G114         | 1           |
+| G24          | 1           | G213         | 1           | G315         | 1           |
+| G131         | 1           | G294         | 1           | G884         | 1           |
+| G324         | 1           | G63          | 1           | G229         | 1           |
+| G435         | 1           | G317         | 1           | G274         | 1           |
+| G387         | 1           | G871         | 1           | G340         | 1           |
+| G176         | 1           | G231         | 1           | G211         | 1           |
+| G843         | 1           | G332         | 1           | G863         | 1           |
+| G23          | 1           | G108         | 1           | G70          | 1           |
+| G215         | 1           | G344         | 1           | G178         | 1           |
+| G216         | 1           | G59          | 1           | G394         | 1           |
+| G404         | 1           | G148         | 1           | G823         | 1           |
+| G275         | 1           | G302         | 1           | G377         | 1           |
+| G159         | 1           | G850         | 1           | G285         | 1           |
+| G277         | 1           | G226         | 1           | G39          | 1           | 
+| G113         | 1           | G363         | 1           | G81          | 1           |
+| G350         | 1           | G61          | 1           | G378         | 1           |
+| G301         | 1           | G56          | 1           | G187         | 1           | 
+| G89          | 1           | G801         | 1           | G803         | 1           |
+| G38          | 1           | G894         | 1           | G355         | 1           | 
+| G251         | 1           | G312         | 1           | G908         | 1           | 
+| G267         | 1           | G903         | 1           | G122         | 1           | 
+| G214         | 1           | G210         | 1           | G400         | 1           |
+| G432         | 1           | G99          | 1           | G421         | 1           |
+| G257         | 1           | G808         | 1           | G29          | 1           | 
+| G802         | 1           | G138         | 1           |              |             |
+| **Total**    | 117         |              |             |              |             |
+
+Podemos ver que `G818` tiene dos ocurrencias, este valor tiene una gran probabilidad de ser un error en la recolección de los datos o puede que dos esqueletos se encontraran en la misma tumba.
 
 **Canine number:** `Float64` *Este atributo toma*
 
