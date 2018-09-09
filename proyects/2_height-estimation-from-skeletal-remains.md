@@ -278,6 +278,7 @@ La longitud del esqueleto se mide en la tumba (usando las definiciones presentad
 | 152.5       | 2           | 173.5       | 1           |
 | **Total**   | 117         |             |             |
 
+Podemos ver dos ocurrencias con valor `0.0` que tendremos que eliminar mas adelante ya que son erroneas.
 
 **Abnormalities Vertebras:** `Anomalias en las vertebras` *Este atributo toma 13 valores diferentes*
 
@@ -288,30 +289,30 @@ Anomalias registradas en las vertebras (en danés).
 | ID  | Anomalia (Danés) | Anomalia (Español, Google Translate) |
 |:---:|:---|:---|
 | 46  | En enkelt hvirvel lidt sammentrykket. Intet voldsomt    | Un solo remolino un poco de compresión. Nada feroz |
-| 14  | Udvoksninger, men intet der påvirker højden             | Expansiones, pero nada que afecte la altura |
-| 2   | To hvirvler fusioneret - har ingen betydning for højden | Dos remolinos fusionados: no tienen relación con la altura |
-| 33  | Læbedannelse | La formación de labio |
-| 43  | Læbedannelse | La formación de labio |
-| 58  | Læbedannelse | La formación de labio |
-| 42  | Læbedannelse men ingen sammenfald | La formación de labio pero no es coincidencia |
-| 21  | Nogle hvirvler lettere trykkede | Algunos remolinos se presionan con mayor facilidad |
-| 93  | Ryg lidt sammenklemt | Espalda ligeramente exprimida |
-| 31  | Em smule læbedannelse | Espalda ligeramente exprimida |
-| 82  | Et par hvirvler sammenklemte. Nok pga af alder. Har indvirkning på højden | Un par de remolinos se arracimaron. Suficiente por la edad. Tiene un impacto en la altura |
-| 63  | Læbedanelse og ser lidt sammentrykkede ud | Formación de labios y se ve un poco comprimido |
-| 77  | To ryghvirvler fusioneret, men har ingen betydning for højden | Dos vértebras se fusionaron pero no tienen importancia para la altura |
-
-Nombre de los huesos en danés para una mejor referencia.
-
-![Danish Bones](./2_src/img/danish_bones.png)
+| 17  | Udvoksninger, men intet der påvirker højden             | Expansiones, pero nada que afecte la altura |
+| 5   | To hvirvler fusioneret - har ingen betydning for højden | Dos remolinos fusionados: no tienen relación con la altura |
+| 37  | Læbedannelse | La formación de labio |
+| 47  | Læbedannelse | La formación de labio |
+| 62  | Læbedannelse | La formación de labio |
+| 50  | Læbedannelse men ingen sammenfald | La formación de labio pero no es coincidencia |
+| 24  | Nogle hvirvler lettere trykkede | Algunos remolinos se presionan con mayor facilidad |
+| 97  | Ryg lidt sammenklemt | Espalda ligeramente exprimida |
+| 35  | Em smule læbedannelse | Espalda ligeramente exprimida |
+| 86  | Et par hvirvler sammenklemte. Nok pga af alder. Har indvirkning på højden | Un par de remolinos se arracimaron. Suficiente por la edad. Tiene un impacto en la altura |
+| 67  | Læbedanelse og ser lidt sammentrykkede ud | Formación de labios y se ve un poco comprimido |
+| 81  | To ryghvirvler fusioneret, men har ingen betydning for højden | Dos vértebras se fusionaron pero no tienen importancia para la altura |
 
 
-| ![Vertebrae](./2_src/img/vertebrae.png) |
-| :-: |
+|![Danish Bones](./2_src/img/danish_bones.png)|
+|:-------------------------------------------:|
+|_Nombre de los huesos en danés para una mejor referencia_|
+
+
+|![Vertebrae](./2_src/img/vertebrae.png)|
+|:-------------------------------------:|
 |_(Læbedannelse) Formación de labios: se ve a lo largo del borde de los extremos del hueso y en el edema de la vértebra._|
 
-Podemos ver que en la `id 82` hay comentario en el cual una anomalia en las vertebras tiene un impacto en la altura.
-
+Podemos ver que en la `id 86` hay un comentario en el cual una anomalia en las vertebras tiene un impacto en la altura.
 
 
 <div>
@@ -342,7 +343,9 @@ Podemos ver que en la `id 82` hay comentario en el cual una anomalia en las vert
       <th>Canine number</th>
       <th>Canine largest age</th>
       <th>Canine 2nd largest age</th>
-      <th>...</th>
+      <th>Incisor number</th>
+      <th>Incisor largest age</th>
+      <th>Incisor 2nd largest age</th>
       <th>Height in grave</th>
       <th>Abnormalities Vertebras</th>
       <th>Femur left</th>
@@ -357,45 +360,154 @@ Podemos ver que en la `id 82` hay comentario en el cual una anomalia en las vert
   </thead>
   <tbody>
     <tr>
-      <th>78</th>
-      <td>82</td>
+      <th>82</th>
+      <td>86</td>
       <td>Ribe</td>
       <td>ASR1015</td>
-      <td>35</td>
-      <td>45.0</td>
+      <td>60</td>
+      <td>70.0</td>
       <td>Female</td>
-      <td>G818</td>
-      <td>3.0</td>
-      <td>2.5</td>
-      <td>3.5</td>
-      <td>...</td>
-      <td>144.0</td>
-      <td>NaN</td>
-      <td>41.0</td>
+      <td>G35</td>
       <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>157.0</td>
+      <td>et par hvirvler sammenklemte. Nok pga af alder. Har indvirkning p? h?jden.</td>
+      <td>45.1</td>
       <td>NaN</td>
       <td>NaN</td>
+      <td>Collas fracture venstre radius.</td>
       <td>5/28/2008</td>
       <td>MWOD</td>
-      <td>True</td>
-      <td>True</td>
+      <td>False</td>
+      <td>False</td>
     </tr>
   </tbody>
 </table>
 </div>
 
 
-**Femur left:** `Femur izquierdo` *Este atributo toma*
+**Femur left:** `Femur izquierdo` *Este atributo toma 58 valores diferentes*
+
+La longitud máxima de los fémures derecho e izquierdo se mide en la mesa de medicion. La longitud se ingresa tradicionalmente en milímetros con un decimal aunque en este caso esta en centimentros.
+
+|![Femur Measures](./2_src/img/femur_measures.png)|
+|:-----------------------------------------------:|
+| _Medición de los huesos_                        |
 
 ####  Ocurrencias de los atributos
 
-**Femur right:** `Femur derecho` *Este atributo toma*
+| Femur izquierdo | Occurencias| Femur izquierdo | Occurencias | Femur izquierdo | Occurencias |
+|:---------------:|:----------:|:---------------:|:-----------:|:---------------:|:-----------:|
+| 0.0             | 7          | 41.6            |  2          | 47.1            | 1           |
+| 47.0            | 4          | 37.7            |  1          | 47.3            | 1           |
+| 43.0            | 4          | 52.6            |  1          | 45.4            | 1           |
+| 50.8            | 4          | 40.6            |  1          | 43.9            | 1           |
+| 44.1            | 3          | 41.0            |  1          | 42.2            | 1           |
+| 45.6            | 3          | 46.1            |  1          | 50.9            | 1           |
+| 43.4            | 3          | 39.8            |  1          | 46.6            | 1           |
+| 48.0            | 3          | 44.5            |  1          | 41.7            | 1           |
+| 43.1            | 2          | 48.3            |  1          | 54.4            | 1           |
+| 45.1            | 2          | 50.0            |  1          | 41.4            | 1           |
+| 44.9            | 2          | 42.1            |  1          | 44.6            | 1           |
+| 43.6            | 2          | 45.8            |  1          | 52.8            | 1           |
+| 49.6            | 2          | 43.5            |  1          | 41.9            | 1           |
+| 48.4            | 2          | 49.0            |  1          | 46.2            | 1           |
+| 48.5            | 2          | 40.7            |  1          | 47.8            | 1           |
+| 52.0            | 2          | 43.3            |  1          | 43.8            | 1           |
+| 44.0            | 2          | 49.3            |  1          | 49.4            | 1           |
+| 47.5            | 2          | 42.0            |  1          | 51.4            | 1           |
+| 51.3            | 2          | 45.3            |  1          | 44.3            | 1           |
+| **Total**       | 91         |                 |             |                 |             |
+
+Podemos ver que tenemos 7 ocurrencias de `0.0` tendremos que ver mas adelante si para estas ocurrencias existen medidas del femur derecho y si podemos remplazar los valores faltantes por estas medidas.
+
+| Femur izquierdo | ID  |
+|:---------------:|:---:|
+| 0.0             | 34  |
+| 0.0             | 50  |
+| 0.0             | 59  |
+| 0.0             | 80  |
+| 0.0             | 95  |
+| 0.0             | 96  |
+| 0.0             | 112 |
+
+**Femur right:** `Femur derecho` *Este atributo toma 60 valores diferentes*
+
+La longitud máxima de los fémures derecho e izquierdo se mide en la mesa de medicion. La longitud se ingresa tradicionalmente en milímetros con un decimal aunque en este caso esta en centimentros.
+
+| Femur izquierdo | Occurencias| Femur izquierdo | Occurencias | Femur izquierdo | Occurencias |
+|:---------------:|:----------:|:---------------:|:-----------:|:---------------:|:-----------:|
+| 0.0             | 11         | 53.6            |  1          | 50.6            | 1           |
+| 47.0            | 3          | 46.4            |  1          | 42.3            | 1           |
+| 46.1            | 3          | 46.2            |  1          | 44.8            | 1           |
+| 45.8            | 3          | 51.6            |  1          | 48.3            | 1           |
+| 47.8            | 2          | 48.5            |  1          | 43.1            | 1           |
+| 45.4            | 2          | 47.5            |  1          | 46.8            | 1           |
+| 40.7            | 2          | 49.5            |  1          | 45.2            | 1           |
+| 39.5            | 2          | 45.0            |  1          | 52.3            | 1           |
+| 43.0            | 2          | 52.5            |  1          | 51.3            | 1           |
+| 50.5            | 2          | 49.0            |  1          | 48.9            | 1           |
+| 41.0            | 2          | 51.2            |  1          | 47.1            | 1           |
+| 42.4            | 2          | 42.5            |  1          | 42.6            | 1           |
+| 43.5            | 2          | 41.6            |  1          | 41.7            | 1           |
+| 47.3            | 2          | 46.6            |  1          | 50.9            | 1           |
+| 44.0            | 2          | 48.6            |  1          | 49.6            | 1           |
+| 44.2            | 2          | 43.7            |  1          | 43.6            | 1           |
+| 45.1            | 2          | 51.7            |  1          | 47.9            | 1           |
+| 46.0            | 2          | 48.7            |  1          | 44.6            | 1           |
+| 48.0            | 2          | 43.8            |  1          | 42.1            | 1           |
+|                 |            | 43.9            |  1          | 50.0            | 1           |
+| **Total**       | 91         |                 |             |                 |             |
+
+Podemos ver que tenemos 11 ocurrencias de `0.0` tendremos que ver mas adelante si para estas ocurrencias existen medidas del femur izquierdo y si podemos remplazar los valores faltantes por estas medidas.
 
 ####  Ocurrencias de los atributos
 
-**Abnormalities Femur:** `?` *Este atributo toma*
+| Femur izquierdo | ID  |
+|:---------------:|:---:|
+| 0.0             | 50  | 
+| 0.0             | 57  | 
+| 0.0             | 59  | 
+| 0.0             | 73  | 
+| 0.0             | 82  | 
+| 0.0             | 87  | 
+| 0.0             | 88  | 
+| 0.0             | 89  | 
+| 0.0             | 95  | 
+| 0.0             | 96  | 
+| 0.0             | 112 |
+
+
+**Abnormalities Femur:** `Anomalias en el femur` *Este atributo toma 12 valores diferentes*
+
+Anomalias registradas en el femur (en danés).
 
 ####  Ocurrencias de los atributos
+
+| ID  | Anomalia (Danés) | Anomalia (Español, Google Translate) |
+|:---:|:-----------------|:-------------------------------------|
+| 13  | Begge lårben for nedbrudte til at måle |Ambos muslos se descomponen para medir |
+| 16  | Skør postmortal nedbrydning | Gran descomposición post mortem |
+| 103 | Mærkelig venstre femur | Extraño fémur izquierdo |
+| 106 | Flade exostoser på caput. Ingen betdning for højden  | Exostos planos en caput. Sin importancia para la altura |
+| 9   | Knækkede postmortalt så kan ikke måles | La mortalidad de publicaciones rotas no se puede medir |
+| 1   | Brækket Postmortalt | Postmortalt roto |
+| 29  | Meget store og robuste. En rigtig mand | Muy grande y robusto. Un verdadero hombre |
+| 85  | Læbedannelse på femur, men ingen betydning for højden |La formación de labios en el fémur, pero no importa la altura|
+| 14  | Højre femur lidt deform... Syfilis? | El fémur derecho se deforma un poco ... ¿sífilis?|
+| 15  | Højre femur ikke bevaret | Fémur derecho no preservado |
+| 47  | FOS på femur | Síndrome osteolítico focal en el fémur |
+
+Podemos ver que en las `id 13`, `id 103`, `id 9`, `id 14` y `id 15` hay comentarios en los que se habla de anomalias que tiene un impacto en la altura.
+
+|![Femur Measures](./2_src/img/fos.png)|
+|:----------------------------------------------------------------------------------:|
+| _Síndrome osteolítico focal en el fémur, no tiene un impacto relevante en la altura_|
+
 
 **Notes:** `Notas` *Este atributo toma*
 
