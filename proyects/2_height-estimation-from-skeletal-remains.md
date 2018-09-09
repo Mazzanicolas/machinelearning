@@ -73,8 +73,83 @@ Varias excavaciones y sitios se les ha dado diferentes nombres en el transcurso 
 | G216      | 1           |
 | **Total** | 117         |
 
-Podemos ver que G216 tiene una gran probabilidad de ser un error en la recolección de los datos y lo analizaremos mas adelante
+Podemos ver que `G216` tiene una gran probabilidad de ser un error en la recolección de los datos.
 
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ID</th>
+      <th>Location</th>
+      <th>Site_Number</th>
+      <th>Age_Minumum</th>
+      <th>Age_Maximum</th>
+      <th>Sex</th>
+      <th>Grave Number</th>
+      <th>Canine number</th>
+      <th>Canine largest age</th>
+      <th>Canine 2nd largest age</th>
+      <th>Incisor number</th>
+      <th>Incisor largest age</th>
+      <th>Incisor 2nd largest age</th>
+      <th>Height in grave</th>
+      <th>Abnormalities Vertebras</th>
+      <th>Femur left</th>
+      <th>Femur right</th>
+      <th>Abnormalities Femur</th>
+      <th>Notes</th>
+      <th>Date</th>
+      <th>Signature</th>
+      <th>Hyperplasia</th>
+      <th>Teeth Scorable</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>30</th>
+      <td>34</td>
+      <td>G216</td>
+      <td>ASR1015</td>
+      <td>30</td>
+      <td>40.0</td>
+      <td>Male</td>
+      <td>G216</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>NaN</td>
+      <td>166.5</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>47.3</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+Podemos ver que `G216` es el numero de tumba y debe haber sido copiado erróneamente en `Location`.
 
 **Site_Number:** `Numero del sitio` *Este atributo toma un solo valor `ASR1015`*
 
@@ -204,9 +279,26 @@ Podemos ver que `G818` tiene dos ocurrencias, este valor tiene una gran probabil
 
 **Canine number:** `Numero Canino` *Este atributo toma 9 valores diferentes*
 
-Los valores fueron tomados siguiendo esta tabla
+El número de hipoplasias visibles en el diente.
+La hipoplasia del esmalte es irregularidades en el esmalte dental visto como una banda impresa en el diente. La hipoplasia es causada por disturbios fisiológicos y se forma mientras diente se está desarrollando. La hipoplasia del esmalte solo se puntúa en los caninos permanentes. Se prefiere el canino superior izquierdo, pero si falta, se marca el canino derecho en lugar.
 
-| Score | Description                                                |
+|![Teeth](./2_src/img/teeth.png)|
+|:-----------------------------:|
+| _Etapas del desarrollo dental_|
+
+Fue usada la tabla de  Haderup.
+
+|           | R |   |   |   |   |   |   |   | MAXILLA |   |   |   |   |   |   |   | L |
+|-----------|---|---|---|---|---|---|---|---|:-------:|---|---|---|---|---|---|---|---|
+| Permanent | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | +       | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+| Deciduous |   |   |   | 05| 04| 03| 02| 01| +       |01 |02 |03 |04 |05 |   |   |   |
+
+|           |       |   |   |   |   |   |   |   | MANDIBULA |   |   |   |   |   |   |   |      |
+|-----------|-------|---|---|---|---|---|---|---|:---------:|---|---|---|---|---|---|---|------|
+| Permanent | 8     | 7 | 6 | 5 | 4 | 3 | 2 | 1 | -         | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8    |
+| Deciduous |       |   |   | 05| 04| 03| 02| 01| -         |01 |02 |03 |04 |05 |   |   |      |
+
+| Score | Descripción                                                |
 |:-----:|:-----------------------------------------------------------|
 | 0     | Unworn tooth                                               |
 | 1     | Attrition only in enamel                                   |
@@ -605,6 +697,7 @@ La `id 16`, `id 22`, `id 54`, `id 55` y la `id 57` dicen que falta el creano y e
 Fecha en la cual se realizo el registro.
 
 ####  Ocurrencias de los atributos
+
 | Fecha     | Ocurrencias |
 |:---------:|:-----------:|
 | 5/28/2008 | 46          |
@@ -676,23 +769,34 @@ Ahora ya podemos cargarlo con `pandas`
 
 ### Importando librerias
 
+
 ```python
 import missingno as msno
 import pandas as pd
+import pandas_profiling as pf
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 ```
+
 ### Cargando el dataset
+
 
 ```python
 data = pd.read_csv('../dataindsamling.csv')
 ```
+
 ### Missing Values
+
+Vamos a utilizar la libreria `missingno` para ver la estructura de los datos faltantes.
+
 
 ```python
 msno.matrix(data)
 ```
 
 
-![png](./2_src/img/output_2_1.png)
+![png](./2_src/img/output_6_1.png)
 
 
 
@@ -701,11 +805,879 @@ msno.bar(data)
 ```
 
 
-![png](./2_src/img/output_3_1.png)
+![png](./2_src/img/output_7_1.png)
 
 
-# References
-[ADBOU](http://www.adbou.dk/fileadmin/adbou/projektopgaver/ADBOU_linear_regression_Mette_Wodx.pdf)
+Podemos ver que hay una gran cantidad de datos faltantes, sobretodo en `Abnormalities Vertebras` y `Abnormalities Femur`. Como el objetivo de este estudio es predecir la altura en base al tamaño del femur vamos a comenzar por solucionar el problema con los missng values de `Femur left` y `Femur right`.
 
-[Human Osteological Methods](http://www.adbou.dk/fileadmin/adbou/manualer/humostman2015.pdf)
-[Skeletterne Fortæller](http://www.adbou.dk/fileadmin/user_upload/skeletter_fortaeller.pdf)
+Como vimos en el analisis de atributos existen valores iguales a 0, para nosotros esos valores son iguales a `NaN` ya que no aporntan a la solucion del problema.
+
+
+```python
+data.loc[data['Femur left']      == 0.0] = np.nan
+data.loc[data['Femur right']     == 0.0] = np.nan
+data.loc[data['Height in grave'] == 0.0] = np.nan
+```
+
+
+```python
+femur_size = data[['ID','Femur left','Femur right']]
+```
+
+
+```python
+msno.matrix(femur_size[['Femur left','Femur right']])
+```
+
+![png](./2_src/img/output_12_1.png)
+
+
+
+```python
+full_values_femur = pd.DataFrame(data=femur_size)
+```
+
+
+```python
+full_values_femur = femur_size.dropna()
+```
+
+Una vez eliminados los valores `NaN` podemos ver de que restos tenemos el tamaño de ambos femur y ver si existe una gran diferencia de tamaño entre ellos para mas adelante sustituir los faltantes con su contraparte.
+
+
+```python
+msno.matrix(full_values_femur[['Femur left','Femur right']])
+```
+
+
+![png](./2_src/img/output_16_1.png)
+
+
+
+```python
+r_femur__l_femur_difference = pd.DataFrame()
+r_femur__l_femur_difference['Difference'] = abs(full_values_femur['Femur left'] - full_values_femur['Femur right'])
+```
+
+
+```python
+full_values_femur = r_femur__l_femur_difference.Difference.sort_values(ascending=False)
+```
+
+
+```python
+full_values_femur.head(5)
+```
+
+
+
+
+    64     2.6
+    102    1.4
+    51     1.0
+    4      0.9
+    105    0.8
+    Name: Difference, dtype: float64
+
+
+
+Podemos ver que la diferencia de tamaño es muy poca entre los femurs
+
+
+```python
+full_values_femur.describe()
+```
+
+
+
+
+    count    64.000000
+    mean      0.406250
+    std       0.407031
+    min       0.000000
+    25%       0.100000
+    50%       0.350000
+    75%       0.600000
+    max       2.600000
+    Name: Difference, dtype: float64
+
+
+
+
+```python
+fig, ax = plt.subplots(figsize=(2,8))
+sns.boxplot(ax=ax, data=full_values_femur)
+```
+
+
+![png](./2_src/img/output_22_1.png)
+
+
+Podemos ver que la diferencia entre el femur derecho e izquierdo  suele ser muy pequeña, asi que vamos a a signarle a los valores faltantes que tienen una contraparte su valor.
+
+
+```python
+data.loc[data['Femur left'].isnull(),'Femur left']   = data['Femur right']
+data.loc[data['Femur right'].isnull(),'Femur right'] = data['Femur left']
+```
+
+
+```python
+both_missing = data[data['Femur left'].isnull()==True]
+len(both_missing)
+```
+
+
+
+
+    26
+
+
+
+Podemos ver que quedamos con 26 de 117 valores NaN para los cuales no sabemos las medidas de ningun femur.
+
+
+```python
+both_missing
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ID</th>
+      <th>Location</th>
+      <th>Site_Number</th>
+      <th>Age_Minumum</th>
+      <th>Age_Maximum</th>
+      <th>Sex</th>
+      <th>Grave Number</th>
+      <th>Canine number</th>
+      <th>Canine largest age</th>
+      <th>Canine 2nd largest age</th>
+      <th>...</th>
+      <th>Height in grave</th>
+      <th>Abnormalities Vertebras</th>
+      <th>Femur left</th>
+      <th>Femur right</th>
+      <th>Abnormalities Femur</th>
+      <th>Notes</th>
+      <th>Date</th>
+      <th>Signature</th>
+      <th>Hyperplasia</th>
+      <th>Teeth Scorable</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>6</th>
+      <td>9.0</td>
+      <td>Ribe</td>
+      <td>ASR1015</td>
+      <td>50.0</td>
+      <td>60.0</td>
+      <td>Male</td>
+      <td>G377</td>
+      <td>3.0</td>
+      <td>3.5</td>
+      <td>5.0</td>
+      <td>...</td>
+      <td>166.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Kn?kkede postmortalt s? kan ikke m?les</td>
+      <td>Incisor mere end 1/3 slidt ned</td>
+      <td>5/8/2008</td>
+      <td>MWOD</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>12.0</td>
+      <td>Ribe</td>
+      <td>ASR1015</td>
+      <td>50.0</td>
+      <td>60.0</td>
+      <td>Female</td>
+      <td>G104</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>150.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Kraniet mangler, kig om det er p? udstilling</td>
+      <td>5/8/2008</td>
+      <td>MWOD</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>13.0</td>
+      <td>Ribe</td>
+      <td>ASR1015</td>
+      <td>35.0</td>
+      <td>44.0</td>
+      <td>Female</td>
+      <td>G159</td>
+      <td>2.0</td>
+      <td>4.0</td>
+      <td>4.3</td>
+      <td>...</td>
+      <td>158.5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Begge l?rben for nedbrudte til at m?le</td>
+      <td>NaN</td>
+      <td>5/8/2008</td>
+      <td>MWOD</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>56.0</td>
+      <td>Ribe</td>
+      <td>ASR1015</td>
+      <td>35.0</td>
+      <td>40.0</td>
+      <td>Female</td>
+      <td>G808</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>153.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Intet at kigge p?. Intet kranie. Female?</td>
+      <td>5/27/2008</td>
+      <td>MWOD</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>58.0</td>
+      <td>Ribe</td>
+      <td>ASR1015</td>
+      <td>50.0</td>
+      <td>60.0</td>
+      <td>NaN</td>
+      <td>G802</td>
+      <td>3.0</td>
+      <td>4.0</td>
+      <td>2.5</td>
+      <td>...</td>
+      <td>165.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>K?n ukendt. T?nder har ikke noget at sidde fas...</td>
+      <td>5/27/2008</td>
+      <td>MWOD</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>74.0</td>
+      <td>Ribe</td>
+      <td>ASR1015</td>
+      <td>40.0</td>
+      <td>50.0</td>
+      <td>Male</td>
+      <td>G846</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>173.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>T?nder faldet ud og remodeleret. Begge l?rben ...</td>
+      <td>5/27/2008</td>
+      <td>MWOD</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>76.0</td>
+      <td>Ribe</td>
+      <td>ASR1015</td>
+      <td>30.0</td>
+      <td>40.0</td>
+      <td>Male</td>
+      <td>G897</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>162.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>5/28/2008</td>
+      <td>MWOD</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>78.0</td>
+      <td>Ribe</td>
+      <td>ASR1015</td>
+      <td>35.0</td>
+      <td>45.0</td>
+      <td>Male</td>
+      <td>G894</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>168.5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Der er et s?t l?rben i overskud  og jeg m?ler ...</td>
+      <td>5/28/2008</td>
+      <td>MWOD</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>83</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>84</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>85</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>86</th>
+      <td>90.0</td>
+      <td>Ribe</td>
+      <td>ASR1015</td>
+      <td>20.0</td>
+      <td>25.0</td>
+      <td>Female</td>
+      <td>G99</td>
+      <td>1.0</td>
+      <td>4.0</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>161.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>5/28/2008</td>
+      <td>MWOD</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>91</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>92</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>94</th>
+      <td>98.0</td>
+      <td>Ribe</td>
+      <td>ASR1015</td>
+      <td>60.0</td>
+      <td>NaN</td>
+      <td>Male</td>
+      <td>G419</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>167.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>T?nder mere end 1/3 slidte. Skelet i d?rlig st...</td>
+      <td>5/28/2008</td>
+      <td>MWOD</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>108</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>109</th>
+      <td>113.0</td>
+      <td>Ribe</td>
+      <td>ASR1015</td>
+      <td>25.0</td>
+      <td>35.0</td>
+      <td>Male</td>
+      <td>G211</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>4.5</td>
+      <td>...</td>
+      <td>163.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Male?</td>
+      <td>5/28/2008</td>
+      <td>MWOD</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>26 rows × 23 columns</p>
+</div>
+
+
+
+Tambien podemos ver que la mayoria de estos casos no esta bien documentado y tiene muchos valores `NaN`. Vamos a eliminar los que tienen valores `NaN` en la altura de la tumba ya que no tienen informacion relevante para el caso de estudio.
+
+
+```python
+both_missing = both_missing[np.isfinite(both_missing['Height in grave'])]
+both_missing
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ID</th>
+      <th>Location</th>
+      <th>Site_Number</th>
+      <th>Age_Minumum</th>
+      <th>Age_Maximum</th>
+      <th>Sex</th>
+      <th>Grave Number</th>
+      <th>Canine number</th>
+      <th>Canine largest age</th>
+      <th>Canine 2nd largest age</th>
+      <th>...</th>
+      <th>Height in grave</th>
+      <th>Abnormalities Vertebras</th>
+      <th>Femur left</th>
+      <th>Femur right</th>
+      <th>Abnormalities Femur</th>
+      <th>Notes</th>
+      <th>Date</th>
+      <th>Signature</th>
+      <th>Hyperplasia</th>
+      <th>Teeth Scorable</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<p>0 rows × 23 columns</p>
+</div>
+
+
+
+
+```python
+
+```
