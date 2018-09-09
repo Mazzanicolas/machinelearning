@@ -91,6 +91,10 @@ Podemos ver que G216 tiene una gran probabilidad de ser un error en la recolecci
 
 Edad mínima estimada al momento de la muerte, verificado a través de metodologias osteológicas estándar. Con respecto a los niños, es posible estimar la edad dentro de un intervalo estrecho utilizando la dentición y las mediciones de la longitud huesos. La edad se da como una fracción decimal de un año (por ejemplo, un niño con un la edad al morir de uno y medio a dos se escribe como '1.5 - 2'). Con respecto a los adultos, un intervalo apropiado de años se da. La edad se presenta como el año entero más cercano y no para el próximo cumpleaños (el intervalo de 30 a 35 años es un lapso de 6 años desde 30.00 - 35.99 años). En este caso contamos solo con valores enteros para la edad mínima.
 
+|![Danish Bones](./2_src/img/danish_bones_3.png)|
+|:-------------------------------------------:|
+|_Estimación de edad en base a restos óseos_  |
+
 ####  Ocurrencias de los atributos
 
 | Edad       | Ocurrencias | Edad       | Ocurrencias |
@@ -307,6 +311,9 @@ Anomalias registradas en las vertebras (en danés).
 |:-------------------------------------------:|
 |_Nombre de los huesos en danés para una mejor referencia_|
 
+|![Danish Bones](./2_src/img/danish_bones_2.png)|
+|:-------------------------------------------:|
+|_Nombre de los huesos en danés para una mejor referencia_|
 
 |![Vertebrae](./2_src/img/vertebrae.png)|
 |:-------------------------------------:|
@@ -509,7 +516,103 @@ Podemos ver que en las `id 13`, `id 103`, `id 9`, `id 14` y `id 15` hay comentar
 | _Síndrome osteolítico focal en el fémur, no tiene un impacto relevante en la altura_|
 
 
-**Notes:** `Notas` *Este atributo toma*
+**Notes:** `Notas` *Este atributo toma 55 valores diferentes*
+
+Notas documentadas al momento del registro.
+
+| ID  | Notas (Danés) | Notas (Español, Google Translate) |
+| :-- | :-- | :--|
+| 7   | Kraniet mangler, kig om det er på udstilling | Falta la grúa, compruebe si está en exhibición |
+| 12  | Kraniet mangler, kig om det er på udstilling | Falta la grúa, compruebe si está en exhibición |
+| 69  | Underlige tænder. Nogler er vokset skævt og har skubbet andre ud og hæmmet vækst ved andre | Dientes extraños Los Nicks se han torcido y han empujado a otros e inhibido el crecimiento de otros |
+| 30  | Spøjs falange | Spike es falso |
+| 49  | FOS eller et gok i nøden. Tandbyld i underkæben. Lidt underlig tibia? Ulla tipper hende til 28-38 | FOS o una conjetura en el empujón. Topetón en la mandíbula inferior. ¿Una tibia un poco extraña? Ulla   la inclinó a 28-38 máx. Más cerca de 30 max|
+| 45  | Kranie mangler| Crane no se encuentra |
+| 46  | Kranie mangler| Crane no se encuentra |
+| 64  | Hvis nogler er de meget små. Den er mere rillet nærmest.| Si es suficiente, son muy pequeños. Es más gemido más cercano. |
+| 114 | Caries i kindtænder! Hvis en hypoplasi så en meget lille bitte bitte en ved alderen 5 på canine | Caries en los dientes de la mejilla! Si una hipoplasia vió un poco mordido uno a los 5 años en el canino|
+| 113 | Male? | Masculino? |
+| 17  | Syfilis?, tænder for slidte | Sífilis?, Dientes para usar |
+| 108 | Tag et billede af tanden | Toma una foto del diente |
+| 16  | Female?, intet kranie - kig efter om det er på udstilling | ¿Mujer?, Sin cráneo: busca una exposición|
+| 6  | Male?, højre femur kan ikke måles da nedbrudt, ingen ryghvirvler, tænder for nedbrudte | ¿Masculino?, El fémur derecho no se puede medir, se descompone, no hay vértebras, los dientes se rompen |
+| 10  | Tænder for slidte | Se enciende gastado |
+| 40  | Lidt lepra har man jo altid. | Algo lepra siempre tiene. |
+| 24  | Hyperplasier små | Hiperplasia pequeña |
+| 103 | "Knude" dorsalt på venstre femurs distale ventrale side lige over ledfladen" |  Nodo" dorsal en el lado ventral distal del ventrículo izquierdo justo arriba de la articulación " |
+| 47  | FOS. Spedalsk! Ikke en pløk i munden. Remodelerede huller i underkæbe. Hug i hovedet (lille) | FOS. Leproso! No una siesta en la boca. Remodelación de agujeros en la mandíbula inferior. Abrazo en la cabeza (pequeño)
+| 4   | Læbedannelser | Formaciones labiales |
+| 18  | "Sjov" "skæv hjørnetand" | "Gracioso" "canino torcido" |
+| 89  | Tænder mere and 1/3 slidte | Giros más y 1/3 desgastados |
+| 20  | Jeg havde problemer med hjørnetanden | Tuve problemas con los caninos |
+| 119 | Hjørnetanden er lidt underlig.. Meget lille.. | La esquina es un poco extraña ... Muy pequeña ... |
+| 35  | Har mistet rigtig mange tænder | Ha perdido muchos dientes |
+| 21  | Tænder mere end 1/3 slidte | Iluminación más de 1/3 desgastada |
+| 31  | Mere end 1/3 del slidt| Más de 1/3 parte desgastada |
+| 50  | Tænder mere end 1/3 slidte. Remodeleret tandudfald i underkæben| Iluminación con más de 1/3 de desgaste. Gota de diente remodelado en la mandíbula inferior |
+| 59  | Tænder mere end 1/3 slidte | Iluminación más de 1/3 desgastada |
+| 61  | Tænder mere end 1/3 slidte| Iluminación más de 1/3 desgastada |
+| 63  | Tænder mere end 1/3 slidte| Iluminación más de 1/3 desgastada |
+| 73  | Tænder mere end 1/3 slidte | Iluminación más de 1/3 desgastada |
+| 93  | Tænder mere end 1/3 slidte | Iluminación más de 1/3 desgastada |
+| 96  | Tænder mere end 1/3 slidte | Iluminación más de 1/3 desgastada |
+| 100 | Tænder mere end 1/3 slidte | Iluminación más de 1/3 desgastada |
+| 101 | Tænder mere end 1/3 slidte | Iluminación más de 1/3 desgastada |
+| 105 | Tænder mere end 1/3 slidte | Iluminación más de 1/3 desgastada |
+| 118 | Tænder mere end 1/3 slidte | Iluminación más de 1/3 desgastada |
+| 86  | Collas fracture venstre radius. | Fractura de Collas radio izquierdo. |
+| 42  | Tænder mere end 1/3 slidte. Calcanus forreven. | Iluminación con más de 1/3 de desgaste. Calcanus forzado. |
+| 8   | Incisor mere end 1/3 slidt ned | Incisivo más de 1/3 desgastado |
+| 9   | Incisor mere end 1/3 slidt ned | Incisivo más de 1/3 desgastado |
+| 22  | Female?, Kranium mangler | ¿Hembra? Cráneo falta |
+| 67  | Mere end 1/3 slidte tænder | Más de 1/3 dientes desgastados |
+| 37  | Kraniet er i posen, men ingen tænder | La grúa está en la bolsa, pero no tiene dientes |
+| 112 | Ukendt køn. Skelet meget nedbrudt. | Género desconocido Esqueleto muy degradado |
+| 98  | Tænder mere end 1/3 slidte. Skelet i dårlig stand. | Iluminación con más de 1/3 de desgaste. Esqueleto en mal estado. |
+| 32  | Female? | Mujer? |
+| 72  | Female? | Mujer? |
+| 26  | Male? Små femur'er | Masculina? Fémur pequeño |
+| 14  | Kraniet udstillet i Ribe fra 1/3-2002. Kranie kommet retur men ingen tænder | Crane exhibió en Ribe del 1/3-2002. Grulla regresó pero sin dientes |
+| 15  | Tænder mere end 1/3 slidt ned. Kranie udtaget til Ribe Middelalder. Har kigget på det. Udstilling kommet hjem | Lágrimas más de 1/3 desgastadas. Grúa tomada para la Edad Media Ribe. Han mirado? ella. Exposición regresó a casa |
+| 29  | Der er nok noget lepra kørende.I 2 kasser. | Probablemente hay algo de lepra en ejecución. En 2 cajas |
+| 53  | Der ligger et sæm i kassen. M?ske nyt | Hay una caja en la caja. Quizás nuevo  |
+| 54  | Intet kranie. Female? | Sin cráneo. Mujer?  |
+| 55  | Delt i to kasser. Evt god til billede af uden hypoplasi. Stær på sp?rgevogn. | Compartido en dos cajas. Quizás sea bueno imaginar sin hipoplasia. Permanece en sp? rgevogn. |
+| 56  | Intet at kigge på. Intet kranie. Female? | Nada que mirar. Sin cráneo Mujer? |
+| 57  | intet kranie. Spinkel fin dame | Sin cráneo. Sparky buena señora |
+| 58  | Køn ukendt. Tænder har ikke noget at sidde fast i. M? de gerne scores? | Desconocido desconocido. Los dientes no tienen nada que atrapar. ¿M? les gusta anotar? |
+| 60  | Intet at kigge pv | ¿Nada para mirar? |
+| 74  | Tænder faldet ud og remodeleret. Begge l?rben kn?kket postmortalt. | Tonos se cayeron y remodelaron. Ambos niños murieron post mortem |
+| 78  | Der er et sæt lårben i overskud og jeg m?ler derfor ikke på l?ngden af disse. | Todavía queda un poco en exceso y no me siento así en absoluto. los números de estos |
+| 79  | den hvor underkøben sidder på i jord. | El que tiene la pierna sentada en el suelo |
+| 85  | Skal tænder scores når intet kranie? | ¿Deberían marcarse las colas cuando no hay cráneo? |
+| 87  | Subperiale eksostoser. Ingen lepra forandringer i kranie. | Exostosis subperiales. No hay cambios de lepra en el cráneo |
+
+
+6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ####  Ocurrencias de los atributos
 
@@ -530,7 +633,7 @@ El dataset se encuentra en un archivo `.accdb` (Microsoft Access) asi que lo pri
 
 ![Acces DB](./2_src/img/accesdb.png)
 
-Analizándolo rápidamente en un editor de texto podemos ver que contiene caracteres que no van a poder ser decodeados con UTF-8 (`�`). Los remplazamos rápidamente por `?`.
+Analizándolo rápidamente en un editor de texto podemos ver que contiene caracteres que no van a poder ser decodeados con UTF-8 (`�`) ya que los comentarios estan en danes. Los remplazamos rápidamente por `?`.
 
 ![UTF-8 Error](./2_src/img/utf8Error.png)
 
