@@ -1793,7 +1793,7 @@ plt.scatter(femur_sizes['Femur right'], femur_sizes['Height in grave'])
 
 
 
-![png](output_5_1.png)
+![png](2_src/img/output_5_1.png)
 
 
 
@@ -1877,7 +1877,7 @@ plt.show()
 
 
 
-![png](output_14_1.png)
+![png](2_src/img/output_14_1.png)
 
 
 
