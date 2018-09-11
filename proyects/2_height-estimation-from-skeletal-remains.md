@@ -1679,5 +1679,209 @@ both_missing
 
 
 ```python
-
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
 ```
+
+
+```python
+data = pd.read_csv('dataindsamling.csv')
+```
+
+
+```python
+data.columns
+```
+
+
+
+
+    Index(['ID', 'Location', 'Site_Number', 'Age_Minumum', 'Age_Maximum', 'Sex',
+           'Grave Number', 'Canine number', 'Canine largest age',
+           'Canine 2nd largest age', 'Incisor number', 'Incisor largest age',
+           'Incisor 2nd largest age', 'Height in grave', 'Abnormalities Vertebras',
+           'Femur left', 'Femur right', 'Abnormalities Femur', 'Notes', 'Date',
+           'Signature', 'Hyperplasia', 'Teeth Scorable'],
+          dtype='object')
+
+
+
+
+```python
+femur_sizes = pd.DataFrame()
+femur_sizes['Femur right'] = data['Femur right'].values
+femur_sizes['Height in grave'] = data['Height in grave'].values
+femur_sizes = femur_sizes[np.isfinite(femur_sizes['Femur right'])]
+femur_sizes = femur_sizes[np.isfinite(femur_sizes['Height in grave'])]
+femur_sizes = femur_sizes[femur_sizes['Femur right'] != 0]
+femur_sizes = femur_sizes[femur_sizes['Height in grave'] != 0]
+```
+
+
+```python
+femur_sizes.head(5)
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Femur right</th>
+      <th>Height in grave</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>50.0</td>
+      <td>173.5</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>48.5</td>
+      <td>170.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>51.3</td>
+      <td>171.5</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>46.6</td>
+      <td>165.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>46.4</td>
+      <td>164.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+plt.scatter(femur_sizes['Femur right'], femur_sizes['Height in grave'])
+```
+
+
+
+
+    <matplotlib.collections.PathCollection at 0x111de7278>
+
+
+
+
+![png](output_5_1.png)
+
+
+
+```python
+from sklearn import linear_model
+from sklearn.metrics import mean_squared_error, r2_score
+```
+
+Separando training y test set
+
+
+```python
+len(femur_sizes)*0.3
+```
+
+
+
+
+    23.7
+
+
+
+
+```python
+X_train = femur_sizes['Femur right'][23:]
+X_test  = femur_sizes['Femur right'][:23]
+y_train = femur_sizes['Height in grave'][23:]
+y_test  = femur_sizes['Height in grave'][:23]
+```
+
+
+```python
+regression = linear_model.LinearRegression()
+```
+
+
+```python
+X_train = X_train.values.reshape(-1, 1)
+y_train = y_train.values.reshape(-1, 1)
+X_test  = X_test.values.reshape(-1, 1)
+y_test  = y_test.values.reshape(-1, 1)
+```
+
+
+```python
+regression.fit(X_train, y_train)
+```
+
+
+
+
+    LinearRegression(copy_X=True, fit_intercept=True, n_jobs=1, normalize=False)
+
+
+
+
+```python
+y_pred = regression.predict(X_test)
+```
+
+
+```python
+print('Coeficiente: \n', regression.coef_)
+print('Mean squared error: %.2f'
+      % mean_squared_error(y_test, y_pred))
+print('Variance score: %.2f' % r2_score(y_test, y_pred))
+
+plt.scatter(X_test, y_test,  color='blue')
+plt.plot(X_test, y_pred, color='red', linewidth=3)
+
+plt.xticks(())
+plt.yticks(())
+
+plt.show()
+```
+
+    Coeficientes: 
+     [[2.63314697]]
+    Mean squared error: 9.74
+    Variance score: 0.87
+
+
+
+![png](output_14_1.png)
+
+
+
+# References
+[ADBOU](http://www.adbou.dk/fileadmin/adbou/projektopgaver/ADBOU_linear_regression_Mette_Wodx.pdf)
+
+[Human Osteological Methods](http://www.adbou.dk/fileadmin/adbou/manualer/humostman2015.pdf)
