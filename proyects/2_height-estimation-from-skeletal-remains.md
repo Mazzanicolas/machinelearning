@@ -312,27 +312,27 @@ Fue usada la tabla de  Haderup.
 | 8     | Attrition has removed the entire crown of the tooth        |
 
 
-####  Ocurrencias de los atributos
+Este atributo se descarta por valores faltantes y poca información.
 
-**Canine largest age:** `Float64` *Este atributo toma*
+**Canine largest age:** `Caninos` *Este atributo toma*
 
-####  Ocurrencias de los atributos
+Este atributo se descarta por valores faltantes y poca información.
 
-**Canine 2nd largest age:** `Float64` *Este atributo toma*
+**Canine 2nd largest age:** `Caninos` *Este atributo toma*
 
-####  Ocurrencias de los atributos
+Este atributo se descarta por valores faltantes y poca información.
 
-**Incisor number:** `Float64` *Este atributo toma*
+**Incisor number:** `Incisivos` *Este atributo toma*
 
-####  Ocurrencias de los atributos
+Este atributo se descarta por valores faltantes y poca información.
 
-**Incisor largest age:** `Float64` *Este atributo toma*
+**Incisor largest age:** `Incisivos` *Este atributo toma*
 
-####  Ocurrencias de los atributos
+Este atributo se descarta por valores faltantes y poca información.
 
-**Incisor 2nd largest age:** `Float64` *Este atributo toma*
+**Incisor 2nd largest age:** `Incisivos` *Este atributo toma*
 
-####  Ocurrencias de los atributos
+Este atributo se descarta por valores faltantes y poca información.
 
 **Height in grave:** `Altura en la tumba` *Este atributo toma valores reales entre 0 y 185*
 
