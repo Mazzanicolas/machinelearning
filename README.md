@@ -39,4 +39,14 @@
 | BM   | | |
 | AE   | | |
 
-
+<!--
+    def get_el_punto(car_length, wheels_angle):
+        if wheels_angle == 0:
+            return
+        x, y, theta = self.get_pose()
+        distancia =  car_length / tan(wheels_angle)
+        x2 = x - (car_length/2)*cos(theta) - (distancia*cos(theta-(pi/2)))
+        y2 = y - (car_length/2)*sin(theta) - (distancia*sin(theta-(pi/2)))
+        
+        return x2, y2
+-->
