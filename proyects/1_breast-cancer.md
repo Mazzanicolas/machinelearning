@@ -595,7 +595,7 @@ Podemos ver que en `Bare Nuclei` tenemos valores de `?`, RapidMiner no los clasi
 
 ![Dataset](./1_src/img/rapidminer_missing_3.png)
 
-### Corelacion (RapidMiner)
+### Correlacion (RapidMiner)
 
 Como `Bare Nuclei` estaba como valor `Polynomial` a pesar de haber removido los missing values tenemos que convertlirlos nuevamente en valores numericos. Una vez convertidos podemos hacer una matriz de correlaciones.
 
