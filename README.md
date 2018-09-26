@@ -11,12 +11,12 @@
 
 ## Curso Postgrado Deep learning for computer vision (Fing)
 
-| Algoritmo | Implementación | Pruebas |  |  |  |
-|----------------------------------------------|:-----------:|:---------:|:-------------:|:--------:|:-----------:|
-| [K-NN](./proyects/deep-learning/k-nn.md) | [✔](./proyects/deep-learning/k-nn-implementation.md) |  | |
-| [Softmax](./proyects/deep-learning/softmax.md) | [✔](./proyects/deep-learning/softmax-implementation.md) | | |
-| [Stochastic Gradient Descent](./proyects/deep-learning/stochastic-gradient-descent.md)  | [✔](./proyects/deep-learning/stochastic-gradient-descent.md#linear-classifier-&-sgd-implementation) | | |
-| [ANN](./proyects/deep-learning/ann.md) | [✔](./proyects/deep-learning/ann-implementation.md) | | 
+| Algoritmo | Implementación | Pruebas |  
+|-----------|:--------------:|:-------:|
+| [K-NN](./proyects/deep-learning/k-nn.md) | [✔](./proyects/deep-learning/k-nn-implementation.md) | [✔](./proyects/deep-learning/k-nn.md)  |
+| [Softmax](./proyects/deep-learning/softmax.md) | [✔](./proyects/deep-learning/softmax-implementation.md) | [✔](./proyects/deep-learning/softmax.md) |
+| [Stochastic Gradient Descent](./proyects/deep-learning/stochastic-gradient-descent.md)  | [✔](./proyects/deep-learning/stochastic-gradient-descent.md#linear-classifier-&-sgd-implementation) | ✘ |
+| [ANN](./proyects/deep-learning/ann.md) | [✔](./proyects/deep-learning/ann-implementation.md) | [✔](./proyects/deep-learning/ann.md) | 
 
 ## Certificado Tensorflow
 
