@@ -14,7 +14,7 @@
 | Algoritmo | Implementación | Pruebas |  |  |  |
 |----------------------------------------------|:-----------:|:---------:|:-------------:|:--------:|:-----------:|
 | [K-NN](./proyects/deep-learning/k-nn.md) | [✔](./proyects/deep-learning/k-nn.md#k-nn-implementation) |  | |
-| SVM  | | | |
+| [Softmax](./proyects/deep-learning/softmax.md) | [✔](./proyects/deep-learning/softmax.md#softmax-implementation) | | |
 | CNN  | | | |
 
 ## Certificado Tensorflow
