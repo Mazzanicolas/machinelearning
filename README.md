@@ -17,7 +17,7 @@
 | [Softmax](./proyects/deep-learning/softmax.md) | [✔](./proyects/deep-learning/softmax-implementation.md) | [✔](./proyects/deep-learning/softmax.md) |
 | [Stochastic Gradient Descent](./proyects/deep-learning/stochastic-gradient-descent.md)  | [✔](./proyects/deep-learning/stochastic-gradient-descent.md#linear-classifier-&-sgd-implementation) | ✘ |
 | [ANN](./proyects/deep-learning/ann.md) | [✔](./proyects/deep-learning/ann-implementation.md) | [✔](./proyects/deep-learning/ann.md) | 
-
+| [Feature Extraction](./proyects/deep-learning/image-feature.md) | ✘ | [✔](./proyects/deep-learning/image-features.md) | 
 ## Certificado Tensorflow
 
 |  | |  | 
