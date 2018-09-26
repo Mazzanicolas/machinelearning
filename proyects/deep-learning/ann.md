@@ -167,7 +167,7 @@ plt.show()
 
 
 
-![png](output_11_1.png)
+![png](./4_src/img/output_11_1.png)
 
 
 # Load the data
@@ -290,7 +290,7 @@ plt.show()
 ```
 
 
-![png](output_19_0.png)
+![png](./4_src/img/output_19_0.png)
 
 
 
@@ -310,7 +310,7 @@ show_net_weights(net)
 ```
 
 
-![png](output_20_0.png)
+![png](./4_src/img/output_20_0.png)
 
 
 # Tune your hyperparameters
@@ -391,7 +391,7 @@ for parameters in to_train:
 
 
 
-![png](output_22_1.png)
+![png](./4_src/img/output_22_1.png)
 
 
 
@@ -402,7 +402,7 @@ show_net_weights(best_net)
 ```
 
 
-![png](output_23_0.png)
+![png](./4_src/img/output_23_0.png)
 
 
 # Run on the test set
