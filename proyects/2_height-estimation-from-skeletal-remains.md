@@ -879,7 +879,7 @@ full_values_femur.head(5)
     105    0.8
     Name: Difference, dtype: float64
 
-
+### Outlyers
 
 Podemos ver que la diferencia de tamaño es muy poca entre los femurs
 
