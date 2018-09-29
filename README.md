@@ -4,7 +4,7 @@
 
 |                     | Breast Cancer                                   | Skeletal Remains                               | 
 |--------------------:|:-----------------------------------------------:|:-----------------------------------------------:|
-| Introducción        |  [![RM](./img/dc.png)](./proyects/breast-cancer/introduction.md) |  [![RM](./img/dc.png)]() |
+| Introducción        |  [![RM](./img/dc.png)](./proyects/breast-cancer/1_introduction.md) |  [![RM](./img/dc.png)]() |
 | Dataset             |  [![RM](./img/dc.png)](./proyects/breast-cancer/) |  [![RM](./img/dc.png)]() |
 | Atributos           |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
 | Missing Values      |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
@@ -15,7 +15,7 @@
 | SVM                 |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
 | Hyperparameters     |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
 
-(rm): data:./img/rm.png
+
 ## Curso Postgrado Deep learning for computer vision (Fing)
 
 | Algoritmo | Implementación | Pruebas |  
