@@ -2,23 +2,44 @@
 
 ## Machine Learning (UCU)
 
-|                     | Breast Cancer                                   | Skeletal Remains                               | 
-|--------------------:|:-----------------------------------------------:|:-----------------------------------------------:|
-|            | ![RM](./img/dc.png) ![RM](./img/jn.png) ![RM](./img/rm.png)         | |   
-| Introducción        | [✔](./proyects/breast-cancer/1_introduction.md) ✘ ✘ |  [![RM](./img/dc.png)]() |
-| Dataset             | [✔](./proyects/breast-cancer/1_introduction.md) ✘ ✘ |  [![RM](./img/dc.png)]() |
-| Atributos           | [✔](./proyects/breast-cancer/1_introduction.md) ✘ ✘ |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
-| Missing Values      | [✔](./proyects/breast-cancer/1_introduction.md) ✘ ✘ |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
-| Outliers            | [✔](./proyects/breast-cancer/1_introduction.md) ✘ ✘ |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
-| Linear Regression   | [✔](./proyects/breast-cancer/1_introduction.md) ✘ ✘ |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
-| Logistic Regression | [✔](./proyects/breast-cancer/1_introduction.md) ✘ ✘ |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
-| CART                | [✔](./proyects/breast-cancer/1_introduction.md) ✘ ✘ |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
-| SVM                 | [✔](./proyects/breast-cancer/1_introduction.md) ✘ ✘ |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
-| Hyperparameters     | [✔](./proyects/breast-cancer/1_introduction.md) ✘ ✘ |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
+|                     | Breast Cancer       | Skeletal Remains   | 
+|--------------------:|:-------------------:|:------------------:|
+| Introducción        | [![RM](./img/dc.png)][1]  |   |
+| Dataset             | [![RM](./img/dc.png)][2] [![RM](./img/rm.png)][3]   |   |
+| Atributos           | [![RM](./img/dc.png)][4]  |   |
+| Missing Values      | [![RM](./img/jn.png)][5] [![RM](./img/rm.png)][6]   |   |
+| Outliers            | [![RM](./img/jn.png)][7] [![RM](./img/rm.png)][8]   |   |
+| Correlation         | [![RM](./img/jn.png)][19] [![RM](./img/rm.png)][20] |   |
+| Linear Regression   | [![RM](./img/jn.png)][9] [![RM](./img/rm.png)][10]  |   |
+| Logistic Regression | [![RM](./img/jn.png)][11] [![RM](./img/rm.png)][12] |   |
+| CART                | [![RM](./img/jn.png)][13] [![RM](./img/rm.png)][14] |   |
+| SVM                 | [![RM](./img/jn.png)][15] [![RM](./img/rm.png)][16] |   |
+| Hyperparameters     | [![RM](./img/jn.png)][17] [![RM](./img/rm.png)][18] |   |
 
-[![RM](./img/dc.png)][1]
+[1]: ./proyects/breast-cancer/1_introduction.md
+[2]: ./proyects/breast-cancer/2_dataset.md
+[3]: ./proyects/breast-cancer/2_dataset_rapidminer.md
+[4]: ./proyects/breast-cancer/3_attributes_text.md
+[5]: ./proyects/breast-cancer/4_missing_values.md
+[6]: ./proyects/breast-cancer/4_missing_values_rapidminer.md
+[7]: ./proyects/breast-cancer/5_outliers_code.md
+[19]: ./proyects/breast-cancer/6_correlation_code.md
+[20]: ./proyects/breast-cancer/6_correlation_rapidminer.md
+[8]: ./proyects/breast-cancer/
+[9]: ./proyects/breast-cancer/
+[10]: ./proyects/breast-cancer/
+[11]: ./proyects/breast-cancer/8_logistic_regression_code.md
+[12]: ./proyects/breast-cancer/
+[13]: ./proyects/breast-cancer/7_CART_code.md
+[14]: ./proyects/breast-cancer/
+[15]: ./proyects/breast-cancer/
+[16]: ./proyects/breast-cancer/
+[17]: ./proyects/breast-cancer/
+[18]: ./proyects/breast-cancer/
 
-[1]: ./proyects/breast-cancer/3_attributes_text.md
+
+
+
 
 ## Curso Postgrado Deep learning for computer vision (Fing)
 
