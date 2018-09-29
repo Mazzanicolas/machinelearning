@@ -2,7 +2,25 @@
 
 [Vista detallada del dataset ➡](./docs/pf_overview.html)
 
-En la vista detallada del dataset podemos ver que tenemos que 
+En la vista detallada del dataset podemos ver la siguiente información:
+
+|||
+|-:|:-|
+|Number of variables	|11|
+|Number of observations|	699|
+|Total Missing |	0.0%|
+
+|Variables types| |
+|-:|:-|
+|Numeric	|8|
+|Categorical|	1|
+|Boolean|	1|
+|Date 	|0|
+|Text (Unique)|	0|
+|Rejected|	1|
+|Unsupported|	0|
+
+Tambien obtenemos que `Uniformity of Cell Shape` esta altamente correlacionada con `Uniformity of Cell Size` _(ρ = 0.90688)_. Lo cual tiene sentido en base al [estudio de atributos](./3_attributes_text.md) que realizamos anteriormente.
 
 ### Importando librerias
 
@@ -33,9 +51,8 @@ dataset = dataset.drop('id number', 1)
 
 ### Missing Values
 
-Ahora que tenemos el dataset cargado y eliminamos la columna de id, vamos a buscar valores faltantes _(o missing values)_.
+Ahora que tenemos el dataset cargado y eliminamos la columna de id, vamos a buscar valores faltantes _(o missing values)_. Comenzamos viendo información básica sobre los atributos del dataset.
 
-Sabemos que 
 ```python
 dataset.info()
 ```
@@ -56,13 +73,14 @@ dataset.info()
     dtypes: int64(9), object(1)
     memory usage: 54.7+ KB
     
+A pesar de haber obtenido un total de 0.0% de missing values en nuestro análisis inicial del dataset podemos ver que `Bare Nuclei` no es del tipo `int64` y es un `object`, esto resulta sospechoso ya que como vimos en el [estudio del dataset](./2_dataset.md) todos los valores son numéricos. Vamos a ver si existen valores `?` usando un filtro sobre el dataset en la bariable `Bare Nuclei`,
 
 
 ```python
 missing_values = dataset[dataset['Bare Nuclei']=='?']
 ```
 
-Podemos verque la variable `Bare Nuclei` tiene por lo menos una ocurrencia con un tipo de dato extraño.
+Podemos verque la variable `Bare Nuclei` tiene varias ocurrencias con el valor `?`, estas no fueron detectadas como missing values ya que fueron consideradas como un valor `?`, los missing values suelen ser espacios en blanco o `NaN`.
 
 ```python
 missing_values
@@ -369,6 +387,10 @@ missing_values['Class'].value_counts()
 
 Para los casos benignos (458) tenemos un `3.056%` de missing values mientras que para los casos malignos (241) tenemos un total de `0.829%` missing values.
 
+Son relativamente pocos valores y no tenemos una forma exacta de estimarlos por lo cual vamos a removerlos.
+
 ```python
 dataset = dataset.drop(dataset.index[missing_values.index])
 ```
+
+[Outliers ➡](./5_outliers.md)
