@@ -35,4 +35,4 @@ data_correlation['Class'].sort_values(ascending=False)
 
 Podemos ver que "Uniformity of Cell Shape" y "Uniformity of Cell Size" estan muy relacionadas con la clase de tumor.
 
-[CART ➡](./7_CART.md)
+[CART ➡](./7_CART_code.md)

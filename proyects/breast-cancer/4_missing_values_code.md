@@ -393,4 +393,4 @@ Son relativamente pocos valores y no tenemos una forma exacta de estimarlos por 
 dataset = dataset.drop(dataset.index[missing_values.index])
 ```
 
-[Outliers ➡](./5_outliers.md)
+[Outliers ➡](./5_outliers_code.md)

@@ -53,4 +53,4 @@ print(
 |**Valores > a**| 9                 | 8                           | 9                | 8               | 1       |
 
 
-[Correlación ➡](./6_correlacion.md)
+[Correlación ➡](./6_correlation_code.md)

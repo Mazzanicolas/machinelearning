@@ -403,4 +403,4 @@ graph
 
 Modelo muy complejo
 
-[Logistic Regression ➡](./8_logistic_regression.md)
+[Logistic Regression ➡](./8_logistic_regression_code.md)
