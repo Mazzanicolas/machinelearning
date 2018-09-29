@@ -18,7 +18,7 @@
 
 [![RM](./img/dc.png)][1]
 
-[1]: ./proyects/breast-cancer/3_attributes.md
+[1]: ./proyects/breast-cancer/3_attributes_text.md
 
 ## Curso Postgrado Deep learning for computer vision (Fing)
 
