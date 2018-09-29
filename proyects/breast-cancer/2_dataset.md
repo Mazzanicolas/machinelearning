@@ -2,7 +2,7 @@
 
 El dataset a ser estudiado esta compuesto por los resultados obtenidos mediante biopsias de ​FNA​ (fine needle aspiration), contiene 699 instancias con 10 atributos y una clase de salida (benigno o malicioso).
 En una biopsia FNA, el doctor usa una aguja muy fina y hueca con una jeringa para poder aspirar una pequeña cantidad de tejido o fluido de un area sospechosa. La muestra recolectada es revisada para ver si hay celulas cancerígenas.
-![FNA](./1_src/img/fna.gif)
+![FNA](./img/fna.gif)
 
 <!--
 In an FNA biopsy, the doctor uses a very thin, hollow needle attached to a syringe to withdraw (aspirate) a small amount of tissue or fluid from a suspicious area. The biopsy sample is then checked to see if there are cancer cells in it.
@@ -39,25 +39,8 @@ Un total de 699 instancias.
 
 El problema consiste en predecir si una muestra de células recolectada mediante ​FNA​ es benigna o no en base a una serie de atributos.
 
-<style>
-    #myBtn {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 30px;
-        z-index: 99;
-        font-size: 18px;
-        border: none;
-        outline: none;
-        background-color: red;
-        color: white;
-        cursor: pointer;
-        padding: 15px;
-        border-radius: 4px;
-    }
-    #myBtn:hover {
-        background-color: #555;
-    }
-</style>
+[Attributes Text ➡](./proyects/breast-cancer/3_attributes.md)
 
-<button href="./proyects/breast-cancer/dataset.md" id="myBtn">Dataset</button>
+[Attributes Code ➡](./proyects/breast-cancer/3_attributes.md)
+
+[Attributes RapidMiner ➡](./proyects/breast-cancer/3_attributes.md)

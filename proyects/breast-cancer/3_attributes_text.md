@@ -18,7 +18,7 @@ La variable objetivo de este dataset es “Class” la cual determina si un tumo
 
 A simple vista podemos descartar el atributo id ya que no aporta valor y causa ruido. 
 
-![Normal cell vs Cancer cell](./1_src/img/cell_structure.jpg)
+![Normal cell vs Cancer cell](./img/cell_structure.jpg)
 
 A continuación una breve descripción de las definiciones  para los atributos del dataset y porque pueden ser relevantes.
 
@@ -53,3 +53,5 @@ Estos últimos dos atributos también parecen ser importantes al momento de re
 **Class:** ​`Tipo de tumor`
 * *2 para benigno*
 * *4 para maligno*
+
+[Dataset ➡](./proyects/breast-cancer/2_dataset.md)
