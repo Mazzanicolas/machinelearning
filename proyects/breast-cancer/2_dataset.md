@@ -36,7 +36,7 @@ Un total de 699 instancias.
 El problema consiste en predecir si una muestra de células recolectada mediante ​FNA​ es benigna o no en base a una serie de atributos.
 
 
-|         |            | |  |
+|         |            |           |       |
 |:--------|------------|-----------|------:|
 |[ ⬅ Introduccin](./proyects/breast-cancer/2_dataset.md) |  |  | [Dataset ➡](./proyects/breast-cancer/2_dataset.md)|
  
