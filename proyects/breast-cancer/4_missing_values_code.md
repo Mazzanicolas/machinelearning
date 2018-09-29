@@ -1,6 +1,6 @@
 ## Analizando el Dataset
 
-[Vista detallada del dataset ➡](./1_src/pf_overview.html)
+[Vista detallada del dataset ➡](./docs/pf_overview.html)
 
 En la vista detallada del dataset podemos ver que tenemos que 
 
