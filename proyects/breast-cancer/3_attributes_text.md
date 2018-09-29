@@ -54,4 +54,4 @@ Estos últimos dos atributos también parecen ser importantes al momento de re
 * *2 para benigno*
 * *4 para maligno*
 
-[Dataset ➡](./proyects/breast-cancer/2_dataset.md)
+[Dataset ➡](./2_dataset.md)

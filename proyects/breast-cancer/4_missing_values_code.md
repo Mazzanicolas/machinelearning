@@ -35,6 +35,7 @@ dataset = dataset.drop('id number', 1)
 
 Ahora que tenemos el dataset cargado y eliminamos la columna de id, vamos a buscar valores faltantes _(o missing values)_.
 
+Sabemos que 
 ```python
 dataset.info()
 ```
