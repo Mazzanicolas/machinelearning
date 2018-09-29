@@ -4,24 +4,22 @@
 
 |                     | Breast Cancer                                   | Skeletal Remains                               | 
 |--------------------:|:-----------------------------------------------:|:-----------------------------------------------:|
-| Introducción        |  [![RM](./img/dc.png)](./proyects/breast-cancer/2_dataset.md) [T](./proyects/breast-cancer/1_introduction.md) |  [![RM](./img/dc.png)]() |
-| Dataset             |  [![RM](./img/dc.png)](./proyects/breast-cancer/2_dataset.md) |  [![RM](./img/dc.png)]() |
-| Atributos           |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
-| Missing Values      |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
-| Outliers            |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
-| Linear Regression   |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
-| Logistic Regression |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
-| CART                |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
-| SVM                 |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
-| Hyperparameters     |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
+|            | ![RM](./img/dc.png) ![RM](./img/jn.png) ![RM](./img/rm.png)         | |   
+| Introducción        | [✔](./proyects/breast-cancer/1_introduction.md) ✘ ✘ |  [![RM](./img/dc.png)]() |
+| Dataset             | [✔](./proyects/breast-cancer/1_introduction.md) ✘ ✘ |  [![RM](./img/dc.png)]() |
+| Atributos           | [✔](./proyects/breast-cancer/1_introduction.md) ✘ ✘ |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
+| Missing Values      | [✔](./proyects/breast-cancer/1_introduction.md) ✘ ✘ |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
+| Outliers            | [✔](./proyects/breast-cancer/1_introduction.md) ✘ ✘ |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
+| Linear Regression   | [✔](./proyects/breast-cancer/1_introduction.md) ✘ ✘ |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
+| Logistic Regression | [✔](./proyects/breast-cancer/1_introduction.md) ✘ ✘ |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
+| CART                | [✔](./proyects/breast-cancer/1_introduction.md) ✘ ✘ |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
+| SVM                 | [✔](./proyects/breast-cancer/1_introduction.md) ✘ ✘ |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
+| Hyperparameters     | [✔](./proyects/breast-cancer/1_introduction.md) ✘ ✘ |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
 
-<p>
-An image as a link: <a href="./proyects/breast-cancer/2_dataset.md">
-<img border="0" alt="W3Schools" src="./img/dc.png" width="25" height="25">
-</a>
-</p>
+[![RM](./img/dc.png)][1]
 
-[@](./proyects/breast-cancer/3_attributes.md)
+[1]: ./proyects/breast-cancer/3_attributes.md
+
 ## Curso Postgrado Deep learning for computer vision (Fing)
 
 | Algoritmo | Implementación | Pruebas |  
