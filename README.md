@@ -15,7 +15,7 @@
 | SVM                 |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
 | Hyperparameters     |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
 
-
+[@](./proyects/breast-cancer/3_attributes.md)
 ## Curso Postgrado Deep learning for computer vision (Fing)
 
 | Algoritmo | Implementación | Pruebas |  
