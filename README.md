@@ -15,6 +15,12 @@
 | SVM                 |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
 | Hyperparameters     |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
 
+<p>
+An image as a link: <a href="./proyects/breast-cancer/2_dataset.md">
+<img border="0" alt="W3Schools" src="./img/dc.png" width="25" height="25">
+</a>
+</p>
+
 [@](./proyects/breast-cancer/3_attributes.md)
 ## Curso Postgrado Deep learning for computer vision (Fing)
 
