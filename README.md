@@ -4,7 +4,8 @@
 
 |                     | Breast Cancer                                   | Skeletal Remains                               | 
 |--------------------:|:-----------------------------------------------:|:-----------------------------------------------:|
-| Dataset             |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
+| Introducción        |  [![RM](./img/dc.png)](./proyects/breast-cancer/introduction.md) |  [![RM](./img/dc.png)]() |
+| Dataset             |  [![RM](./img/dc.png)](./proyects/breast-cancer/) |  [![RM](./img/dc.png)]() |
 | Atributos           |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
 | Missing Values      |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
 | Outliers            |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
