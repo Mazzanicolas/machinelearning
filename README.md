@@ -2,13 +2,19 @@
 
 ## Machine Learning (UCU)
 
-| Proyecto                                     | Análisis   | Atributos | Missing Values | Outlyers | Correlación |
-|----------------------------------------------|:-----------:|:---------:|:-------------:|:--------:|:-----------:|
-| [Breast Cancer](./proyects/1_breast-cancer.md) | [✔](./proyects/1_breast-cancer.md#introduccion) | [✔](./proyects/1_breast-cancer.md#estudio-de-atributos) | [✔](./proyects/1_breast-cancer.md#missing-values) | [✔](./proyects/1_breast-cancer.md#outlyers) | [✔](./proyects/1_breast-cancer.md#correlacion-en-los-datos) |
-| [Height Estimation from Skeletal Remains](./proyects/2_height-estimation-from-skeletal-remains.md) | [✔](./proyects/2_height-estimation-from-skeletal-remains.md#introduccion) | [✔](./proyects/2_height-estimation-from-skeletal-remains.md#estudio-de-atributos)        | [✔](./proyects/2_height-estimation-from-skeletal-remains.md#missing-values) | ✘         |
-| 
+|                     | Breast Cancer                                   | Skeletal Remains                               | 
+|--------------------:|:-----------------------------------------------:|:-----------------------------------------------:|
+| Dataset             |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
+| Atributos           |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
+| Missing Values      |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
+| Outliers            |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
+| Linear Regression   |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
+| Logistic Regression |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
+| CART                |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
+| SVM                 |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
+| Hyperparameters     |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |  [![RM](./img/rm.png)]()[![JN](./img/jn.png)]() |
 
-
+(rm): data:./img/rm.png
 ## Curso Postgrado Deep learning for computer vision (Fing)
 
 | Algoritmo | Implementación | Pruebas |  
