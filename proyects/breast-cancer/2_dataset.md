@@ -39,4 +39,4 @@ Un total de 699 instancias.
 
 El problema consiste en predecir si una muestra de células recolectada mediante ​FNA​ es benigna o no en base a una serie de atributos.
 
-[Attributes Text ➡](./3_attributes_text.md)
+[Attributes Document ➡](./3_attributes_text.md)

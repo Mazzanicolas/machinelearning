@@ -1,5 +1,6 @@
 # Correlacion en los datos
 
+Para esto vamos a hacer una matriz de correlación y ver los valores
 
 ```python
 data_correlation = dataset.corr()
@@ -33,6 +34,6 @@ data_correlation['Class'].sort_values(ascending=False)
 
 
 
-Podemos ver que "Uniformity of Cell Shape" y "Uniformity of Cell Size" estan muy relacionadas con la clase de tumor.
+Podemos ver que "Uniformity of Cell Shape" y "Uniformity of Cell Size" estan muy relacionadas entre si, por lo cual seria conveniente descartar alguno de los dos.
 
 [CART ➡](./7_CART_code.md)

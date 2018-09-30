@@ -2,13 +2,17 @@
 
 Para poder analizar los outliers vamos a utilizar diagramas de caja, una tecnica muy popular para analizar variables univariantes.
 
+
 ```python
 fig, ax = plt.subplots(figsize=(12,8))
 sns.boxplot(ax=ax, data=dataset.iloc[:, : 5])
 ```
 
 
-![png](./img/output_13_1.png)
+
+
+
+![png](img/output_26_1.png)
 
 
 
@@ -18,20 +22,24 @@ sns.boxplot(ax=ax, data=dataset.iloc[:, 5:9])
 ```
 
 
-![png](./img/output_14_1.png)
+
+
+
+
+![png](img/output_27_1.png)
+
 
 Notar que no se realizo un diagrama para la variable de salida ya que en este caso son dos salidas y el diagrama no aportaria informacion relevante.
 
-
-Vamos a analizar los outliers detectados
+### Vamos a analizar los outliers detectados
 
 
 ```python
-marginal_adhesion_outlyers = dataset[dataset['Marginal Adhesion']>9]
-single_ephithelial_cell_size_outlyers = dataset[dataset['Single Epithelial Cell Size']>8]
-bland_chromatin_outlyers = dataset[dataset['Bland Chromatin']>9]
-normal_nucleoli_outlyers = dataset[dataset['Normal Nucleoli']>8]
-mitosis_outlyers = dataset[dataset['Mitoses']>1]
+marginal_adhesion_outlyers = dataset[dataset[' Marginal Adhesion']>9]
+single_ephithelial_cell_size_outlyers = dataset[dataset[' Single Epithelial Cell Size']>8]
+bland_chromatin_outlyers = dataset[dataset[' Bland Chromatin']>9]
+normal_nucleoli_outlyers = dataset[dataset[' Normal Nucleoli']>8]
+mitosis_outlyers = dataset[dataset[' Mitoses']>1]
 ```
 
 
@@ -45,6 +53,8 @@ print(
 ```
 
     8.052708638360176 4.831625183016105 2.9282576866764276 10.980966325036603 17.569546120058565
+    
+
 
 
 |               | Marginal Adhesion | Single Epithelial Cell Size |  Bland Chromatin | Normal Nucleoli | Mitoses |
