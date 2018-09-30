@@ -20,3 +20,5 @@ Utilizar restos óseos para estimar la altura de una persona es una herramienta 
 | Humero | Radio |
 | :---: | :---: |
 |![Humero](./img/humerus.gif)|![Radio](./img/radius.gif)|
+
+[Dataset ➡](./2_dataset.md)

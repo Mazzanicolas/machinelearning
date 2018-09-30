@@ -5,14 +5,14 @@
 |                     | Breast Cancer       | Skeletal Remains   | 
 |--------------------:|:-------------------|:------------------:|
 | Introducción        | [![RM](./img/dc.png)][1]  | [![RM](./img/dc.png)][2_1]  |
-| Dataset             | [![DOC](./img/dc.png)][2] [![Dataset](./img/dd.png)][23] [![RM](./img/rm.png)][3] |   |
+| Dataset             | [![DOC](./img/dc.png)][2] [![Dataset](./img/dd.png)][23] [![RM](./img/rm.png)][3] | [![Dataset](./img/dc.png)][2_4] [![Dataset](./img/dd.png)][2_3] |
 | Atributos           | [![RM](./img/dc.png)][4]  | [![RM](./img/dc.png)][2_2]  |
 | Missing Values      | [![RM](./img/jn.png)][5] [![RM](./img/jd.png)][25] [![RM](./img/rm.png)][6] [![RM](./img/rd.png)][24]  |   |
 | Outliers            | [![RM](./img/jn.png)][7] [![RM](./img/jd.png)][26] [![RM](./img/rm.png)][8] [![RM](./img/rd.png)][21]   |   |
 | Correlation         | [![RM](./img/jn.png)][19] [![RM](./img/jd.png)][27] [![RM](./img/rm.png)][20] [![RM](./img/rd.png)][22] |   |
 | Linear Regression   | [![](./img/)][9] [![](./img/)][10]  |   |
-| Logistic Regression | [![RM](./img/jn.png)][11] [![](./img/)][12] |   |
-| CART                | [![RM](./img/jn.png)][13] [![](./img/)][14] |   |
+| Logistic Regression | [![RM](./img/jn.png)][11] [![](./img/jd.png)][12] |   |
+| CART                | [![RM](./img/jn.png)][13] [![](./img/jd.png)][14] |   |
 | SVM                 | [![](./img/)][15] [![](./img/)][16] |   |
 
 
@@ -36,9 +36,9 @@
 [9]: ./proyects/breast-cancer/
 [10]: ./proyects/breast-cancer/
 [11]: ./proyects/breast-cancer/8_logistic_regression_code.md
-[12]: ./proyects/breast-cancer/
+[12]: https://drive.google.com/file/d/1jGZdum82wDCsL4c2eGyltIQGhnWFdR3e/view?usp=sharing
 [13]: ./proyects/breast-cancer/7_CART_code.md
-[14]: ./proyects/breast-cancer/
+[14]: https://drive.google.com/file/d/14kr4rsp7mNqpNT2p_WISr-KOOVWmydxu/view?usp=sharing
 [15]: ./proyects/breast-cancer/
 [16]: ./proyects/breast-cancer/
 [17]: ./proyects/breast-cancer/UNUSED-UNUSED-UNUSED
@@ -46,8 +46,8 @@
 
 [2_1]: ./proyects/skeletal-remains/1_introduction.md
 [2_2]: ./proyects/skeletal-remains/3_attributes_text.md
-
-
+[2_4]: ./proyects/skeletal-remains/2_dataset.md
+[2_3]: https://drive.google.com/file/d/1FW2yhiYE35hSLrAabjBpor1f23vAchCm/view?usp=sharing
 
 ## Curso Postgrado Deep learning for computer vision (Fing)
 

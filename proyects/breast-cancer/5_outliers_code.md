@@ -1,5 +1,7 @@
 # Outlyers
 
+_Este codigo es una continuación de [missing values code](./4_missing_values_code.md)_.
+
 Para poder analizar los outliers vamos a utilizar diagramas de caja, una tecnica muy popular para analizar variables univariantes.
 
 

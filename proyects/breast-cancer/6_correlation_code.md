@@ -1,5 +1,7 @@
 # Correlacion en los datos
 
+_Este codigo es una continuación de [outliers code](./5_outliers_code.md)_.
+
 Para esto vamos a hacer una matriz de correlación y ver los valores
 
 ```python
@@ -33,6 +35,9 @@ data_correlation['Class'].sort_values(ascending=False)
     Name: Class, dtype: float64
 
 
+```python
+dataset = dataset.drop(' Uniformity of Cell Shape',1)
+```
 
 Podemos ver que "Uniformity of Cell Shape" y "Uniformity of Cell Size" estan muy relacionadas entre si, por lo cual seria conveniente descartar alguno de los dos.
 

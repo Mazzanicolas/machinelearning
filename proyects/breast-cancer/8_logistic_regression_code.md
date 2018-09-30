@@ -1,29 +1,45 @@
 
-## Logistic Regression
+# Logistic Regression
 
+_Este codigo es una continuación de [correlation code](./6_correlation_code.md)_.
+
+Para hacer regresión logistica vamos a importar algunas librerias de sklearn.
 
 
 ```python
-import pandas as pd
-import numpy as np
 from sklearn import preprocessing
-import matplotlib.pyplot as plt 
 from sklearn.feature_selection import RFE
 from sklearn.linear_model import LogisticRegression
 from sklearn.cross_validation import train_test_split
-import seaborn as sns
 sns.set(style="white")
 sns.set(style="whitegrid", color_codes=True)
 ```
 
+Para poder realizar la regresión logistica tenemos que tener en cuenta algunas considreaciones:
+
+1 - La regresión logistica requiere que la variable dependiente sea binaria
+
 
 ```python
-data = pd.read_csv('dataset.csv')
+dataset[' Class'].value_counts()
 ```
 
 
+
+
+    2    444
+    4    239
+    Name:  Class, dtype: int64
+
+
+
+2 - Eliminar rudio y outliers
+
+3 - Eliminar atributos correlacionados
+
+
 ```python
-data.head()
+dataset.head()
 ```
 
 
@@ -47,10 +63,8 @@ data.head()
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>Sample code number</th>
       <th>Clump Thickness</th>
       <th>Uniformity of Cell Size</th>
-      <th>Uniformity of Cell Shape</th>
       <th>Marginal Adhesion</th>
       <th>Single Epithelial Cell Size</th>
       <th>Bare Nuclei</th>
@@ -63,9 +77,7 @@ data.head()
   <tbody>
     <tr>
       <th>0</th>
-      <td>1000025</td>
       <td>5</td>
-      <td>1</td>
       <td>1</td>
       <td>1</td>
       <td>2</td>
@@ -77,9 +89,7 @@ data.head()
     </tr>
     <tr>
       <th>1</th>
-      <td>1002945</td>
       <td>5</td>
-      <td>4</td>
       <td>4</td>
       <td>5</td>
       <td>7</td>
@@ -91,9 +101,7 @@ data.head()
     </tr>
     <tr>
       <th>2</th>
-      <td>1015425</td>
       <td>3</td>
-      <td>1</td>
       <td>1</td>
       <td>1</td>
       <td>2</td>
@@ -105,9 +113,7 @@ data.head()
     </tr>
     <tr>
       <th>3</th>
-      <td>1016277</td>
       <td>6</td>
-      <td>8</td>
       <td>8</td>
       <td>1</td>
       <td>3</td>
@@ -119,9 +125,7 @@ data.head()
     </tr>
     <tr>
       <th>4</th>
-      <td>1017023</td>
       <td>4</td>
-      <td>1</td>
       <td>1</td>
       <td>3</td>
       <td>2</td>
@@ -137,88 +141,12 @@ data.head()
 
 
 
-Uniformity of Cell Shape is highly correlated with Uniformity of Cell Size (ρ = 0.90688) Rejected
-Dataset has 8 duplicate rows Warning
+Ahora vamos a separar en train y test sets
 
 
 ```python
-data = data.drop(['Sample code number',' Uniformity of Cell Size'],1)
-data = data.replace('?', np.nan)
-data = data.dropna(axis=0)
-```
-
-
-```python
-data.head(2)
-```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Clump Thickness</th>
-      <th>Uniformity of Cell Shape</th>
-      <th>Marginal Adhesion</th>
-      <th>Single Epithelial Cell Size</th>
-      <th>Bare Nuclei</th>
-      <th>Bland Chromatin</th>
-      <th>Normal Nucleoli</th>
-      <th>Mitoses</th>
-      <th>Class</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>5</td>
-      <td>1</td>
-      <td>1</td>
-      <td>2</td>
-      <td>1</td>
-      <td>3</td>
-      <td>1</td>
-      <td>1</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>5</td>
-      <td>4</td>
-      <td>5</td>
-      <td>7</td>
-      <td>10</td>
-      <td>3</td>
-      <td>2</td>
-      <td>1</td>
-      <td>2</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-
-```python
-labels = data.iloc[:,-1:] 
-data_  = data.iloc[:,:-1]
+labels = dataset.iloc[:,-1:] 
+data_  = dataset.iloc[:,:-1]
 ```
 
 
@@ -248,7 +176,7 @@ data_.head(2)
     <tr style="text-align: right;">
       <th></th>
       <th>Clump Thickness</th>
-      <th>Uniformity of Cell Shape</th>
+      <th>Uniformity of Cell Size</th>
       <th>Marginal Adhesion</th>
       <th>Single Epithelial Cell Size</th>
       <th>Bare Nuclei</th>
@@ -330,6 +258,8 @@ labels.head(2)
 
 
 
+Vamos a ver cuantas ocurrencias tenemos en cada clase
+
 
 ```python
 sns.countplot(x=labels[' Class'], data=labels, palette='hls')
@@ -337,12 +267,12 @@ plt.show()
 ```
 
 
-![png](./img/output_9_0.png)
+![png](output_52_0.png)
 
 
 
 ```python
-data.groupby(' Class').mean()
+dataset.groupby(' Class').mean()
 ```
 
 
@@ -367,7 +297,7 @@ data.groupby(' Class').mean()
     <tr style="text-align: right;">
       <th></th>
       <th>Clump Thickness</th>
-      <th>Uniformity of Cell Shape</th>
+      <th>Uniformity of Cell Size</th>
       <th>Marginal Adhesion</th>
       <th>Single Epithelial Cell Size</th>
       <th>Bland Chromatin</th>
@@ -389,7 +319,7 @@ data.groupby(' Class').mean()
     <tr>
       <th>2</th>
       <td>2.963964</td>
-      <td>1.414414</td>
+      <td>1.306306</td>
       <td>1.346847</td>
       <td>2.108108</td>
       <td>2.083333</td>
@@ -399,7 +329,7 @@ data.groupby(' Class').mean()
     <tr>
       <th>4</th>
       <td>7.188285</td>
-      <td>6.560669</td>
+      <td>6.577406</td>
       <td>5.585774</td>
       <td>5.326360</td>
       <td>5.974895</td>
@@ -414,29 +344,16 @@ data.groupby(' Class').mean()
 
 Podemos ver las diferencias entre los valores por lo cual no vale la pena sacar ninguno
 
-
-```python
-data[' Uniformity of Cell Shape'].hist()
-plt.title('Histogram of Age')
-plt.xlabel('Age')
-plt.ylabel('Frequency')
-```
-
-
-
-
-    Text(0,0.5,'Frequency')
-
-
-
-
-![png](./img/output_12_1.png)
-
+Separamos nuestro dataset en `entrenamiento` y `test`.
 
 
 ```python
-X_train, X_test, y_train, y_test = train_test_split(data_, labels, test_size=0.3, random_state=0)
+X_train, X_test, y_train, y_test = train_test_split(data_, labels,
+                                                    test_size=0.3,
+                                                    random_state=0)
 ```
+
+Creamos un modelo de regresión logistica y lo entrenamos.
 
 
 ```python
@@ -453,6 +370,8 @@ logisticRegr.fit(X_train, y_train.values.reshape(478,))
               verbose=0, warm_start=False)
 
 
+
+Realizamos predicciones con nuestro modelo y comparamos los resutados obtenidos contra los esperados.
 
 
 ```python
@@ -525,16 +444,17 @@ results.head()
 
 
 
+Ahora calculamos la `accuracy` de nuestro modelo.
+
+
+
 
 ```python
 wrong_predictions = results[results['Predicted Value'] != results['Actual Value']]
-```
-
-
-```python
 accuracy = (len(results)-len(wrong_predictions))/len(results)
 accuracy
 ```
+
 
 
 
