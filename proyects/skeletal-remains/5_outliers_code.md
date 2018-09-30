@@ -1,4 +1,4 @@
-# Outlyers
+# Outliers
 
 Podemos ver que la diferencia de tamaño es muy poca entre los femurs
 
