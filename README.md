@@ -25,7 +25,7 @@
 [7]: ./proyects/breast-cancer/5_outliers_code.md
 [19]: ./proyects/breast-cancer/6_correlation_code.md
 [20]: ./proyects/breast-cancer/6_correlation_rapidminer.md
-[8]: ./proyects/breast-cancer/
+[8]: ./proyects/breast-cancer/5_outliers_rapidminer.md
 [9]: ./proyects/breast-cancer/
 [10]: ./proyects/breast-cancer/
 [11]: ./proyects/breast-cancer/8_logistic_regression_code.md
