@@ -57,7 +57,7 @@
 [2_12]: ./proyects/skeletal-remains/4_missing_values_rapidminer.md
 [2_13]: https://drive.google.com/file/d/1kkWEYlrdIHpbOhj6z-21NoXKz7rf7yC2/view?usp=sharing
 [2_14]: ./proyects/skeletal-remains/5_outliers_rapidminer.md
-[2_15]: 
+[2_15]: ./
 
 ## Curso Postgrado Deep learning for computer vision (Fing)
 
