@@ -8,4 +8,6 @@ Como `Bare Nuclei` estaba como valor `Polynomial` a pesar de haber removido los 
 
 Podemos ver una alta correlacion entre `Uniformity of Cell Shape` y `Uniformity of Cell Size`, como vimos en el estudio de atributos esto tiene sentido dado que al ser mas grandes las celulastienen una forma mas irregular.
 
+[Outliers Rapidminer ➡](./7_CART_rapidminer.md)
+
 

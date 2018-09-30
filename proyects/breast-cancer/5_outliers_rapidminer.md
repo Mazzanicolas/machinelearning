@@ -54,3 +54,5 @@ Podemos ver que casi todos los atributos tienen una gran diferencia y pueden ser
 | Mitoses                     | 1.519         | 2.397           | 0.878      |
 
 Por lo que vimos en el [estudio de atributos](./3_attributes_text.md) sabemos que en las células cancerígenas suelen ser más asimétricas lo que puede justificar una diferencia de `5.781` entre todos los otuliers y no outliers contra una de `0.878`, cuando comparamos solo los outliers de la misma clase. Todos los demas atributos indican que realmente son outliers por lo cual deberán de ser descartados de aquí en mas.
+
+[Correlation Rapidminer ➡](./6_correlation_rapidminer.md)
