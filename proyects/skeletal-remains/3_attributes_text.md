@@ -728,3 +728,7 @@ Indica si los dientes son puntiagudos o no. Un diente es considerado no puntuabl
 | False               | 56          | 
 | **Total**           | 117         |
 
+# References
+[ADBOU](http://www.adbou.dk/fileadmin/adbou/projektopgaver/ADBOU_linear_regression_Mette_Wodx.pdf)
+
+[Human Osteological Methods](http://www.adbou.dk/fileadmin/adbou/manualer/humostman2015.pdf)

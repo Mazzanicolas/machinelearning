@@ -267,7 +267,7 @@ plt.show()
 ```
 
 
-![png](output_52_0.png)
+![png](./img/output_52_0.png)
 
 
 
