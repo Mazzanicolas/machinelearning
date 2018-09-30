@@ -10,7 +10,7 @@
 | Missing Values      | [![RM](./img/jn.png)][5] [![RM](./img/jd.png)][25] [![RM](./img/rm.png)][6] [![RM](./img/rd.png)][24]  |  [![RM](./img/jn.png)][2_6] [![RM](./img/jd.png)][2_9] [![RM](./img/rm.png)][2_12] [![RM](./img/rd.png)][2_13] |
 | Outliers            | [![RM](./img/jn.png)][7] [![RM](./img/jd.png)][26] [![RM](./img/rm.png)][8] [![RM](./img/rd.png)][21]   | [![RM](./img/jn.png)][2_7] [![RM](./img/jd.png)][2_10] [![RM](./img/rm.png)][2_14] |
 | Correlation         | [![RM](./img/jn.png)][19] [![RM](./img/jd.png)][27] [![RM](./img/rm.png)][20] [![RM](./img/rd.png)][22] |   |
-| Linear Regression   |  | [![RM](./img/jn.png)][2_8] [![RM](./img/jd.png)][2_11] |
+| Linear Regression   |  | [![RM](./img/jn.png)][2_8] [![RM](./img/jd.png)][2_11] [![RM](./img/rm.png)][2_15] |
 | Logistic Regression | [![RM](./img/jn.png)][11] [![](./img/jd.png)][12] |   |
 | CART                | [![RM](./img/jn.png)][13] [![](./img/jd.png)][14] |   |
 | SVM                 | [![](./img/rm.png)][15] [![](./img/rd.png)][16] |   |
@@ -57,7 +57,7 @@
 [2_12]: ./proyects/skeletal-remains/4_missing_values_rapidminer.md
 [2_13]: https://drive.google.com/file/d/1kkWEYlrdIHpbOhj6z-21NoXKz7rf7yC2/view?usp=sharing
 [2_14]: ./proyects/skeletal-remains/5_outliers_rapidminer.md
-[2_15]: ./
+[2_15]: ./proyects/skeletal-remains/10_linear_regression_rapidminer.md
 
 ## Curso Postgrado Deep learning for computer vision (Fing)
 
