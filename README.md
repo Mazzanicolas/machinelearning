@@ -13,7 +13,7 @@
 | Linear Regression   | [![](./img/)][9] [![](./img/)][10]  |   |
 | Logistic Regression | [![RM](./img/jn.png)][11] [![](./img/jd.png)][12] |   |
 | CART                | [![RM](./img/jn.png)][13] [![](./img/jd.png)][14] |   |
-| SVM                 | [![](./img/)][15] [![](./img/)][16] |   |
+| SVM                 | [![](./img/rm.png)][15] [![](./img/rd.png)][16] |   |
 
 
 [1]: ./proyects/breast-cancer/1_introduction.md
@@ -39,8 +39,8 @@
 [12]: https://drive.google.com/file/d/1jGZdum82wDCsL4c2eGyltIQGhnWFdR3e/view?usp=sharing
 [13]: ./proyects/breast-cancer/7_CART_code.md
 [14]: https://drive.google.com/file/d/14kr4rsp7mNqpNT2p_WISr-KOOVWmydxu/view?usp=sharing
-[15]: ./proyects/breast-cancer/
-[16]: ./proyects/breast-cancer/
+[15]: ./proyects/breast-cancer/9_SVM_rapidminer.md
+[16]: https://drive.google.com/file/d/141aHUtPFuTgDtkpVs7NV7BaM5crYwavm/view?usp=sharing
 [17]: ./proyects/breast-cancer/UNUSED-UNUSED-UNUSED
 [18]: ./proyects/breast-cancer/UNUSED-UNUSED-UNUSED
 
