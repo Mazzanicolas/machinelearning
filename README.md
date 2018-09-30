@@ -20,7 +20,7 @@
 [2]: ./proyects/breast-cancer/2_dataset.md
 [3]: ./proyects/breast-cancer/2_dataset_rapidminer.md
 [4]: ./proyects/breast-cancer/3_attributes_text.md
-[5]: ./proyects/breast-cancer/4_missing_values.md
+[5]: ./proyects/breast-cancer/4_missing_values_code.md
 [6]: ./proyects/breast-cancer/4_missing_values_rapidminer.md
 [7]: ./proyects/breast-cancer/5_outliers_code.md
 [19]: ./proyects/breast-cancer/6_correlation_code.md
