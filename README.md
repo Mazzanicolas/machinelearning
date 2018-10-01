@@ -4,7 +4,7 @@
 
 |                     | Breast Cancer       | Skeletal Remains   | PLAsTiCC | 
 |--------------------:|:-------------------|:--------------------| ------- |
-| Introducción        | [![RM](./img/dc.png)][1]  | [![RM](./img/dc.png)][2_1]  | PLAsTiCC |
+| Introducción        | [![RM](./img/dc.png)][1]  | [![RM](./img/dc.png)][2_1]  | [![RM](./img/dc.png)][3_1] |
 | Dataset             | [![DOC](./img/dc.png)][2] [![Dataset](./img/dd.png)][23] [![RM](./img/rm.png)][3] | [![Dataset](./img/dc.png)][2_4] [![Dataset](./img/dd.png)][2_3] [![Dataset](./img/jn.png)][2_5] |PLAsTiCC |
 | Atributos           | [![RM](./img/dc.png)][4]  | [![RM](./img/dc.png)][2_2]  |PLAsTiCC |
 | Missing Values      | [![RM](./img/jn.png)][5] [![RM](./img/jd.png)][25] [![RM](./img/rm.png)][6] [![RM](./img/rd.png)][24]  |  [![RM](./img/jn.png)][2_6] [![RM](./img/jd.png)][2_9] [![RM](./img/rm.png)][2_12] [![RM](./img/rd.png)][2_13] |PLAsTiCC |
@@ -58,6 +58,8 @@
 [2_13]: https://drive.google.com/file/d/1kkWEYlrdIHpbOhj6z-21NoXKz7rf7yC2/view?usp=sharing
 [2_14]: ./proyects/skeletal-remains/5_outliers_rapidminer.md
 [2_15]: ./proyects/skeletal-remains/10_linear_regression_rapidminer.md
+
+[3_1]: ./proyects/plasticc/1_introduction.md
 
 ## Curso Postgrado Deep learning for computer vision (Fing)
 
