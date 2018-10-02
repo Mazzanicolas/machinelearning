@@ -65,14 +65,21 @@
 
 | Algoritmo | Implementación | Pruebas |  
 |-----------|:--------------:|:-------:|
-| [K-NN](./proyects/deep-learning/k-nn.md) | [![PY](./img/py.png)][2_1_1] | [✔](./proyects/deep-learning/k-nn.md)  |
-| [Softmax](./proyects/deep-learning/softmax.md) | [![PY](./img/py.png)][Softmax-imp] | [✔](./proyects/deep-learning/softmax.md) |
-| [Stochastic Gradient Descent](./proyects/deep-learning/stochastic-gradient-descent.md)  | [✔](./proyects/deep-learning/stochastic-gradient-descent.md#linear-classifier-&-sgd-implementation) | ✘ |
-| [ANN](./proyects/deep-learning/ann.md) | [✔](./proyects/deep-learning/ann-implementation.md) | [✔](./proyects/deep-learning/ann.md) | 
-| [Feature Extraction](./proyects/deep-learning/image-feature.md) | ✘ | [✔](./proyects/deep-learning/image-features.md) | 
+| [K-NN](./proyects/deep-learning/k-nn.md) | [![PY](./img/py.png)][KNN-imp] | [![PY](./img/jn.png)][KNN]  |
+| [Softmax](./proyects/deep-learning/softmax.md) | [![PY](./img/py.png)][Softmax-imp] | [![JN](./img/jn.png)][Softmax] |
+| [Stochastic Gradient Descent](./proyects/deep-learning/stochastic-gradient-descent.md)  | [![PY](./img/py.png)][SGD-imp] | ✘ |
+| [ANN](./proyects/deep-learning/ann.md) | [![PY](./img/py.png)][ANN-imp] | [![PY](./img/jn.png)][ANN] | 
+| [Feature Extraction](./proyects/deep-learning/image-feature.md) | ✘ | [![PY](./img/jn.png)][FE] | 
 
-[2_1_1]: ./proyects/deep-learning/knn-implementation.md
+[KNN-imp]: ./proyects/deep-learning/knn-implementation.md
 [Softmax-imp]: ./proyects/deep-learning/softmax-implementation.md
+[SGD-imp]: ./proyects/deep-learning/stochastic-gradient-descent.md#linear-classifier-&-sgd-implementation
+[ANN-imp]: ./proyects/deep-learning/ann-implementation.md
+
+[KNN]: ./proyects/deep-learning/k-nn.md
+[Softmax]: ./proyects/deep-learning/softmax.md
+[ANN]: ./proyects/deep-learning/ann.md
+[FE]: ./proyects/deep-learning/image-features.md
 
 
 ## Certificado Tensorflow
