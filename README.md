@@ -2,18 +2,20 @@
 
 ## Machine Learning (UCU)
 
-|                     | Breast Cancer       | Skeletal Remains   | PLAsTiCC | 
-|--------------------:|:-------------------|:--------------------| ------- |
-| Introducción        | [![RM](./img/dc.png)][1]  | [![RM](./img/dc.png)][2_1]  | [![RM](./img/dc.png)][3_1] |
-| Dataset             | [![DOC](./img/dc.png)][2] [![Dataset](./img/dd.png)][23] [![RM](./img/rm.png)][3] | [![Dataset](./img/dc.png)][2_4] [![Dataset](./img/dd.png)][2_3] [![Dataset](./img/jn.png)][2_5] |PLAsTiCC |
-| Atributos           | [![RM](./img/dc.png)][4]  | [![RM](./img/dc.png)][2_2]  |PLAsTiCC |
-| Missing Values      | [![RM](./img/jn.png)][5] [![RM](./img/jd.png)][25] [![RM](./img/rm.png)][6] [![RM](./img/rd.png)][24]  |  [![RM](./img/jn.png)][2_6] [![RM](./img/jd.png)][2_9] [![RM](./img/rm.png)][2_12] [![RM](./img/rd.png)][2_13] |PLAsTiCC |
-| Outliers            | [![RM](./img/jn.png)][7] [![RM](./img/jd.png)][26] [![RM](./img/rm.png)][8] [![RM](./img/rd.png)][21]   | [![RM](./img/jn.png)][2_7] [![RM](./img/jd.png)][2_10] [![RM](./img/rm.png)][2_14] |PLAsTiCC |
-| Correlation         | [![RM](./img/jn.png)][19] [![RM](./img/jd.png)][27] [![RM](./img/rm.png)][20] [![RM](./img/rd.png)][22] |   | PLAsTiCC |
-| Linear Regression   |  | [![RM](./img/jn.png)][2_8] [![RM](./img/jd.png)][2_11] [![RM](./img/rm.png)][2_15] |PLAsTiCC |
-| Logistic Regression | [![RM](./img/jn.png)][11] [![](./img/jd.png)][12] |   |PLAsTiCC |
-| CART                | [![RM](./img/jn.png)][13] [![](./img/jd.png)][14] |   |PLAsTiCC |
-| SVM                 | [![](./img/rm.png)][15] [![](./img/rd.png)][16] |   |PLAsTiCC |
+|                     | Breast Cancer FNA     | Breast Cancer |Skeletal Remains   | PLAsTiCC | 
+|--------------------:|:-------------------|:--|:--------------------| ------- |
+| Introducción        | [![RM](./img/dc.png)][1]  | [![RM](./img/dc.png)][4_1] | [![RM](./img/dc.png)][2_1]  | [![RM](./img/dc.png)][3_1] |
+| Dataset             | [![DOC](./img/dc.png)][2] [![Dataset](./img/dd.png)][23] [![RM](./img/rm.png)][3] | [![RM](./img/dc.png)][4_2] | [![Dataset](./img/dc.png)][2_4] [![Dataset](./img/dd.png)][2_3] [![Dataset](./img/jn.png)][2_5] |PLAsTiCC |
+| Atributos           | [![RM](./img/dc.png)][4]  | [![RM](./img/jn.png)][4_3] | [![RM](./img/dc.png)][2_2]  |PLAsTiCC |
+| Missing Values      | [![RM](./img/jn.png)][5] [![RM](./img/jd.png)][25] [![RM](./img/rm.png)][6] [![RM](./img/rd.png)][24] | [![RM](./img/jn.png)][4_4] |  [![RM](./img/jn.png)][2_6] [![RM](./img/jd.png)][2_9] [![RM](./img/rm.png)][2_12] [![RM](./img/rd.png)][2_13] |PLAsTiCC |
+| Outliers            | [![RM](./img/jn.png)][7] [![RM](./img/jd.png)][26] [![RM](./img/rm.png)][8] [![RM](./img/rd.png)][21]  | [![RM](./img/jn.png)][4_5] | [![RM](./img/jn.png)][2_7] [![RM](./img/jd.png)][2_10] [![RM](./img/rm.png)][2_14] |PLAsTiCC |
+| Correlation         | [![RM](./img/jn.png)][19] [![RM](./img/jd.png)][27] [![RM](./img/rm.png)][20] [![RM](./img/rd.png)][22] | [![RM](./img/jn.png)][4_6]  |  | PLAsTiCC |
+| Linear Regression   |  | BC | [![RM](./img/jn.png)][2_8] [![RM](./img/jd.png)][2_11] [![RM](./img/rm.png)][2_15] |PLAsTiCC |
+| Logistic Regression | [![RM](./img/jn.png)][11] [![](./img/jd.png)][12] | BC |  |PLAsTiCC |
+| CART                | [![RM](./img/jn.png)][13] [![](./img/jd.png)][14] |  BC |  |PLAsTiCC |
+| SVM                 | [![](./img/rm.png)][15] [![](./img/rd.png)][16] |   BC | |PLAsTiCC |
+| k-NN | a | BC | c |
+| Naive Bayes | a | BC | c | d |
 
 [1]: ./proyects/breast-cancer/1_introduction.md
 [2]: ./proyects/breast-cancer/2_dataset.md
@@ -61,6 +63,12 @@
 
 [3_1]: ./proyects/plasticc/1_introduction.md
 
+[4_1]: ./proyects/breast-cancer-diagnosis/1_introduction.md
+[4_2]: ./proyects/breast-cancer-diagnosis/2_dataset.md
+[4_3]: ./proyects/breast-cancer-diagnosis/3_attributes.md
+[4_4]: ./proyects/breast-cancer-diagnosis/4_missing_values.md
+[4_5]: ./proyects/breast-cancer-diagnosis/5_outliers.md
+[4_6]: ./proyects/breast-cancer-diagnosis/6_correlation.md
 ## Curso Postgrado Deep learning for computer vision (Fing)
 
 | Algoritmo | Implementación | Pruebas |  
