@@ -14,7 +14,7 @@
 | Logistic Regression | [![RM](./img/jn.png)][11] [![](./img/jd.png)][12] | BC |  |PLAsTiCC |
 | CART                | [![RM](./img/jn.png)][13] [![](./img/jd.png)][14] |  BC |  |PLAsTiCC |
 | SVM                 | [![](./img/rm.png)][15] [![](./img/rd.png)][16] |   BC | |PLAsTiCC |
-| k-NN | a | BC | c |
+| k-NN | a | [![JN](./img/jn.png)][4_7] | c |
 | Naive Bayes | a | BC | c | d |
 
 [1]: ./proyects/breast-cancer/1_introduction.md
@@ -69,6 +69,8 @@
 [4_4]: ./proyects/breast-cancer-diagnosis/4_missing_values.md
 [4_5]: ./proyects/breast-cancer-diagnosis/5_outliers.md
 [4_6]: ./proyects/breast-cancer-diagnosis/6_correlation.md
+[4_7]: ./proyects/breast-cancer-diagnosis/11_KNN.md
+
 ## Curso Postgrado Deep learning for computer vision (Fing)
 
 | Algoritmo | Implementación | Pruebas |  
