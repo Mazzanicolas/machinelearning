@@ -53,3 +53,7 @@ Ahora miramos las estadisticas para poder ver las distribuciones de los datos.
 
 Podemos ver que casi todos los datos menos Clump Thickness tienen una distribucion similar (Similar a una beta).
 Tambien podemos ver que no se indican missing values pero que `Bare Nuclei` es de tipo `Polynomial` cuando el dataset indicaba que todos los atributos eran numericos, vamos a tener que analizar esto como un posible caso de missing values.
+
+[Missing Values Code➡](./4_missing_values_code.md)
+
+[Missing Values RapidMiner➡](./4_missing_values_rapidminer.md)

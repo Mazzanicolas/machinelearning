@@ -5,8 +5,8 @@
 |                     | Breast Cancer FNA     | Breast Cancer |Skeletal Remains   | PLAsTiCC | 
 |--------------------:|:-------------------|:--|:--------------------| ------- |
 | Introducción        | [![RM](./img/dc.png)][1]  | [![RM](./img/dc.png)][4_1] | [![RM](./img/dc.png)][2_1]  | [![RM](./img/dc.png)][3_1] |
-| Dataset             | [![DOC](./img/dc.png)][2] [![Dataset](./img/dd.png)][23] [![RM](./img/rm.png)][3] | [![RM](./img/dc.png)][4_2] | [![Dataset](./img/dc.png)][2_4] [![Dataset](./img/dd.png)][2_3] [![Dataset](./img/jn.png)][2_5] |PLAsTiCC |
-| Atributos           | [![RM](./img/dc.png)][4]  | [![RM](./img/jn.png)][4_3] | [![RM](./img/dc.png)][2_2]  |PLAsTiCC |
+| Dataset             | [![DOC](./img/dc.png)][2] [![Dataset](./img/dd.png)][23] | [![RM](./img/dc.png)][4_2] [![RM](./img/dd.png)][4_9] | [![Dataset](./img/dc.png)][2_4] [![Dataset](./img/dd.png)][2_3]  |PLAsTiCC |
+| Atributos           | [![RM](./img/dc.png)][4] [![RM](./img/rm.png)][3] | [![RM](./img/jn.png)][4_3] [![RM](./img/RM.png)][4_8]  | [![RM](./img/dc.png)][2_2] [![Dataset](./img/jn.png)][2_5]  |PLAsTiCC |
 | Missing Values      | [![RM](./img/jn.png)][5] [![RM](./img/jd.png)][25] [![RM](./img/rm.png)][6] [![RM](./img/rd.png)][24] | [![RM](./img/jn.png)][4_4] |  [![RM](./img/jn.png)][2_6] [![RM](./img/jd.png)][2_9] [![RM](./img/rm.png)][2_12] [![RM](./img/rd.png)][2_13] |PLAsTiCC |
 | Outliers            | [![RM](./img/jn.png)][7] [![RM](./img/jd.png)][26] [![RM](./img/rm.png)][8] [![RM](./img/rd.png)][21]  | [![RM](./img/jn.png)][4_5] | [![RM](./img/jn.png)][2_7] [![RM](./img/jd.png)][2_10] [![RM](./img/rm.png)][2_14] |PLAsTiCC |
 | Correlation         | [![RM](./img/jn.png)][19] [![RM](./img/jd.png)][27] [![RM](./img/rm.png)][20] [![RM](./img/rd.png)][22] | [![RM](./img/jn.png)][4_6]  |  | PLAsTiCC |
@@ -20,7 +20,7 @@
 [1]: ./proyects/breast-cancer/1_introduction.md
 [2]: ./proyects/breast-cancer/2_dataset.md
 [23]: https://drive.google.com/file/d/1N31jS36zYpPMVXFy1AqcbxCgJodye0bW/view?usp=sharing
-[3]: ./proyects/breast-cancer/2_dataset_rapidminer.md
+[3]: ./proyects/breast-cancer/3_attributes_rapidminer.md
 [4]: ./proyects/breast-cancer/3_attributes_text.md
 [5]: ./proyects/breast-cancer/4_missing_values_code.md
 [6]: ./proyects/breast-cancer/4_missing_values_rapidminer.md
@@ -48,7 +48,7 @@
 [2_1]: ./proyects/skeletal-remains/1_introduction.md
 [2_2]: ./proyects/skeletal-remains/3_attributes_text.md
 [2_4]: ./proyects/skeletal-remains/2_dataset.md
-[2_5]: ./proyects/skeletal-remains/2_dataset_code.md
+[2_5]: ./proyects/skeletal-remains/3_attributes_code.md
 [2_3]: https://drive.google.com/file/d/1FW2yhiYE35hSLrAabjBpor1f23vAchCm/view?usp=sharing
 [2_6]: ./proyects/skeletal-remains/4_missing_values_code.md
 [2_7]: ./proyects/skeletal-remains/5_outliers_code.md
@@ -65,7 +65,9 @@
 
 [4_1]: ./proyects/breast-cancer-diagnosis/1_introduction.md
 [4_2]: ./proyects/breast-cancer-diagnosis/2_dataset.md
+[4_9]: https://drive.google.com/file/d/1yhe1SvayM-MDZsLT-qY50_H1yWdq8l9c/view?usp=sharing
 [4_3]: ./proyects/breast-cancer-diagnosis/3_attributes.md
+[4_8]: ./proyects/breast-cancer-diagnosis/3_attributes_rapidminer.md
 [4_4]: ./proyects/breast-cancer-diagnosis/4_missing_values.md
 [4_5]: ./proyects/breast-cancer-diagnosis/5_outliers.md
 [4_6]: ./proyects/breast-cancer-diagnosis/6_correlation.md
