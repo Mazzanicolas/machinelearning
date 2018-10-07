@@ -9,7 +9,7 @@
 | Atributos           | [![RM](./img/dc.png)][4] [![RM](./img/rm.png)][3] | [![RM](./img/jn.png)][4_3] [![RM](./img/rm.png)][4_8]  | [![RM](./img/dc.png)][2_2] [![Dataset](./img/jn.png)][2_5]  |PLAsTiCC |
 | Missing Values      | [![RM](./img/jn.png)][5] [![RM](./img/jd.png)][25] [![RM](./img/rm.png)][6] [![RM](./img/rd.png)][24] | [![RM](./img/jn.png)][4_4] [![RM](./img/rm.png)][4_11] [![RM](./img/rd.png)][4_10] |  [![RM](./img/jn.png)][2_6] [![RM](./img/jd.png)][2_9] [![RM](./img/rm.png)][2_12] [![RM](./img/rd.png)][2_13] |PLAsTiCC |
 | Outliers            | [![RM](./img/jn.png)][7] [![RM](./img/jd.png)][26] [![RM](./img/rm.png)][8] [![RM](./img/rd.png)][21]  | [![RM](./img/jn.png)][4_5] [![RM](./img/rm.png)][4_12] [![RM](./img/rd.png)][4_13] | [![RM](./img/jn.png)][2_7] [![RM](./img/jd.png)][2_10] [![RM](./img/rm.png)][2_14] |PLAsTiCC |
-| Correlation         | [![RM](./img/jn.png)][19] [![RM](./img/jd.png)][27] [![RM](./img/rm.png)][20] [![RM](./img/rd.png)][22] | [![RM](./img/jn.png)][4_6]  |  | PLAsTiCC |
+| Correlation         | [![RM](./img/jn.png)][19] [![RM](./img/jd.png)][27] [![RM](./img/rm.png)][20] [![RM](./img/rd.png)][22] | [![RM](./img/jn.png)][4_6]  [![RM](./img/rm.png)][4_14]  [![RM](./img/rd.png)][4_15]  |  | PLAsTiCC |
 | Linear Regression   |  | BC | [![RM](./img/jn.png)][2_8] [![RM](./img/jd.png)][2_11] [![RM](./img/rm.png)][2_15] |PLAsTiCC |
 | Logistic Regression | [![RM](./img/jn.png)][11] [![](./img/jd.png)][12] | BC |  |PLAsTiCC |
 | CART                | [![RM](./img/jn.png)][13] [![](./img/jd.png)][14] |  BC |  |PLAsTiCC |
@@ -74,6 +74,9 @@
 [4_5]: ./proyects/breast-cancer-diagnosis/5_outliers.md
 [4_12]: ./proyects/breast-cancer-diagnosis/5_outliers_rapidminer.md
 [4_13]: https://drive.google.com/file/d/1yhe1SvayM-MDZsLT-qY50_H1yWdq8l9c/view?usp=sharing
+[4_6]: ./proyects/breast-cancer-diagnosis/6_correlation.md
+[4_14]: ./proyects/breast-cancer-diagnosis/6_correlation_rapidminer.md
+[4_15]: https://drive.google.com/file/d/1XRNyRdLqmAA26e3uzUhCGXFDsLTQ5Vv1/view?usp=sharing
 [4_6]: ./proyects/breast-cancer-diagnosis/6_correlation.md
 [4_7]: ./proyects/breast-cancer-diagnosis/11_KNN.md
 

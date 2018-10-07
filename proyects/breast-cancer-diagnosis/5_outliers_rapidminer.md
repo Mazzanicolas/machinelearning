@@ -27,3 +27,5 @@ Ahora solo nos resta filtrar los outliers con el operador `Filter Examples`.
 Podemos ver que en el dataset nos restan los con una distancia menor a `1.5`.
 
 ![](./img/outliers_5.png)
+
+[Correlation ➡](./6_correlation_rapidminer)
