@@ -5,17 +5,17 @@
 |                     | Breast Cancer FNA     | Breast Cancer |Skeletal Remains   | PLAsTiCC | 
 |--------------------:|:-------------------|:--|:--------------------| ------- |
 | Introducción        | [![RM](./img/dc.png)][1]  | [![RM](./img/dc.png)][4_1] | [![RM](./img/dc.png)][2_1]  | [![RM](./img/dc.png)][3_1] |
-| Dataset             | [![DOC](./img/dc.png)][2] [![Dataset](./img/dd.png)][23] | [![RM](./img/dc.png)][4_2] [![RM](./img/dd.png)][4_9] | [![Dataset](./img/dc.png)][2_4] [![Dataset](./img/dd.png)][2_3]  |PLAsTiCC |
-| Atributos           | [![RM](./img/dc.png)][4] [![RM](./img/rm.png)][3] | [![RM](./img/jn.png)][4_3] [![RM](./img/rm.png)][4_8]  | [![RM](./img/dc.png)][2_2] [![Dataset](./img/jn.png)][2_5]  |PLAsTiCC |
-| Missing Values      | [![RM](./img/jn.png)][5] [![RM](./img/jd.png)][25] [![RM](./img/rm.png)][6] [![RM](./img/rd.png)][24] | [![RM](./img/jn.png)][4_4] [![RM](./img/rm.png)][4_11] [![RM](./img/rd.png)][4_10] |  [![RM](./img/jn.png)][2_6] [![RM](./img/jd.png)][2_9] [![RM](./img/rm.png)][2_12] [![RM](./img/rd.png)][2_13] |PLAsTiCC |
-| Outliers            | [![RM](./img/jn.png)][7] [![RM](./img/jd.png)][26] [![RM](./img/rm.png)][8] [![RM](./img/rd.png)][21]  | [![RM](./img/jn.png)][4_5] [![RM](./img/rm.png)][4_12] [![RM](./img/rd.png)][4_13] | [![RM](./img/jn.png)][2_7] [![RM](./img/jd.png)][2_10] [![RM](./img/rm.png)][2_14] |PLAsTiCC |
-| Correlation         | [![RM](./img/jn.png)][19] [![RM](./img/jd.png)][27] [![RM](./img/rm.png)][20] [![RM](./img/rd.png)][22] | [![RM](./img/jn.png)][4_6]  [![RM](./img/rm.png)][4_14]  [![RM](./img/rd.png)][4_15]  |  | PLAsTiCC |
-| Linear Regression   |  | BC | [![RM](./img/jn.png)][2_8] [![RM](./img/jd.png)][2_11] [![RM](./img/rm.png)][2_15] |PLAsTiCC |
-| Logistic Regression | [![RM](./img/jn.png)][11] [![](./img/jd.png)][12] | BC |  |PLAsTiCC |
-| CART                | [![RM](./img/jn.png)][13] [![](./img/jd.png)][14] |  BC |  |PLAsTiCC |
-| SVM                 | [![](./img/rm.png)][15] [![](./img/rd.png)][16] |   BC | |PLAsTiCC |
-| k-NN | a | [![JN](./img/jn.png)][4_7] | c |
-| Naive Bayes | a | [![](./img/rm.png)][4_16] [![](./img/rd.png)][4_17] | c | d |
+| Dataset             | [![DOC](./img/dc.png)][2] [![Dataset](./img/dd.png)][23] | [![RM](./img/dc.png)][4_2] [![RM](./img/dd.png)][4_9] | [![Dataset](./img/dc.png)][2_4] [![Dataset](./img/dd.png)][2_3]  |✘ |
+| Atributos           | [![RM](./img/dc.png)][4] [![RM](./img/rm.png)][3] | [![RM](./img/jn.png)][4_3] [![RM](./img/rm.png)][4_8]  | [![RM](./img/dc.png)][2_2] [![Dataset](./img/jn.png)][2_5]  |✘ |
+| Missing Values      | [![RM](./img/jn.png)][5] [![RM](./img/jd.png)][25] [![RM](./img/rm.png)][6] [![RM](./img/rd.png)][24] | [![RM](./img/jn.png)][4_4] [![RM](./img/rm.png)][4_11] [![RM](./img/rd.png)][4_10] |  [![RM](./img/jn.png)][2_6] [![RM](./img/jd.png)][2_9] [![RM](./img/rm.png)][2_12] [![RM](./img/rd.png)][2_13] |✘ |
+| Outliers            | [![RM](./img/jn.png)][7] [![RM](./img/jd.png)][26] [![RM](./img/rm.png)][8] [![RM](./img/rd.png)][21]  | [![RM](./img/jn.png)][4_5] [![RM](./img/rm.png)][4_12] [![RM](./img/rd.png)][4_13] | [![RM](./img/jn.png)][2_7] [![RM](./img/jd.png)][2_10] [![RM](./img/rm.png)][2_14] |✘ |
+| Correlation         | [![RM](./img/jn.png)][19] [![RM](./img/jd.png)][27] [![RM](./img/rm.png)][20] [![RM](./img/rd.png)][22] | [![RM](./img/jn.png)][4_6]  [![RM](./img/rm.png)][4_14]  [![RM](./img/rd.png)][4_15]  | ✘ | ✘ |
+| Linear Regression   | ✘  | ✘ | [![RM](./img/jn.png)][2_8] [![RM](./img/jd.png)][2_11] [![RM](./img/rm.png)][2_15] |✘ |
+| Logistic Regression | [![RM](./img/jn.png)][11] [![](./img/jd.png)][12] | ✘ | ✘ |✘ |
+| CART                | [![RM](./img/jn.png)][13] [![](./img/jd.png)][14] | ✘ | ✘ |✘ |
+| SVM                 | [![](./img/rm.png)][15] [![](./img/rd.png)][16] | ✘ | ✘ |✘ |
+| k-NN | ✘ | [![JN](./img/jn.png)][4_7] | ✘ |✘ |
+| Naive Bayes | ✘ | [![](./img/rm.png)][4_16] [![](./img/rd.png)][4_17] | ✘ | ✘ |
 
 [1]: ./proyects/breast-cancer/1_introduction.md
 [2]: ./proyects/breast-cancer/2_dataset.md
