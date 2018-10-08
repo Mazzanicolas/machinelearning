@@ -15,7 +15,7 @@
 | CART                | [![RM](./img/jn.png)][13] [![](./img/jd.png)][14] |  BC |  |PLAsTiCC |
 | SVM                 | [![](./img/rm.png)][15] [![](./img/rd.png)][16] |   BC | |PLAsTiCC |
 | k-NN | a | [![JN](./img/jn.png)][4_7] | c |
-| Naive Bayes | a | BC | c | d |
+| Naive Bayes | a | [![](./img/rm.png)][4_16] [![](./img/rd.png)][4_17] | c | d |
 
 [1]: ./proyects/breast-cancer/1_introduction.md
 [2]: ./proyects/breast-cancer/2_dataset.md
@@ -79,6 +79,8 @@
 [4_15]: https://drive.google.com/file/d/1XRNyRdLqmAA26e3uzUhCGXFDsLTQ5Vv1/view?usp=sharing
 [4_6]: ./proyects/breast-cancer-diagnosis/6_correlation.md
 [4_7]: ./proyects/breast-cancer-diagnosis/11_KNN.md
+[4_16]: ./proyects/breast-cancer-diagnosis/12_naive-bayes.md
+[4_17]: https://drive.google.com/file/d/1kNfTpj5fsDvZU1VOILLOKHFoD5GhpejE/view?usp=sharing
 
 ## Curso Postgrado Deep learning for computer vision (Fing)
 

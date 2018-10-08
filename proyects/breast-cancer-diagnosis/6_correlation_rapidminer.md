@@ -1,6 +1,6 @@
 # Correlation
 
-_Se retoma el modelo de outliers_
+_Se retoma el modelo de [outliers](./5_outliers_rapidminer.md)_
 
 Primero eliminamos los atributos que generamos en la deteccion de otuliers y utilizamos el modulo `Correlation Matrix`
 
