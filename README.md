@@ -16,6 +16,15 @@
 | SVM                 | [![](./img/rm.png)][15] [![](./img/rd.png)][16] | ✘ | ✘ |✘ |
 | k-NN | ✘ | [![JN](./img/jn.png)][4_7] | ✘ |✘ |
 | Naive Bayes | ✘ | [![](./img/rm.png)][4_16] [![](./img/rd.png)][4_17] | ✘ | ✘ |
+| K-Means | ✘ | ✘ | ✘ | [![JN](./img/jn.png)][5_1] |
+| DBSCAN | ✘ | ✘ | ✘ | ✘ |
+| Clusting Jerárquico | ✘ | ✘ | ✘ | ✘ |
+| PCA | ✘ | ✘ | ✘ | ✘ |
+| Ensmbles | ✘ | ✘ | ✘ | ✘ |
+| Bagging | ✘ | ✘ | ✘ | ✘ |
+| Random Forest | ✘ | ✘ | ✘ | ✘ |
+| Boosting | ✘ | ✘ | ✘ | ✘ |
+| AdaBoost | ✘ | ✘ | ✘ | ✘ |
 
 [1]: ./proyects/breast-cancer/1_introduction.md
 [2]: ./proyects/breast-cancer/2_dataset.md
@@ -81,6 +90,7 @@
 [4_7]: ./proyects/breast-cancer-diagnosis/11_KNN.md
 [4_16]: ./proyects/breast-cancer-diagnosis/12_naive-bayes.md
 [4_17]: https://drive.google.com/file/d/1kNfTpj5fsDvZU1VOILLOKHFoD5GhpejE/view?usp=sharing
+[5_1]: ./proyects/K-means-clustering/Clustering.md
 
 ## Curso Postgrado Deep learning for computer vision (Fing)
 
