@@ -91,6 +91,11 @@
 | [Stochastic Gradient Descent](./proyects/deep-learning/stochastic-gradient-descent.md)  | [![PY](./img/py.png)][SGD-imp] | ✘ |
 | [ANN](./proyects/deep-learning/ann.md) | [![PY](./img/py.png)][ANN-imp] | [![PY](./img/jn.png)][ANN] | 
 | [Feature Extraction](./proyects/deep-learning/image-feature.md) | ✘ | [![PY](./img/jn.png)][FE] | 
+| [Batch Normalization](./proyects/deep-learning/BatchNormalization.md) | ✘ | [![PY](./img/jn.png)][BN] | 
+| [Convolutinal Networks](./proyects/deep-learning/ConvolutionalNetworks.md) | ✘ | [![PY](./img/jn.png)][CN] | 
+| [Dropout](./proyects/deep-learning/Dropout.md) | ✘ | [![PY](./img/jn.png)][DO] | 
+| [Fully Connected Nets](./proyects/deep-learning/FullyConnectedNets.md) | ✘ | [![PY](./img/jn.png)][FCN] | 
+| [Tensorflow](./proyects/deep-learning/Tensorflow.md) | ✘ | [![PY](./img/jn.png)][TSF] | 
 
 [KNN-imp]: ./proyects/deep-learning/knn-implementation.md
 [Softmax-imp]: ./proyects/deep-learning/softmax-implementation.md
@@ -101,6 +106,11 @@
 [Softmax]: ./proyects/deep-learning/softmax.md
 [ANN]: ./proyects/deep-learning/ann.md
 [FE]: ./proyects/deep-learning/image-features.md
+[BN]: ./proyects/deep-learning/BatchNormalization.md
+[CN]: ./proyects/deep-learning/ConvolutionalNetworks.md
+[DO]: ./proyects/deep-learning/Dropout.md
+[FCN]: ./proyects/deep-learning/FullyConnectedNets.md
+[TSF]: ./proyects/deep-learning/Tensorflow.md
 
 
 ## Certificado Tensorflow
