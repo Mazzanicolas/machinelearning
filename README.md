@@ -92,15 +92,17 @@
 | [ANN](./proyects/deep-learning/ann.md) | [![PY](./img/py.png)][ANN-imp] | [![PY](./img/jn.png)][ANN] | 
 | [Feature Extraction](./proyects/deep-learning/image-feature.md) | ✘ | [![PY](./img/jn.png)][FE] | 
 | [Batch Normalization](./proyects/deep-learning/BatchNormalization.md) | ✘ | [![PY](./img/jn.png)][BN] | 
-| [Convolutinal Networks](./proyects/deep-learning/ConvolutionalNetworks.md) | ✘ | [![PY](./img/jn.png)][CN] | 
+| [Convolutinal Networks](./proyects/deep-learning/ConvolutionalNetworks.md) | [![PY](./img/py.png)][CNN-imp] | [![PY](./img/jn.png)][CN] | 
 | [Dropout](./proyects/deep-learning/Dropout.md) | ✘ | [![PY](./img/jn.png)][DO] | 
-| [Fully Connected Nets](./proyects/deep-learning/FullyConnectedNets.md) | ✘ | [![PY](./img/jn.png)][FCN] | 
+| [Fully Connected Nets](./proyects/deep-learning/FullyConnectedNets.md) | [![PY](./img/py.png)][FCN-imp] | [![PY](./img/jn.png)][FCN] | 
 | [Tensorflow](./proyects/deep-learning/Tensorflow.md) | ✘ | [![PY](./img/jn.png)][TSF] | 
 
 [KNN-imp]: ./proyects/deep-learning/knn-implementation.md
 [Softmax-imp]: ./proyects/deep-learning/softmax-implementation.md
 [SGD-imp]: ./proyects/deep-learning/stochastic-gradient-descent.md#linear-classifier-&-sgd-implementation
 [ANN-imp]: ./proyects/deep-learning/ann-implementation.md
+[CNN-imp]: ./proyects/deep-learning/cnn-implementation.md
+[FCN-imp]: ./proyects/deep-learning/fullyconnectednets.md
 
 [KNN]: ./proyects/deep-learning/k-nn.md
 [Softmax]: ./proyects/deep-learning/softmax.md
