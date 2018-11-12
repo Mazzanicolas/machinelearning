@@ -90,7 +90,7 @@
 [4_7]: ./proyects/breast-cancer-diagnosis/11_KNN.md
 [4_16]: ./proyects/breast-cancer-diagnosis/12_naive-bayes.md
 [4_17]: https://drive.google.com/file/d/1kNfTpj5fsDvZU1VOILLOKHFoD5GhpejE/view?usp=sharing
-[5_1]: ./proyects/K-means-clustering/Clustering.md
+[5_1]: ./proyects/K-menas-clustering/Clustering.md
 
 ## Curso Postgrado Deep learning for computer vision (Fing)
 
