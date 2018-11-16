@@ -2,7 +2,7 @@
 
 ## Machine Learning (UCU)
 
-|                     | Breast Cancer FNA     | Breast Cancer |Skeletal Remains   | PLAsTiCC | 
+|                     | Breast Cancer FNA     | Breast Cancer |Skeletal Remains   | Bank | 
 |--------------------:|:-------------------|:--|:--------------------| ------- |
 | Introducción        | [![RM](./img/dc.png)][1]  | [![RM](./img/dc.png)][4_1] | [![RM](./img/dc.png)][2_1]  | [![RM](./img/dc.png)][3_1] |
 | Dataset             | [![DOC](./img/dc.png)][2] [![Dataset](./img/dd.png)][23] | [![RM](./img/dc.png)][4_2] [![RM](./img/dd.png)][4_9] | [![Dataset](./img/dc.png)][2_4] [![Dataset](./img/dd.png)][2_3]  |✘ |
@@ -16,13 +16,13 @@
 | SVM                 | [![](./img/rm.png)][15] [![](./img/rd.png)][16] | ✘ | ✘ |✘ |
 | k-NN | ✘ | [![JN](./img/jn.png)][4_7] | ✘ |✘ |
 | Naive Bayes | ✘ | [![](./img/rm.png)][4_16] [![](./img/rd.png)][4_17] | ✘ | ✘ |
-| K-Means | ✘ | ✘ | ✘ | [![JN](./img/jn.png)][5_1] |
+| K-Means | ✘ | ✘ | ✘ | [![JN](./img/jn.png)][5_1] [![RM](./img/rm.png)][5_3] |
 | DBSCAN | ✘ | ✘ | ✘ | ✘ |
 | Clusting Jerárquico | ✘ | ✘ | ✘ | ✘ |
-| PCA | ✘ | ✘ | ✘ | ✘ |
+| PCA | ✘ | ✘ | ✘ | [![RM](./img/rm.png)][5_2]  |
 | Ensmbles | ✘ | ✘ | ✘ | ✘ |
 | Bagging | ✘ | ✘ | ✘ | ✘ |
-| Random Forest | ✘ | ✘ | ✘ | ✘ |
+| Random Forest | ✘ | [![RM](./img/rm.png)][6_1] | ✘ | ✘ |
 | Boosting | ✘ | ✘ | ✘ | ✘ |
 | AdaBoost | ✘ | ✘ | ✘ | ✘ |
 
@@ -91,7 +91,10 @@
 [4_16]: ./proyects/breast-cancer-diagnosis/12_naive-bayes.md
 [4_17]: https://drive.google.com/file/d/1kNfTpj5fsDvZU1VOILLOKHFoD5GhpejE/view?usp=sharing
 [5_1]: ./proyects/K-menas-clustering/Clustering.md
+[5_3]: ./proyects/K-menas-clustering/Clustering-rm.md
+[5_2]: ./proyects/PCA/PCA-rm.md
 
+[6_1]: ./proyects/Random-Forest/random-forest-rm.md
 ## Curso Postgrado Deep learning for computer vision (Fing)
 
 | Algoritmo | Implementación | Pruebas |  
