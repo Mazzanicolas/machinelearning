@@ -22,7 +22,7 @@
 | PCA | ✘ | ✘ | ✘ | [![RM](./img/rm.png)][5_2]  |
 | Ensmbles | ✘ | ✘ | ✘ | ✘ |
 | Bagging | ✘ | ✘ | ✘ | ✘ |
-| Random Forest | ✘ | [![RM](./img/rm.png)][6_1] | ✘ | ✘ |
+| Random Forest | ✘ | [![RM](./img/rm.png)][6_1][![RM](./img/rd.png)][6_2] | ✘ | ✘ |
 | Boosting | ✘ | ✘ | ✘ | ✘ |
 | AdaBoost | ✘ | ✘ | ✘ | ✘ |
 
@@ -95,6 +95,8 @@
 [5_2]: ./proyects/PCA/PCA-rm.md
 
 [6_1]: ./proyects/Random-Forest/random-forest-rm.md
+[6_2]: ./proyects/Random-Forest/process/random-forest.rmp
+
 ## Curso Postgrado Deep learning for computer vision (Fing)
 
 | Algoritmo | Implementación | Pruebas |  
