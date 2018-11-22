@@ -14,7 +14,7 @@
 | Logistic Regression | [![RM](./img/jn.png)][1_8] [![RM](./img/jd.png)][1_8_2] | ✘ | ✘ | ✘ | 
 | CART                | [![RM](./img/jn.png)][1_9] [![RM](./img/jd.png)][1_9_2] | ✘ | ✘ | ✘ | 
 | Support Vector Machine | [![RM](./img/rm.png)][1_10] [![RM](./img/rd.png)][1_10_1] | ✘ | ✘ | ✘ | 
-| K Nearest Neighbor  | ✘ | [![RM](./img/jn.png)][2_11] | ✘ | ✘ | 
+| K Nearest Neighbor  | [![RM](./img/rm.png)][1_11] [![RM](./img/rd.png)][1_11_2] | [![RM](./img/jn.png)][2_11] | ✘ | ✘ | 
 | Naive Bayes         | ✘ | [![RM](./img/rm.png)][2_12] [![RM](./img/rd.png)][2_12_2] | ✘ | ✘ | 
 | K-Means             | ✘ | ✘ | ✘ | ✘ | 
 | DBSCAN              | ✘ | ✘ | ✘ | ✘ | 
@@ -62,7 +62,8 @@
 [1_10]: ./ucu_machine_learning/breast-cancer-fna/documents/10_SVM_rapidminer.md
 [1_10_1]: ./ucu_machine_learning/breast-cancer-fna/process/SVM.rmp
 <!-- K Nearest Neighbor -->
-[1_11]: ./
+[1_11]: ./ucu_machine_learning/breast-cancer-fna/documents/11_knn_rapidminer.md
+[1_11_2]: ./ucu_machine_learning/breast-cancer-fna/process/knn.rmp
 <!-- Naive Bayes -->
 [1_12]: ./
 <!-- K-Means -->
