@@ -2,100 +2,245 @@
 
 ## Machine Learning (UCU)
 
-|                     | Breast Cancer FNA     | Breast Cancer |Skeletal Remains   | Bank | 
-|--------------------:|:-------------------|:--|:--------------------| ------- |
-| Introducción        | [![RM](./img/dc.png)][1]  | [![RM](./img/dc.png)][4_1] | [![RM](./img/dc.png)][2_1]  | [![RM](./img/dc.png)][3_1] |
-| Dataset             | [![DOC](./img/dc.png)][2] [![Dataset](./img/dd.png)][23] | [![RM](./img/dc.png)][4_2] [![RM](./img/dd.png)][4_9] | [![Dataset](./img/dc.png)][2_4] [![Dataset](./img/dd.png)][2_3]  |✘ |
-| Atributos           | [![RM](./img/dc.png)][4] [![RM](./img/rm.png)][3] | [![RM](./img/jn.png)][4_3] [![RM](./img/rm.png)][4_8]  | [![RM](./img/dc.png)][2_2] [![Dataset](./img/jn.png)][2_5]  |✘ |
-| Missing Values      | [![RM](./img/jn.png)][5] [![RM](./img/jd.png)][25] [![RM](./img/rm.png)][6] [![RM](./img/rd.png)][24] | [![RM](./img/jn.png)][4_4] [![RM](./img/rm.png)][4_11] [![RM](./img/rd.png)][4_10] |  [![RM](./img/jn.png)][2_6] [![RM](./img/jd.png)][2_9] [![RM](./img/rm.png)][2_12] [![RM](./img/rd.png)][2_13] |✘ |
-| Outliers            | [![RM](./img/jn.png)][7] [![RM](./img/jd.png)][26] [![RM](./img/rm.png)][8] [![RM](./img/rd.png)][21]  | [![RM](./img/jn.png)][4_5] [![RM](./img/rm.png)][4_12] [![RM](./img/rd.png)][4_13] | [![RM](./img/jn.png)][2_7] [![RM](./img/jd.png)][2_10] [![RM](./img/rm.png)][2_14] |✘ |
-| Correlation         | [![RM](./img/jn.png)][19] [![RM](./img/jd.png)][27] [![RM](./img/rm.png)][20] [![RM](./img/rd.png)][22] | [![RM](./img/jn.png)][4_6]  [![RM](./img/rm.png)][4_14]  [![RM](./img/rd.png)][4_15]  | ✘ | ✘ |
-| Linear Regression   | ✘  | ✘ | [![RM](./img/jn.png)][2_8] [![RM](./img/jd.png)][2_11] [![RM](./img/rm.png)][2_15] |✘ |
-| Logistic Regression | [![RM](./img/jn.png)][11] [![](./img/jd.png)][12] | ✘ | ✘ |✘ |
-| CART                | [![RM](./img/jn.png)][13] [![](./img/jd.png)][14] | ✘ | ✘ |✘ |
-| SVM                 | [![](./img/rm.png)][15] [![](./img/rd.png)][16] | ✘ | ✘ |✘ |
-| k-NN | ✘ | [![JN](./img/jn.png)][4_7] | ✘ |✘ |
-| Naive Bayes | ✘ | [![](./img/rm.png)][4_16] [![](./img/rd.png)][4_17] | ✘ | ✘ |
-| K-Means | ✘ | ✘ | ✘ | [![JN](./img/jn.png)][5_1] [![RM](./img/rm.png)][5_3] |
-| DBSCAN | ✘ | ✘ | ✘ | ✘ |
-| Clusting Jerárquico | ✘ | ✘ | ✘ | ✘ |
-| PCA | ✘ | ✘ | ✘ | [![RM](./img/rm.png)][5_2]  |
-| Ensmbles | ✘ | ✘ | ✘ | ✘ |
-| Bagging | ✘ | ✘ | ✘ | ✘ |
-| Random Forest | ✘ | [![RM](./img/rm.png)][6_1][![RM](./img/rd.png)][6_2] | ✘ | ✘ |
-| Boosting | ✘ | ✘ | ✘ | ✘ |
-| AdaBoost | ✘ | ✘ | ✘ | ✘ |
+|                     | Breast Cancer FNA          | Breast Cancer | Skeletal Remains  | Bank | 
+|--------------------:| :------------------------- | :------------ | :---------------- | ---- |
+| Introduction        | [![RM](./img/dc.png)][1_1] | [![RM](./img/dc.png)][2_1] | [![RM](./img/dc.png)][3_1] | ✘ | 
+| Dataset             | [![RM](./img/dc.png)][1_2] [![RM](./img/dd.png)][1_2_1] | [![RM](./img/dc.png)][2_2] [![RM](./img/dd.png)][2_2_2] | [![RM](./img/dc.png)][3_2] [![RM](./img/dd.png)][3_2_2] | ✘ | 
+| Attributes          | [![RM](./img/dc.png)][1_3] [![RM](./img/rm.png)][1_3_1] | [![RM](./img/jn.png)][2_3] [![RM](./img/rm.png)][2_3_2] [![RM](./img/rd.png)][2_3_3] | [![RM](./img/dc.png)][3_3] [![RM](./img/jn.png)][3_3_2] | ✘ | 
+| Missing Values      | [![RM](./img/jn.png)][1_4] [![RM](./img/jd.png)][1_4_2] [![RM](./img/rm.png)][1_4_3] [![RM](./img/rd.png)][1_4_4] | [![RM](./img/jn.png)][2_4] [![RM](./img/rm.png)][2_4_2] | [![RM](./img/jn.png)][3_4] [![RM](./img/jd.png)][3_4_2] [![RM](./img/rm.png)][3_4_3] [![RM](./img/rd.png)][3_4_4] | ✘ | 
+| Outliers            | [![RM](./img/jn.png)][1_5] [![RM](./img/jd.png)][1_5_2] [![RM](./img/rm.png)][1_5_3] [![RM](./img/rd.png)][1_5_4] | [![RM](./img/jn.png)][2_5] [![RM](./img/rm.png)][2_5_2] [![RM](./img/rd.png)][2_5_3] | [![RM](./img/jn.png)][3_5] [![RM](./img/jd.png)][3_5_2] [![RM](./img/rm.png)][3_5_3] | ✘ | 
+| Correlation         | [![RM](./img/jn.png)][1_6] [![RM](./img/jd.png)][1_6_2] [![RM](./img/rm.png)][1_6_3] [![RM](./img/rd.png)][1_6_4] | [![RM](./img/jn.png)][2_6] [![RM](./img/rm.png)][2_6_2] [![RM](./img/rd.png)][2_6_3] | ✘  | ✘ | 
+| Linear Regression   | ✘ | ✘ | [![RM](./img/jn.png)][3_7] [![RM](./img/jd.png)][3_7_2] [![RM](./img/rm.png)][3_7_3] | ✘ | 
+| Logistic Regression | [![RM](./img/jn.png)][1_8] [![RM](./img/jd.png)][1_8_2] | ✘ | ✘ | ✘ | 
+| CART                | [![RM](./img/jn.png)][1_9] [![RM](./img/jd.png)][1_9_2] | ✘ | ✘ | ✘ | 
+| Support Vector Machine | [![RM](./img/rm.png)][1_10] [![RM](./img/rd.png)][1_10_1] | ✘ | ✘ | ✘ | 
+| K Nearest Neighbor  | ✘ | [![RM](./img/jn.png)][2_11] | ✘ | ✘ | 
+| Naive Bayes         | ✘ | [![RM](./img/rm.png)][2_12] [![RM](./img/rd.png)][2_12_2] | ✘ | ✘ | 
+| K-Means             | ✘ | ✘ | ✘ | ✘ | 
+| DBSCAN              | ✘ | ✘ | ✘ | ✘ | 
+| Hierarchical Clustering | ✘ | ✘ | ✘ | ✘ | 
+| PC Analysis         | ✘ | ✘ | ✘ | ✘ | 
+| Ensembles           | ✘ | ✘ | ✘ | ✘ | 
+| Bagging             | ✘ | ✘ | ✘ | ✘ | 
+| Random Forest       | ✘ | ✘ | ✘ | ✘ | 
+| Boosting            | ✘ | ✘ | ✘ | ✘ | 
+| AdaBoost            | ✘ | ✘ | ✘ | ✘ | 
 
-[1]: ./proyects/breast-cancer/1_introduction.md
-[2]: ./proyects/breast-cancer/2_dataset.md
-[23]: https://drive.google.com/file/d/1N31jS36zYpPMVXFy1AqcbxCgJodye0bW/view?usp=sharing
-[3]: ./proyects/breast-cancer/3_attributes_rapidminer.md
-[4]: ./proyects/breast-cancer/3_attributes_text.md
-[5]: ./proyects/breast-cancer/4_missing_values_code.md
-[6]: ./proyects/breast-cancer/4_missing_values_rapidminer.md
-[25]: https://drive.google.com/file/d/13QAtVBRNAjF_7PL_QxUb_bbmdfuNIIBh/view?usp=sharing
-[24]: https://drive.google.com/file/d/1OGvxyWzjjxLlCi36yNKFzMCeQoL7PEUP/view?usp=sharing
-[7]: ./proyects/breast-cancer/5_outliers_code.md
-[26]: https://drive.google.com/file/d/1J0YxNysM__epSxv9qC35dw_pUN7PEjFP/view?usp=sharing
-[21]: https://drive.google.com/file/d/1Wl7EbF4hMsidKGcm8Fr6wGTw0x5GIgNd/view?usp=sharing
-[19]: ./proyects/breast-cancer/6_correlation_code.md
-[27]: https://drive.google.com/file/d/1HzOwoi8c0WAsTh10GIxluBqPCRE_MZy6/view?usp=sharing
-[20]: ./proyects/breast-cancer/6_correlation_rapidminer.md
-[22]: https://drive.google.com/file/d/1LrBDKFolKlYzN1JeliW61lSSXrE3CbWm/view?usp=sharing
-[8]: ./proyects/breast-cancer/5_outliers_rapidminer.md
-[9]: ./proyects/breast-cancer/
-[10]: ./proyects/breast-cancer/
-[11]: ./proyects/breast-cancer/8_logistic_regression_code.md
-[12]: https://drive.google.com/file/d/1jGZdum82wDCsL4c2eGyltIQGhnWFdR3e/view?usp=sharing
-[13]: ./proyects/breast-cancer/7_CART_code.md
-[14]: https://drive.google.com/file/d/14kr4rsp7mNqpNT2p_WISr-KOOVWmydxu/view?usp=sharing
-[15]: ./proyects/breast-cancer/9_SVM_rapidminer.md
-[16]: https://drive.google.com/file/d/141aHUtPFuTgDtkpVs7NV7BaM5crYwavm/view?usp=sharing
-[17]: ./proyects/breast-cancer/UNUSED-UNUSED-UNUSED
-[18]: ./proyects/breast-cancer/UNUSED-UNUSED-UNUSED
 
-[2_1]: ./proyects/skeletal-remains/1_introduction.md
-[2_2]: ./proyects/skeletal-remains/3_attributes_text.md
-[2_4]: ./proyects/skeletal-remains/2_dataset.md
-[2_5]: ./proyects/skeletal-remains/3_attributes_code.md
-[2_3]: https://drive.google.com/file/d/1FW2yhiYE35hSLrAabjBpor1f23vAchCm/view?usp=sharing
-[2_6]: ./proyects/skeletal-remains/4_missing_values_code.md
-[2_7]: ./proyects/skeletal-remains/5_outliers_code.md
-[2_8]: ./proyects/skeletal-remains/10_linear_regression.md
-[2_9]: https://drive.google.com/file/d/1QJrkH7FepLMd3x2FI_zO_Vp1XTFUzMPm/view?usp=sharing
-[2_10]: https://drive.google.com/file/d/1W8TGU0OziPPN1Bf49lY74KIq22f7P0bp/view?usp=sharing
-[2_11]: https://drive.google.com/file/d/1rgjs3WasXmS7Kv8dXdY7AGBAJO1d_Q7Y/view?usp=sharing
-[2_12]: ./proyects/skeletal-remains/4_missing_values_rapidminer.md
-[2_13]: https://drive.google.com/file/d/1kkWEYlrdIHpbOhj6z-21NoXKz7rf7yC2/view?usp=sharing
-[2_14]: ./proyects/skeletal-remains/5_outliers_rapidminer.md
-[2_15]: ./proyects/skeletal-remains/10_linear_regression_rapidminer.md
+<!-- Introduction -->
+[1_1]: ./ucu_machine_learning/breast-cancer-fna/documents/1_introduction.md
+<!-- Dataset -->
+[1_2]: ./ucu_machine_learning/breast-cancer-fna/documents/2_dataset.md
+[1_2_1]: ./ucu_machine_learning/breast-cancer-fna/dataset/breast-cancer.csv
+<!-- Attributes -->
+[1_3]: ./ucu_machine_learning/breast-cancer-fna/documents/3_attributes_text.md
+[1_3_1]: ./ucu_machine_learning/breast-cancer-fna/documents/3_attributes_rapidminer.md
+<!-- Missing Values -->
+[1_4]: ./ucu_machine_learning/breast-cancer-fna/documents/4_missing_values_code.md
+[1_4_2]: ./ucu_machine_learning/breast-cancer-fna/notebooks/Missing_Values.ipynb
+[1_4_3]: ./ucu_machine_learning/breast-cancer-fna/documents/4_missing_values_rapidminer.md
+[1_4_4]: ./ucu_machine_learning/breast-cancer-fna/process/missing-values.rmp
+<!-- Outliers -->
+[1_5]: ./ucu_machine_learning/breast-cancer-fna/documents/5_outliers_code.md
+[1_5_2]: ./ucu_machine_learning/breast-cancer-fna/notebooks/Outliers.ipynb
+[1_5_3]: ./ucu_machine_learning/breast-cancer-fna/documents/5_outliers_rapidminer.md
+[1_5_4]: ./ucu_machine_learning/breast-cancer-fna/process/outliers.rmp
+<!-- Correlation -->
+[1_6]: ./ucu_machine_learning/breast-cancer-fna/documents/6_correlation_code.md
+[1_6_2]: ./ucu_machine_learning/breast-cancer-fna/notebooks/correlation.ipynb
+[1_6_3]: ./ucu_machine_learning/breast-cancer-fna/documents/6_correlation_rapidminer.md
+[1_6_4]: ./ucu_machine_learning/breast-cancer-fna/process/correlation.rmp
+<!-- Linear Regression -->
+[1_7]: ./
+<!-- Logistic Regression -->
+[1_8]: ./ucu_machine_learning/breast-cancer-fna/documents/8_logistic_regression_code.md
+[1_8_2]: ./ucu_machine_learning/breast-cancer-fna/notebooks/Logistic_Regression.ipynb
+<!-- CART -->
+[1_9]: ./ucu_machine_learning/breast-cancer-fna/documents/9_CART_code.md
+[1_9_2]: ./ucu_machine_learning/breast-cancer-fna/notebooks/CART.ipynb
+<!-- Support Vector Machine -->
+[1_10]: ./ucu_machine_learning/breast-cancer-fna/documents/10_SVM_rapidminer.md
+[1_10_1]: ./ucu_machine_learning/breast-cancer-fna/process/SVM.rmp
+<!-- K Nearest Neighbor -->
+[1_11]: ./
+<!-- Naive Bayes -->
+[1_12]: ./
+<!-- K-Means -->
+[1_13]: ./
+<!-- DBSCAN -->
+[1_14]: ./
+<!-- Hierarchical Clustering -->
+[1_15]: ./
+<!-- PC Analysis -->
+[1_16]: ./
+<!-- Ensembles -->
+[1_17]: ./
+<!-- Bagging -->
+[1_18]: ./
+<!-- Random Forest -->
+[1_19]: ./
+<!-- Boosting -->
+[1_20]: ./
+<!-- AdaBoost -->
+[1_21]: ./
 
-[3_1]: ./proyects/plasticc/1_introduction.md
 
-[4_1]: ./proyects/breast-cancer-diagnosis/1_introduction.md
-[4_2]: ./proyects/breast-cancer-diagnosis/2_dataset.md
-[4_9]: https://drive.google.com/file/d/1yhe1SvayM-MDZsLT-qY50_H1yWdq8l9c/view?usp=sharing
-[4_3]: ./proyects/breast-cancer-diagnosis/3_attributes.md
-[4_8]: ./proyects/breast-cancer-diagnosis/3_attributes_rapidminer.md
-[4_4]: ./proyects/breast-cancer-diagnosis/4_missing_values.md
-[4_10]: https://drive.google.com/file/d/1yhe1SvayM-MDZsLT-qY50_H1yWdq8l9c/view?usp=sharing
-[4_11]: ./proyects/breast-cancer-diagnosis/4_missing_values_rapidminer.md
-[4_5]: ./proyects/breast-cancer-diagnosis/5_outliers.md
-[4_12]: ./proyects/breast-cancer-diagnosis/5_outliers_rapidminer.md
-[4_13]: https://drive.google.com/file/d/1yhe1SvayM-MDZsLT-qY50_H1yWdq8l9c/view?usp=sharing
-[4_6]: ./proyects/breast-cancer-diagnosis/6_correlation.md
-[4_14]: ./proyects/breast-cancer-diagnosis/6_correlation_rapidminer.md
-[4_15]: https://drive.google.com/file/d/1XRNyRdLqmAA26e3uzUhCGXFDsLTQ5Vv1/view?usp=sharing
-[4_6]: ./proyects/breast-cancer-diagnosis/6_correlation.md
-[4_7]: ./proyects/breast-cancer-diagnosis/11_KNN.md
-[4_16]: ./proyects/breast-cancer-diagnosis/12_naive-bayes.md
-[4_17]: https://drive.google.com/file/d/1kNfTpj5fsDvZU1VOILLOKHFoD5GhpejE/view?usp=sharing
-[5_1]: ./proyects/K-menas-clustering/Clustering.md
-[5_3]: ./proyects/K-menas-clustering/Clustering-rm.md
-[5_2]: ./proyects/PCA/PCA-rm.md
 
-[6_1]: ./proyects/Random-Forest/random-forest-rm.md
-[6_2]: ./proyects/Random-Forest/process/random-forest.rmp
+
+<!-- Introduction -->
+[2_1]: ./ucu_machine_learning/breast-cancer/documents/1_introduction.md
+<!-- Dataset -->
+[2_2]: ./ucu_machine_learning/breast-cancer/documents/2_dataset.md
+[2_2_2]: ./ucu_machine_learning/breast-cancer/dataset/breast-cancer.csv
+<!-- Attributes -->
+[2_3]: ./ucu_machine_learning/breast-cancer/documents/3_attributes_code.md
+[2_3_2]: ./ucu_machine_learning/breast-cancer/documents/3_attributes_rapidminer.md
+[2_3_3]: ./ucu_machine_learning/breast-cancer/process/attributes.rmp
+<!-- Missing Values -->
+[2_4]: ./ucu_machine_learning/breast-cancer/documents/4_missing_values_code.md
+[2_4_2]: ./ucu_machine_learning/breast-cancer/documents/4_missing_values_rapidminer.md
+<!-- Outliers -->
+[2_5]: ./ucu_machine_learning/breast-cancer/documents/5_outliers_code.md
+[2_5_2]: ./ucu_machine_learning/breast-cancer/documents/5_outliers_rapidminer.md
+[2_5_3]: ./ucu_machine_learning/breast-cancer/process/outliers.rmp
+<!-- Correlation -->
+[2_6]: ./ucu_machine_learning/breast-cancer/documents/6_correlation_code.md
+[2_6_2]: ./ucu_machine_learning/breast-cancer/documents/6_correlation_rapidminer.md
+[2_6_3]: ./ucu_machine_learning/breast-cancer/process/correlation.rmp
+<!-- Linear Regression -->
+[2_7]: ./
+<!-- Logistic Regression -->
+[2_8]: ./
+<!-- CART -->
+[2_9]: ./
+<!-- Support Vector Machine -->
+[2_10]: ./
+<!-- K Nearest Neighbor -->
+[2_11]: ./ucu_machine_learning/breast-cancer/documents/11_KNN_code.md
+<!-- Naive Bayes -->
+[2_12]: ./ucu_machine_learning/breast-cancer/documents/12_naive_bayes_rapidminer.md
+[2_12_2]: ./ucu_machine_learning/breast-cancer/process/naive-bayes.rmp
+<!-- K-Means -->
+[2_13]: ./
+<!-- DBSCAN -->
+[2_14]: ./
+<!-- Hierarchical Clustering -->
+[2_15]: ./
+<!-- PC Analysis -->
+[2_16]: ./
+<!-- Ensembles -->
+[2_17]: ./
+<!-- Bagging -->
+[2_18]: ./
+<!-- Random Forest -->
+[2_19]: ./
+<!-- Boosting -->
+[2_20]: ./
+<!-- AdaBoost -->
+[2_21]: ./
+
+
+
+
+<!-- Introduction -->
+[3_1]: ./ucu_machine_learning/skeletal-remains/documents/1_introduction.md
+<!-- Dataset -->
+[3_2]: ./ucu_machine_learning/skeletal-remains/documents/2_dataset.md
+[3_2_2]: ./ucu_machine_learning/skeletal-remains/dataset/Knogler.accdb
+<!-- Attributes -->
+[3_3]: ./ucu_machine_learning/skeletal-remains/documents/3_attributes_text.md
+[3_3_2]: ./ucu_machine_learning/skeletal-remains/documents/3_attributes_code.md
+<!-- Missing Values -->
+[3_4]: ./ucu_machine_learning/skeletal-remains/documents/4_missing_values_code.md
+[3_4_2]: ./ucu_machine_learning/skeletal-remains/notebooks/missing-values.ipynb
+[3_4_3]: ./ucu_machine_learning/skeletal-remains/documents/4_missing_values_rapidminer.md
+[3_4_4]: ./ucu_machine_learning/skeletal-remains/process/missing-values.rmp
+<!-- Outliers -->
+[3_5]: ./ucu_machine_learning/skeletal-remains/documents/5_outliers_code.md
+[3_5_2]: ./ucu_machine_learning/skeletal-remains/notebooks/outliers.ipynb
+[3_5_3]: ./ucu_machine_learning/skeletal-remains/documents/5_outliers_rapidminer.md
+<!-- Correlation -->
+[3_6]: ./ucu_machine_learning/skeletal-remains/documents/
+<!-- Linear Regression -->
+[3_7]: ./ucu_machine_learning/skeletal-remains/documents/7_linear_regression_code.md
+[3_7_2]: ./ucu_machine_learning/skeletal-remains/notebooks/linear-regression.ipynb
+[3_7_3]: ./ucu_machine_learning/skeletal-remains/documents/7_linear_regression_rapidminer.md
+<!-- Logistic Regression -->
+[3_8]: ./ucu_machine_learning/skeletal-remains/documents/
+<!-- CART -->
+[3_9]: ./ucu_machine_learning/skeletal-remains/documents/
+<!-- Support Vector Machine -->
+[3_10]: ./ucu_machine_learning/skeletal-remains/documents/
+<!-- K Nearest Neighbor -->
+[3_11]: ./ucu_machine_learning/skeletal-remains/documents/
+<!-- Naive Bayes -->
+[3_12]: ./ucu_machine_learning/skeletal-remains/documents/
+<!-- K-Means -->
+[3_13]: ./ucu_machine_learning/skeletal-remains/documents/
+<!-- DBSCAN -->
+[3_14]: ./ucu_machine_learning/skeletal-remains/documents/
+<!-- Hierarchical Clustering -->
+[3_15]: ./ucu_machine_learning/skeletal-remains/documents/
+<!-- PC Analysis -->
+[3_16]: ./ucu_machine_learning/skeletal-remains/documents/
+<!-- Ensembles -->
+[3_17]: ./ucu_machine_learning/skeletal-remains/documents/
+<!-- Bagging -->
+[3_18]: ./ucu_machine_learning/skeletal-remains/documents/
+<!-- Random Forest -->
+[3_19]: ./ucu_machine_learning/skeletal-remains/documents/
+<!-- Boosting -->
+[3_20]: ./ucu_machine_learning/skeletal-remains/documents/
+<!-- AdaBoost -->
+[3_21]: ./ucu_machine_learning/skeletal-remains/documents/
+
+
+
+<!-- Introduction -->
+[4_1]: ./
+<!-- Dataset -->
+[4_2]: ./
+<!-- Attributes -->
+[4_3]: ./
+<!-- Missing Values -->
+[4_4]: ./
+<!-- Outliers -->
+[4_5]: ./
+<!-- Correlation -->
+[4_6]: ./
+<!-- Linear Regression -->
+[4_7]: ./
+<!-- Logistic Regression -->
+[4_8]: ./
+<!-- CART -->
+[4_9]: ./
+<!-- Support Vector Machine -->
+[4_10]: ./
+<!-- K Nearest Neighbor -->
+[4_11]: ./
+<!-- Naive Bayes -->
+[4_12]: ./
+<!-- K-Means -->
+[4_13]: ./
+<!-- DBSCAN -->
+[4_14]: ./
+<!-- Hierarchical Clustering -->
+[4_15]: ./
+<!-- PC Analysis -->
+[4_16]: ./
+<!-- Ensembles -->
+[4_17]: ./
+<!-- Bagging -->
+[4_18]: ./
+<!-- Random Forest -->
+[4_19]: ./
+<!-- Boosting -->
+[4_20]: ./
+<!-- AdaBoost -->
+[4_21]: ./
+
+
+
 
 ## Curso Postgrado Deep learning for computer vision (Fing)
 
@@ -128,27 +273,3 @@
 [DO]: ./proyects/deep-learning/Dropout.md
 [FCN]: ./proyects/deep-learning/FullyConnectedNets.md
 [TSF]: ./proyects/deep-learning/Tensorflow.md
-
-
-## Certificado Tensorflow
-
-|  | |  | 
-|:--|:---:|:----:|
-| Regression | | |
-| CNN  | | |
-| RNN  | | |
-| W2V  | | | 
-| AE   | | | 
-| GAN  | | | 
-
-## Certificado Deep learning
-
-|      |   |   | 
-|:-----|:-:|:-:|
-| ANN  | | |
-| CNN  | | |
-| RNN  | | |
-| SOM  | | |
-| BM   | | |
-| AE   | | |
-
