@@ -45,6 +45,7 @@ El paso 4 y 5 los englobamos en un `Subprocess`.
 * Dentro del cross validation:
   
   7.1- En el lado izquierdo _(training)_ agregamos el modulo `k-NN`.
+  
   7.2- En el lado derecho _(testing)_ agregamos el modulo de `Apply model` conectado a `Performance (Classification)`.
 
 Al momento de utilziar K-NN un hiperparametro importante es **K**, la cantidad de vecinos. A continuacion vamos a probar con varios K y observar los resultados.
