@@ -330,6 +330,11 @@
 | [Dropout](./proyects/deep-learning/Dropout.md) | ✘ | [![PY](./img/jn.png)][DO] | 
 | [Fully Connected Nets](./proyects/deep-learning/FullyConnectedNets.md) | [![PY](./img/py.png)][FCN-imp] | [![PY](./img/jn.png)][FCN] | 
 | [Tensorflow](./proyects/deep-learning/Tensorflow.md) | ✘ | [![PY](./img/jn.png)][TSF] | 
+| [Tensorflow](./proyects/deep-learning/Tensorflow.md) | ✘ | [![PY](./img/jn.png)][IMGe] | 
+| [Tensorflow](./proyects/deep-learning/Tensorflow.md) | ✘ | [![PY](./img/jn.png)][IMGr] | 
+| [Tensorflow](./proyects/deep-learning/Tensorflow.md) | ✘ | [![PY](./img/jn.png)][LSTM] | 
+| [Tensorflow](./proyects/deep-learning/Tensorflow.md) | ✘ | [![PY](./img/jn.png)][RNNC] | 
+
 
 [KNN-imp]: ./proyects/deep-learning/knn-implementation.md
 [Softmax-imp]: ./proyects/deep-learning/softmax-implementation.md
@@ -347,3 +352,8 @@
 [DO]: ./proyects/deep-learning/Dropout.md
 [FCN]: ./proyects/deep-learning/FullyConnectedNets.md
 [TSF]: ./proyects/deep-learning/Tensorflow.md
+
+[IMGe]: ./proyects/deep-learning/ImageGeneration/ImageGeneration.md
+[IMGr]: ./proyects/deep-learning/ImageGradients/ImageGradients.md
+[LSTM]: ./proyects/deep-learning/LSTM_Captioning/LSTM_Captioning.md
+[RNNC]: ./proyects/deep-learning/RNN_Captioning/RNN_Captioning.md
