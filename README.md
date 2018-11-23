@@ -14,9 +14,9 @@
 | Logistic Regression | [![RM](./img/jn.png)][1_8] [![RM](./img/jd.png)][1_8_2] | ✘ | ✘ | ✘ | 
 | CART                | [![RM](./img/jn.png)][1_9] [![RM](./img/jd.png)][1_9_2] | ✘ | ✘ | ✘ | 
 | Support Vector Machine | [![RM](./img/rm.png)][1_10] [![RM](./img/rd.png)][1_10_1] | ✘ | ✘ | ✘ | 
-| K Nearest Neighbor  | [![RM](./img/rm.png)][1_11] [![RM](./img/rd.png)][1_11_2] | [![RM](./img/jn.png)][2_11] | ✘ | ✘ | 
-| Naive Bayes         | [![RM](./img/rm.png)][1_12] [![RM](./img/rd.png)][1_12_2] | [![RM](./img/rm.png)][2_12] [![RM](./img/rd.png)][2_12_2] | ✘ | ✘ | 
-| K-Means             | [![RM](./img/rm.png)][1_13] [![RM](./img/rd.png)][1_13_2] | ✘ | ✘ | ✘ | 
+| K Nearest Neighbor  | [![RM](./img/jn.png)][1_11_3] [![RM](./img/jd.png)][1_11_4] [![RM](./img/rm.png)][1_11] [![RM](./img/rd.png)][1_11_2] | [![RM](./img/jn.png)][2_11] | ✘ | ✘ | 
+| Naive Bayes         | [![RM](./img/jn.png)][1_12_3] [![RM](./img/jd.png)][1_12_4] [![RM](./img/rm.png)][1_12] [![RM](./img/rd.png)][1_12_2] | [![RM](./img/rm.png)][2_12] [![RM](./img/rd.png)][2_12_2] | ✘ | ✘ | 
+| K-Means             | [![RM](./img/jn.png)][1_13_3] [![RM](./img/jd.png)][1_13_4] [![RM](./img/rm.png)][1_13] [![RM](./img/rd.png)][1_13_2] | ✘ | ✘ | ✘ | 
 | DBSCAN              | [![RM](./img/rm.png)][1_14] [![RM](./img/rd.png)][1_14_2]  | ✘ | ✘ | ✘ | 
 | Hierarchical Clustering | [![RM](./img/rm.png)][1_15] [![RM](./img/rd.png)][1_15_2]  | ✘ | ✘ | ✘ | 
 | PC Analysis         | [![RM](./img/rm.png)][1_16] [![RM](./img/rd.png)][1_16_2] | ✘ | ✘ | ✘ | 
@@ -64,12 +64,18 @@
 <!-- K Nearest Neighbor -->
 [1_11]: ./ucu_machine_learning/breast-cancer-fna/documents/11_knn_rapidminer.md
 [1_11_2]: ./ucu_machine_learning/breast-cancer-fna/process/knn.rmp
+[1_11_3]: ./ucu_machine_learning/breast-cancer-fna/documents/11_knn_code.md
+[1_11_4]: ./ucu_machine_learning/breast-cancer-fna/notebooks/K-NN.ipynb
 <!-- Naive Bayes -->
 [1_12]: ./ucu_machine_learning/breast-cancer-fna/documents/12_naive_bayes_rapidminer.md
 [1_12_2]: ./ucu_machine_learning/breast-cancer-fna/process/naive-bayes.rmp
+[1_12_3]: ./ucu_machine_learning/breast-cancer-fna/documents/12_naive_bayes_code.md
+[1_12_4]: ./ucu_machine_learning/breast-cancer-fna/notebooks/Naive_Bayes.ipynb
 <!-- K-Means -->
 [1_13]: ./ucu_machine_learning/breast-cancer-fna/documents/13_k_means.md
 [1_13_2]: ./ucu_machine_learning/breast-cancer-fna/process/kmeans.rmp
+[1_13_3]: ./ucu_machine_learning/breast-cancer-fna/documents/13_k_means_code.md
+[1_13_4]: ./ucu_machine_learning/breast-cancer-fna/notebooks/K-Means.ipynb
 <!-- DBSCAN -->
 [1_14]: ./ucu_machine_learning/breast-cancer-fna/documents/14_dbscan_rapidminer.md
 [1_14_2]: ./ucu_machine_learning/breast-cancer-fna/process/dbscan.rmp
