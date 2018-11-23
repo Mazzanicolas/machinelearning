@@ -2,13 +2,13 @@
 
 ## Machine Learning (UCU)
 
-|                     | Breast Cancer FNA          | Breast Cancer | Skeletal Remains  | Bank | 
+|                     | Breast Cancer FNA          | Breast Cancer | Skeletal Remains  | TEA | 
 |--------------------:| :------------------------- | :------------ | :---------------- | ---- |
 | Introduction        | [![RM](./img/dc.png)][1_1] | [![RM](./img/dc.png)][2_1] | [![RM](./img/dc.png)][3_1] | ✘ | 
 | Dataset             | [![RM](./img/dc.png)][1_2] [![RM](./img/dd.png)][1_2_1] | [![RM](./img/dc.png)][2_2] [![RM](./img/dd.png)][2_2_2] | [![RM](./img/dc.png)][3_2] [![RM](./img/dd.png)][3_2_2] | ✘ | 
-| Attributes          | [![RM](./img/dc.png)][1_3] [![RM](./img/rm.png)][1_3_1] | [![RM](./img/jn.png)][2_3] [![RM](./img/rm.png)][2_3_2] [![RM](./img/rd.png)][2_3_3] | [![RM](./img/dc.png)][3_3] [![RM](./img/jn.png)][3_3_2] | ✘ | 
-| Missing Values      | [![RM](./img/jn.png)][1_4] [![RM](./img/jd.png)][1_4_2] [![RM](./img/rm.png)][1_4_3] [![RM](./img/rd.png)][1_4_4] | [![RM](./img/jn.png)][2_4] [![RM](./img/rm.png)][2_4_2] | [![RM](./img/jn.png)][3_4] [![RM](./img/jd.png)][3_4_2] [![RM](./img/rm.png)][3_4_3] [![RM](./img/rd.png)][3_4_4] | ✘ | 
-| Outliers            | [![RM](./img/jn.png)][1_5] [![RM](./img/jd.png)][1_5_2] [![RM](./img/rm.png)][1_5_3] [![RM](./img/rd.png)][1_5_4] | [![RM](./img/jn.png)][2_5] [![RM](./img/rm.png)][2_5_2] [![RM](./img/rd.png)][2_5_3] | [![RM](./img/jn.png)][3_5] [![RM](./img/jd.png)][3_5_2] [![RM](./img/rm.png)][3_5_3] | ✘ | 
+| Attributes          | [![RM](./img/dc.png)][1_3] [![RM](./img/rm.png)][1_3_1] | [![RM](./img/jn.png)][2_3] [![RM](./img/rm.png)][2_3_2] [![RM](./img/rd.png)][2_3_3] | [![RM](./img/dc.png)][3_3] [![RM](./img/jn.png)][3_3_2] | [![RM](./img/jn.png)][4_3] [![RM](./img/jd.png)][4_3_2] [![RM](./img/jn.png)][4_3_3] [![RM](./img/jd.png)][4_3_4] | 
+| Missing Values      | [![RM](./img/jn.png)][1_4] [![RM](./img/jd.png)][1_4_2] [![RM](./img/rm.png)][1_4_3] [![RM](./img/rd.png)][1_4_4] | [![RM](./img/jn.png)][2_4] [![RM](./img/rm.png)][2_4_2] | [![RM](./img/jn.png)][3_4] [![RM](./img/jd.png)][3_4_2] [![RM](./img/rm.png)][3_4_3] [![RM](./img/rd.png)][3_4_4] | [![RM](./img/jn.png)][4_4] [![RM](./img/jd.png)][4_4_2] | 
+| Outliers            | [![RM](./img/jn.png)][1_5] [![RM](./img/jd.png)][1_5_2] [![RM](./img/rm.png)][1_5_3] [![RM](./img/rd.png)][1_5_4] | [![RM](./img/jn.png)][2_5] [![RM](./img/rm.png)][2_5_2] [![RM](./img/rd.png)][2_5_3] | [![RM](./img/jn.png)][3_5] [![RM](./img/jd.png)][3_5_2] [![RM](./img/rm.png)][3_5_3] | [![RM](./img/jn.png)][4_5] [![RM](./img/jd.png)][4_5_2] [![RM](./img/jn.png)][4_5_3] [![RM](./img/jd.png)][4_5_4] | 
 | Correlation         | [![RM](./img/jn.png)][1_6] [![RM](./img/jd.png)][1_6_2] [![RM](./img/rm.png)][1_6_3] [![RM](./img/rd.png)][1_6_4] | [![RM](./img/jn.png)][2_6] [![RM](./img/rm.png)][2_6_2] [![RM](./img/rd.png)][2_6_3] | ✘  | ✘ | 
 | Linear Regression   | ✘ | ✘ | [![RM](./img/jn.png)][3_7] [![RM](./img/jd.png)][3_7_2] [![RM](./img/rm.png)][3_7_3] | ✘ | 
 | Logistic Regression | [![RM](./img/jn.png)][1_8] [![RM](./img/jd.png)][1_8_2] | ✘ | ✘ | ✘ | 
@@ -220,13 +220,20 @@
 <!-- Dataset -->
 [4_2]: ./
 <!-- Attributes -->
-[4_3]: ./
+[4_3]: ./ucu_machine_learning/tea/documents/1-Data-Preparaton/data_preparation.md
+[4_3_2]: ./ucu_machine_learning/tea/notebooks/1-Data_Preparation.ipynb
+[4_3_3]:./ucu_machine_learning/tea/documents/3-Attribute-Generation/attribute_generation.md
+[4_3_4]:./ucu_machine_learning/tea/notebooks/3-Attribute_Generation.ipynb
 <!-- Missing Values -->
-[4_4]: ./
+[4_4]: ./ucu_machine_learning/tea/documents/4-Attribute-Generation-II/attribute_generation_II.md
+[4_4_2]: ./ucu_machine_learning/tea/notebooks/4-Attribute_Generation_II.ipynb
 <!-- Outliers -->
-[4_5]: ./
+[4_5]: ./ucu_machine_learning/tea/documents/2-Outliers/outliers.md
+[4_5_2]: ./ucu_machine_learning/tea/notebooks/2-Outliers.ipynb
+[4_5_3]: ./ucu_machine_learning/tea/documents/5-Outliers-II/outliers_II.md
+[4_5_4]: ./ucu_machine_learning/tea/notebooks/5-Outliers_II.ipynb
 <!-- Correlation -->
-[4_6]: ./
+[4_6]: ./ucu_machine_learning/tea/documents/6-Attributes-Overview.html
 <!-- Linear Regression -->
 [4_7]: ./
 <!-- Logistic Regression -->
@@ -258,6 +265,48 @@
 <!-- AdaBoost -->
 [4_21]: ./
 
+<!-- Introduction -->
+[5_1]: ./
+<!-- Dataset -->
+[5_2]: ./
+<!-- Attributes -->
+[5_3]: ./
+<!-- Missing Values -->
+[5_4]: ./
+<!-- Outliers -->
+[5_5]: ./
+<!-- Correlation -->
+[5_6]: ./
+<!-- Linear Regression -->
+[5_7]: ./
+<!-- Logistic Regression -->
+[5_8]: ./
+<!-- CART -->
+[5_9]: ./
+<!-- Support Vector Machine -->
+[5_10]: ./
+<!-- K Nearest Neighbor -->
+[5_11]: ./
+<!-- Naive Bayes -->
+[5_12]: ./
+<!-- K-Means -->
+[5_13]: ./
+<!-- DBSCAN -->
+[5_14]: ./
+<!-- Hierarchical Clustering -->
+[5_15]: ./
+<!-- PC Analysis -->
+[5_16]: ./
+<!-- Ensembles -->
+[5_17]: ./
+<!-- Bagging -->
+[5_18]: ./
+<!-- Random Forest -->
+[5_19]: ./
+<!-- Boosting -->
+[5_20]: ./
+<!-- AdaBoost -->
+[5_21]: ./
 
 
 
