@@ -41,6 +41,12 @@ Vamos a ejecutar PCA con los valores por defecto, dimensionality reduction = Kee
 
 ![](./img/16_pca_eigenvalues.PNG)
 
+Podemos ver que con los primero 6 componetes principales podemos representar el 0.95 de la varianza.
+
+PCA1  + PCA2  + PCA3  + PCA4  + PCA5  + PCA6
+
+0.691 + 0.072 + 0.061 + 0.044 + 0.039 + 0.034  = 0.95
+
 ### Eigenvectors
 
 ![](./img/16_pca_eigenvectors.PNG)

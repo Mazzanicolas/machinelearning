@@ -1,5 +1,6 @@
 # CRISP DM
 
+![](./img/ml.png)
 
 
 # Proyectos
@@ -27,8 +28,8 @@
 | Ensembles           | [![RM](./img/rm.png)][1_17] [![RM](./img/rd.png)][1_17_2] | ✘ | ✘ | ✘ | 
 | Bagging             | [![RM](./img/rm.png)][1_18] [![RM](./img/rd.png)][1_18_2] | ✘ | ✘ | ✘ | 
 | Random Forest       | [![RM](./img/rm.png)][1_19] [![RM](./img/rd.png)][1_19_2] | ✘ | ✘ | ✘ | 
-| Boosting            | ✘ | ✘ | ✘ | ✘ | 
-| AdaBoost            | ✘ | ✘ | ✘ | ✘ | 
+| AdaBoost            | [![RM](./img/rm.png)][1_20] [![RM](./img/rd.png)][1_20_2] | ✘ | ✘ | ✘ | 
+| ROC Comparison      | [![RM](./img/rm.png)][1_21] [![RM](./img/rd.png)][1_21_2] | ✘ | ✘ | ✘ | 
 
 
 <!-- Introduction -->
@@ -102,10 +103,9 @@
 <!-- Random Forest -->
 [1_19]: ./ucu_machine_learning/breast-cancer-fna/documents/19-random_forest.md
 [1_19_2]: ./ucu_machine_learning/breast-cancer-fna/process/random-forest.rmp
-<!-- Boosting -->
-[1_20]: ./
 <!-- AdaBoost -->
-[1_21]: ./
+[1_20]: ./ucu_machine_learning/breast-cancer-fna/documents/20-adaboost
+[1_20_2]: ./ucu_machine_learning/breast-cancer-fna/process/adaboost.rmp
 
 
 
