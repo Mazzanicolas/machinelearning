@@ -1,22 +1,15 @@
-# Naive Bayes
+# K-Means Clustering
 
-### Naive Bayes Consideraciones
-
-✔ Naive Bayes es para resolver problemas de clasificación.
-
-* Nuestro problema es de clasificacion, predecir alguna de las categorias, 2 o 4.
-
-✔ Naive Bayes asume que las label de salidas son categoricas _(puede tomar entras numericas pero es otro caso)_.
-
-* En este caso nuestra salida es categorica 2 y 4, que son nuestras clases.
+### K-Means Consideraciones
 
 ### Proceso en RapidMiner
 
 __Seed = 2018__
 
+
 1- Agregamos el dataset en un proceso nuevo con el modulo `Retrive`.
 
-2- Eliminamos los atributos inecesarios con un modulo de `Select Attributes`, en este caso vamos a eliminar la id.
+2- Eliminamos los atributos inecesarios con un modulo de `Select Attributes`, en este caso vamos a eliminar la id y la clase (`Class`).
 
 3- Como vimos en [Missing Values](./), este dataset contiene valores faltantes en el atributo **Bare Nuclei**. Vamos a removerlos con el modulo `Filter Examples`.
 
@@ -36,26 +29,3 @@ El paso 4 y 5 los englobamos en un `Subprocess`.
 
   7.2- En el lado derecho _(testing)_ agregamos el modulo de `Apply model` conectado a `Performance (Classification)`.
 
-
-### Process
-
-![](./img/11_knn_process_3.PNG)
-
-![](./img/11_knn_process_1.PNG)
-
-### Cross Validation
-
-![](./img/12_naive_bayes_process_2.PNG)
-
-## Experimentos
-
-El modulo de `Naive Bayes` solo cuenta con un hyperparametro, **laplace correction**.
-
-| Laplace Correction   | Accuracy         | 2 Recall | 4 Recall |
-|----------------------| ---------------- |--------- | -------- |
-|**✔**                   | **96.34% +/- 1.88%**  | **95.27%**  | **98.33%**  |
-| ✘                   | 96.34% +/- 1.88%  | 95.27%   | 98.33%  |
-
-## Resultados
-
-Como era de epserarse, tener activado o desactivado la correcion de laplace no cambia los resutados ya solo surge efecto cuando no tenemos ninguna instancia de alguna de las categorias.

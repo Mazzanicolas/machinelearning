@@ -52,6 +52,8 @@ Al momento de utilziar K-NN un hiperparametro importante es **K**, la cantidad d
 
 ### Process
 
+![](./img/11_knn_process_3.PNG)
+
 ![](./img/11_knn_process_1.PNG)
 
 ### Cross Validation
@@ -87,5 +89,7 @@ Al momento de utilziar K-NN un hiperparametro importante es **K**, la cantidad d
 | 9  | Manhattan Distance | 96.34% +/- 2.29% |  97.07%  |  94.98%  |
 | 10 | Manhattan Distance | 96.34% +/- 1.99% |  97.07%  |  94.98%  |
 | 11 | Manhattan Distance | 96.34% +/- 1.99% |  97.07%  |  94.98%  |
+
+## Resultados
 
 Podemos ver que el modelo con distancia Euclideana y K>8, cuando utilizamos la distancia Manhattan se estanca con K>9. Nuestro mejor modelo es con distancia Manhattan y K=4, tiene un buena accuracy/recall y 4 es una cantidad de vecinos razonables, por otra parte es preferible (en este caso) tener un k impar, por eso nos tomamos K=5.
