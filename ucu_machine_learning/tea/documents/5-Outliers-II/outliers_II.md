@@ -601,20 +601,20 @@ data.query('distance > 500').head(5)
 
 **-34.872250, -56.098970**
 
-![Large Distance](./images/large_distances4.png)
+![Large Distance](../images/large_distances4.png)
 
 **-34.883415, -56.180183**
 
 **-34.880634, -56.187466**
 
-![Large Distance](./images/large_distances5.png)
+![Large Distance](../images/large_distances5.png)
 
 
 **-34.859050, -56.216835**
 
 **-34.862350, -56.212017**
 
-![Large Distance](./images/large_distances6.png)
+![Large Distance](../images/large_distances6.png)
 
 Parece que estas largas distancias son el linea recta a velocidades superiores a la media, por temas de simplicidad vamosa suponer que esto es asi.
 

@@ -1,7 +1,5 @@
 # Ensembles
 
-### Consideraciones
-
 
 ### Proceso en RapidMiner
 

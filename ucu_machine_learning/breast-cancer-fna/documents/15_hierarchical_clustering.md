@@ -1,8 +1,5 @@
 # Hierarchical Clustering
 
-### Consideraciones
-
-
 ### Proceso en RapidMiner
 
 __Seed = 2018__

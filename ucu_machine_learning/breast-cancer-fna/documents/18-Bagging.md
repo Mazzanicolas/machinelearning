@@ -1,7 +1,5 @@
 # Bagging
 
-### Consideraciones
-
 
 ### Proceso en RapidMiner
 

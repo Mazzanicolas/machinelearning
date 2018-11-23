@@ -1,7 +1,5 @@
 # DBSCAN 
 
-### Consideraciones
-
 
 ### Proceso en RapidMiner
 

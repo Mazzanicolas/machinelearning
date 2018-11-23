@@ -1,7 +1,5 @@
 # K-Means Clustering
 
-### K-Means Consideraciones
-
 ### Proceso en RapidMiner
 
 __Seed = 2018__
