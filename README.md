@@ -107,7 +107,7 @@
 [1_20]: ./ucu_machine_learning/breast-cancer-fna/documents/20-adaboost.md
 [1_20_2]: ./ucu_machine_learning/breast-cancer-fna/process/adaboost.rmp
 <!-- ROC -->
-[1_21]: ./ucu_machine_learning/breast-cancer-fna/documents/21-roc.md
+[1_21]: ./ucu_machine_learning/breast-cancer-fna/documents/21_roc.md
 [1_21_2]: ./ucu_machine_learning/breast-cancer-fna/process/roc.rmp
 
 
