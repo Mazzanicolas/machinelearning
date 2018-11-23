@@ -1,3 +1,7 @@
+# CRISP DM
+
+
+
 # Proyectos
 
 ## Machine Learning (UCU)
@@ -9,7 +13,7 @@
 | Attributes          | [![RM](./img/dc.png)][1_3] [![RM](./img/rm.png)][1_3_1] | [![RM](./img/jn.png)][2_3] [![RM](./img/rm.png)][2_3_2] [![RM](./img/rd.png)][2_3_3] | [![RM](./img/dc.png)][3_3] [![RM](./img/jn.png)][3_3_2] | [![RM](./img/jn.png)][4_3] [![RM](./img/jd.png)][4_3_2] [![RM](./img/jn.png)][4_3_3] [![RM](./img/jd.png)][4_3_4] | 
 | Missing Values      | [![RM](./img/jn.png)][1_4] [![RM](./img/jd.png)][1_4_2] [![RM](./img/rm.png)][1_4_3] [![RM](./img/rd.png)][1_4_4] | [![RM](./img/jn.png)][2_4] [![RM](./img/rm.png)][2_4_2] | [![RM](./img/jn.png)][3_4] [![RM](./img/jd.png)][3_4_2] [![RM](./img/rm.png)][3_4_3] [![RM](./img/rd.png)][3_4_4] | [![RM](./img/jn.png)][4_4] [![RM](./img/jd.png)][4_4_2] | 
 | Outliers            | [![RM](./img/jn.png)][1_5] [![RM](./img/jd.png)][1_5_2] [![RM](./img/rm.png)][1_5_3] [![RM](./img/rd.png)][1_5_4] | [![RM](./img/jn.png)][2_5] [![RM](./img/rm.png)][2_5_2] [![RM](./img/rd.png)][2_5_3] | [![RM](./img/jn.png)][3_5] [![RM](./img/jd.png)][3_5_2] [![RM](./img/rm.png)][3_5_3] | [![RM](./img/jn.png)][4_5] [![RM](./img/jd.png)][4_5_2] [![RM](./img/jn.png)][4_5_3] [![RM](./img/jd.png)][4_5_4] | 
-| Correlation         | [![RM](./img/jn.png)][1_6] [![RM](./img/jd.png)][1_6_2] [![RM](./img/rm.png)][1_6_3] [![RM](./img/rd.png)][1_6_4] | [![RM](./img/jn.png)][2_6] [![RM](./img/rm.png)][2_6_2] [![RM](./img/rd.png)][2_6_3] | ✘  | ✘ | 
+| Correlation         | [![RM](./img/jn.png)][1_6] [![RM](./img/jd.png)][1_6_2] [![RM](./img/rm.png)][1_6_3] [![RM](./img/rd.png)][1_6_4] | [![RM](./img/jn.png)][2_6] [![RM](./img/rm.png)][2_6_2] [![RM](./img/rd.png)][2_6_3] | ✘  | [![RM](./img/jn.png)][4_6] | 
 | Linear Regression   | ✘ | ✘ | [![RM](./img/jn.png)][3_7] [![RM](./img/jd.png)][3_7_2] [![RM](./img/rm.png)][3_7_3] | ✘ | 
 | Logistic Regression | [![RM](./img/jn.png)][1_8] [![RM](./img/jd.png)][1_8_2] | ✘ | ✘ | ✘ | 
 | CART                | [![RM](./img/jn.png)][1_9] [![RM](./img/jd.png)][1_9_2] | ✘ | ✘ | ✘ | 
