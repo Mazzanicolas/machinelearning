@@ -32,7 +32,7 @@ El paso 4 y 5 los englobamos en un `Subprocess`.
 
 ### Process
 
-![](./img/19_random_forest_process.PNG)
+![](./img/19_random_forest_process.png)
 
 ### Cross Validation
 
@@ -74,7 +74,7 @@ Estos son los hiperparametros que vamos a modificar, tambien existen otros:
 |       15         | Gini Index       |    10         |     ✔     | Confidence Vote | 96.78% +/- 2.35% | 96.85% | 96.65% |
 |       20         | Gini Index       |    10         |     ✔     | Confidence Vote | 96.78% +/- 2.35% | 96.85% | 96.65% |
 |       5          | Information Gain |    5         |     ✔      | Confidence Vote | 96.05% +/- 2.45% | 96.40% | 95.40% | 
-|       10         | Information Gain |    5         |     ✔      | Confidence Vote | 96.78% +/- 2.06% | 96.62% | 97.07% |
+|     **10**  | **Information Gain** |   **5**       |   **✔**    | **Confidence Vote** | **96.78% +/- 2.06%** | **96.62%** | **97.07%** |
 |       15         | Information Gain |    5         |     ✔      | Confidence Vote | 96.49% +/- 2.30% | 96.62% | 96.23% |
 |       20         | Information Gain |    5         |     ✔      | Confidence Vote | 96.63% +/- 2.19% | 96.85% | 96.23% |
 |       5          | Information Gain |    5         |     ✘      | Confidence Vote | 96.05% +/- 2.45% | 96.40% | 95.40% | 
@@ -93,9 +93,61 @@ Estos son los hiperparametros que vamos a modificar, tambien existen otros:
 |       10         | Gain Rato |    5         |     ✘             | Confidence Vote | 96.19% +/- 1.63% | 96.62% | 95.40% |
 |       15         | Gain Rato |    5         |     ✘             | Confidence Vote | 96.63% +/- 1.74% | 96.85% | 96.23% |
 |       20         | Gain Rato |    5         |     ✘             | Confidence Vote | 96.63% +/- 1.74% | 96.85% | 96.23% | 
-|       5          | Gini Index       |    5          |     ✔     | Confidence Vote | 96.93% +/- 1.78% | 96.40% | 97.91%% | 
+|       5          | Gini Index       |    5          |     ✔     | Confidence Vote | 96.93% +/- 1.78% | 96.40% | 97.91% | 
 |       10         | Gini Index       |    5          |     ✔     | Confidence Vote | 96.49% +/- 1.99% | 96.40% | 96.65% |
 |       15         | Gini Index       |    5          |     ✔     | Confidence Vote | 96.49% +/- 2.29% | 96.62% | 96.23% |
 |       20         | Gini Index       |    5          |     ✔     | Confidence Vote | 96.78% +/- 2.35% | 96.85% | 96.65% |
 
-Podemos ver que 
+Podemos ver que a pesar de los cambios en los parametros no se ven cambios mayores a un ~1% en la Accuracy, ~1% en el Recall de la clase 2 y un ~2% en el Recall de la clase 4. Nuestra mejor accuracy es 96.78% a continuacion una lista con los parametros de estos modelos.
+
+| Number of Trees  | Criterion | Maximal Depth | Apply Prepruning | Voting Strategy | Accuracy | 2 Recall | 4 Recall |
+|------------------| ----------| ------------- | ---------------- | --------------- | -------- | -------- | -------- |
+|       20         | Information Gain |    10         |     ✔     | Confidence Vote | 96.78% +/- 2.25% | 97.30% | 95.82% |
+|       5          | Gini Index       |    10         |     ✔     | Confidence Vote | 96.78% +/- 1.94% | 96.85% | 96.65% |
+|       15         | Gini Index       |    10         |     ✔     | Confidence Vote | 96.78% +/- 2.35% | 96.85% | 96.65% |
+|       20         | Gini Index       |    10         |     ✔     | Confidence Vote | 96.78% +/- 2.35% | 96.85% | 96.65% | 
+|       10         | Information Gain |    5         |     ✔      | Confidence Vote | 96.78% +/- 2.06% | 96.62% | 97.07% |
+|       15         | Information Gain |    5         |     ✘      | Confidence Vote | 96.78% +/- 2.06% | 97.07% | 96.23% |
+|       20         | Information Gain |    5         |     ✘      | Confidence Vote | 96.78% +/- 2.06% | 97.07% | 96.23% | 
+|       10         | Information Gain |    5         |     ✘      | Majority Vote   | 96.78% +/- 2.06% | 96.62% | 97.07% |
+|       15         | Information Gain |    5         |     ✘      | Majority Vote   | 96.78% +/- 2.35% | 96.62% | 97.07% |
+|       20         | Information Gain |    5         |     ✘      | Majority Vote   | 96.78% +/- 2.25% | 96.85% | 96.65% |
+|       20         | Gini Index       |    5          |     ✔     | Confidence Vote | 96.78% +/- 2.35% | 96.85% | 96.65% |
+
+Como vamos a estar clasificando enfermedades es preferible un _False Positve_ que un _False Negative_, por esto vamos a quedarlos con las configuraciones que maximizan esto. En otras palabras queremos aumentar el recall de la clase 4 (tumor maligno).
+
+| Number of Trees  | Criterion | Maximal Depth | Apply Prepruning | Voting Strategy | Accuracy | 2 Recall | 4 Recall |
+|------------------| ----------| ------------- | ---------------- | --------------- | -------- | -------- | -------- | 
+|       10         | Information Gain |   5    |     ✔            | Confidence Vote | 96.78% +/- 2.06% | 96.62% | 97.07% | 
+|       10         | Information Gain |   5    |     ✘            | Majority Vote   | 96.78% +/- 2.06% | 96.62% | 97.07% |
+|       15         | Information Gain |   5    |     ✘            | Majority Vote   | 96.78% +/- 2.35% | 96.62% | 97.07% |
+
+Con los restantes vamos a apicar el prinicipio de _Occam's Razor_ y nos vamos a quedar con la solucion mas simple.
+
+| Number of Trees  | Criterion | Maximal Depth | Apply Prepruning | Voting Strategy | Accuracy | 2 Recall | 4 Recall |
+|------------------| ----------| ------------- | ---------------- | --------------- | -------- | -------- | -------- | 
+|       10         | Information Gain |   5    |     ✔            | Confidence Vote | 96.78% +/- 2.06% | 96.62% | 97.07% | 
+
+Ahora vamos a ver los arboles generados con esta configuracion.
+
+![](./img/19_tree1.png)
+
+![](./img/19_tree2.png)
+
+![](./img/19_tree3.png)
+
+![](./img/19_tree4.png)
+
+![](./img/19_tree5.png)
+
+![](./img/19_tree6.png)
+
+![](./img/19_tree7.png)
+
+![](./img/19_tree8.png)
+
+![](./img/19_tree9.png)
+
+![](./img/19_tree10.png)
+
+Podemos ver que **Uniformity of Cell Size** es predominante como raiz, que este atributo se encuentre frecuentemente como raiz tiene sentido. Si recordamos la seccion de [Attributes](./) la forma de las celulas cancerigenas suelen ser bastante irregulares.
