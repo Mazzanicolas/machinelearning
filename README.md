@@ -17,9 +17,9 @@
 | K Nearest Neighbor  | [![RM](./img/jn.png)][1_11_3] [![RM](./img/jd.png)][1_11_4] [![RM](./img/rm.png)][1_11] [![RM](./img/rd.png)][1_11_2] | [![RM](./img/jn.png)][2_11] | ✘ | ✘ | 
 | Naive Bayes         | [![RM](./img/jn.png)][1_12_3] [![RM](./img/jd.png)][1_12_4] [![RM](./img/rm.png)][1_12] [![RM](./img/rd.png)][1_12_2] | [![RM](./img/rm.png)][2_12] [![RM](./img/rd.png)][2_12_2] | ✘ | ✘ | 
 | K-Means             | [![RM](./img/jn.png)][1_13_3] [![RM](./img/jd.png)][1_13_4] [![RM](./img/rm.png)][1_13] [![RM](./img/rd.png)][1_13_2] | ✘ | ✘ | ✘ | 
-| DBSCAN              | [![RM](./img/rm.png)][1_14] [![RM](./img/rd.png)][1_14_2]  | ✘ | ✘ | ✘ | 
+| DBSCAN              | [![RM](./img/jn.png)][1_14_3] [![RM](./img/jd.png)][1_14_4] [![RM](./img/rm.png)][1_14] [![RM](./img/rd.png)][1_14_2]  | ✘ | ✘ | ✘ | 
 | Hierarchical Clustering | [![RM](./img/rm.png)][1_15] [![RM](./img/rd.png)][1_15_2]  | ✘ | ✘ | ✘ | 
-| PC Analysis         | [![RM](./img/rm.png)][1_16] [![RM](./img/rd.png)][1_16_2] | ✘ | ✘ | ✘ | 
+| PC Analysis         | [![RM](./img/jn.png)][1_16_3] [![RM](./img/jd.png)][1_16_4] [![RM](./img/rm.png)][1_16] [![RM](./img/rd.png)][1_16_2] | ✘ | ✘ | ✘ | 
 | Ensembles           | [![RM](./img/rm.png)][1_17] [![RM](./img/rd.png)][1_17_2] | ✘ | ✘ | ✘ | 
 | Bagging             | [![RM](./img/rm.png)][1_18] [![RM](./img/rd.png)][1_18_2] | ✘ | ✘ | ✘ | 
 | Random Forest       | [![RM](./img/rm.png)][1_19] [![RM](./img/rd.png)][1_19_2] | ✘ | ✘ | ✘ | 
@@ -79,12 +79,16 @@
 <!-- DBSCAN -->
 [1_14]: ./ucu_machine_learning/breast-cancer-fna/documents/14_dbscan_rapidminer.md
 [1_14_2]: ./ucu_machine_learning/breast-cancer-fna/process/dbscan.rmp
+[1_14_3]: ./ucu_machine_learning/breast-cancer-fna/documents/14_dbscan_code.md
+[1_14_4]: ./ucu_machine_learning/breast-cancer-fna/process/DBSCAN.ipynb
 <!-- Hierarchical Clustering -->
 [1_15]: ./ucu_machine_learning/breast-cancer-fna/documents/15_hierarchical_clustering.md
 [1_15_2]: ./ucu_machine_learning/breast-cancer-fna/process/hierarchical-clustering.rmp
 <!-- PC Analysis -->
 [1_16]: ./ucu_machine_learning/breast-cancer-fna/documents/16_pca.md
 [1_16_2]: ./ucu_machine_learning/breast-cancer-fna/process/pca.rmp
+[1_16_3]: ./ucu_machine_learning/breast-cancer-fna/documents/16_pca_code.md
+[1_16_4]: ./ucu_machine_learning/breast-cancer-fna/notebooks/PCA.ipynb
 <!-- Ensembles -->
 [1_17]: ./ucu_machine_learning/breast-cancer-fna/documents/17-Ensembles.md
 [1_17_2]: ./ucu_machine_learning/breast-cancer-fna/process/ensambles.rmp
