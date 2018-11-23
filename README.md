@@ -18,8 +18,8 @@
 | Naive Bayes         | [![RM](./img/rm.png)][1_12] [![RM](./img/rd.png)][1_12_2] | [![RM](./img/rm.png)][2_12] [![RM](./img/rd.png)][2_12_2] | ✘ | ✘ | 
 | K-Means             | [![RM](./img/rm.png)][1_13] [![RM](./img/rd.png)][1_13_2] | ✘ | ✘ | ✘ | 
 | DBSCAN              | [![RM](./img/rm.png)][1_14] [![RM](./img/rd.png)][1_14_2]  | ✘ | ✘ | ✘ | 
-| Hierarchical Clustering | ✘ | ✘ | ✘ | ✘ | 
-| PC Analysis         | ✘ | ✘ | ✘ | ✘ | 
+| Hierarchical Clustering | [![RM](./img/rm.png)][1_15] [![RM](./img/rd.png)][1_15_2]  | ✘ | ✘ | ✘ | 
+| PC Analysis         | [![RM](./img/rm.png)][1_16] [![RM](./img/rd.png)][1_16_2] | ✘ | ✘ | ✘ | 
 | Ensembles           | ✘ | ✘ | ✘ | ✘ | 
 | Bagging             | ✘ | ✘ | ✘ | ✘ | 
 | Random Forest       | ✘ | ✘ | ✘ | ✘ | 
@@ -74,9 +74,11 @@
 [1_14]: ./ucu_machine_learning/breast-cancer-fna/documents/14_dbscan_rapidminer.md
 [1_14_2]: ./ucu_machine_learning/breast-cancer-fna/process/dbscan.rmp
 <!-- Hierarchical Clustering -->
-[1_15]: ./
+[1_15]: ./ucu_machine_learning/breast-cancer-fna/documents/15_hierarchical_clustering.md
+[1_15_2]: ./ucu_machine_learning/breast-cancer-fna/process/hierarchical-clustering.rmp
 <!-- PC Analysis -->
-[1_16]: ./
+[1_16]: ./ucu_machine_learning/breast-cancer-fna/documents/16_pca.md
+[1_16_2]: ./ucu_machine_learning/breast-cancer-fna/process/pca.rmp
 <!-- Ensembles -->
 [1_17]: ./
 <!-- Bagging -->

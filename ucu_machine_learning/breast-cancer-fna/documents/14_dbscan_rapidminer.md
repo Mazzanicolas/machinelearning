@@ -19,7 +19,7 @@ __Seed = 2018__
 
 6- Los valores del atributo **Bare Nuclei** estan siendo considerados como _polynomial_ vamos a utilizar el modulo de `Parse Numbers` para convertirlos en números.
 
-7- Agregamos el modulo de `Clustering (DBSCAN)`  
+7- Agregamos el modulo de `Clustering (DBSCAN)`.
 
 8- Agregamos un join por id con los datos originales para recuperar el atributo de la clase. 
 
