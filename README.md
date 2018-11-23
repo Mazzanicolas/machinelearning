@@ -16,8 +16,8 @@
 | Support Vector Machine | [![RM](./img/rm.png)][1_10] [![RM](./img/rd.png)][1_10_1] | ✘ | ✘ | ✘ | 
 | K Nearest Neighbor  | [![RM](./img/rm.png)][1_11] [![RM](./img/rd.png)][1_11_2] | [![RM](./img/jn.png)][2_11] | ✘ | ✘ | 
 | Naive Bayes         | [![RM](./img/rm.png)][1_12] [![RM](./img/rd.png)][1_12_2] | [![RM](./img/rm.png)][2_12] [![RM](./img/rd.png)][2_12_2] | ✘ | ✘ | 
-| K-Means             | ✘ | ✘ | ✘ | ✘ | 
-| DBSCAN              | ✘ | ✘ | ✘ | ✘ | 
+| K-Means             | [![RM](./img/rm.png)][1_13] [![RM](./img/rd.png)][1_13_2] | ✘ | ✘ | ✘ | 
+| DBSCAN              | [![RM](./img/rm.png)][1_14] [![RM](./img/rd.png)][1_14_2]  | ✘ | ✘ | ✘ | 
 | Hierarchical Clustering | ✘ | ✘ | ✘ | ✘ | 
 | PC Analysis         | ✘ | ✘ | ✘ | ✘ | 
 | Ensembles           | ✘ | ✘ | ✘ | ✘ | 
@@ -68,9 +68,11 @@
 [1_12]: ./ucu_machine_learning/breast-cancer-fna/documents/12_naive_bayes_rapidminer.md
 [1_12_2]: ./ucu_machine_learning/breast-cancer-fna/process/naive-bayes.rmp
 <!-- K-Means -->
-[1_13]: ./
+[1_13]: ./ucu_machine_learning/breast-cancer-fna/documents/13_k_means.md
+[1_13_2]: ./ucu_machine_learning/breast-cancer-fna/process/kmeans.rmp
 <!-- DBSCAN -->
-[1_14]: ./
+[1_14]: ./ucu_machine_learning/breast-cancer-fna/documents/14_dbscan_rapidminer.md
+[1_14_2]: ./ucu_machine_learning/breast-cancer-fna/process/dbscan.rmp
 <!-- Hierarchical Clustering -->
 [1_15]: ./
 <!-- PC Analysis -->

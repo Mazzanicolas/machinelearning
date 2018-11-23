@@ -45,7 +45,8 @@ DBSCAN cuenta con 3 hiperparametros principales:
 | 5.0        |     1         | Euclidean Distance | 73           | Uno de los clusters tiene 597 mientras que los demas tienen 1 o 2 elementos. |
 | 5.0        |     10        | Euclidean Distance | 3           | Los clusters nuevos tienen 152, 442 y 89 elementos. Filtrando por diferentes cluster podemos observar que en el cluster_0 tenemos 9 elementos de la clase 2 y 143 de la clase 4 _(imagen 1)_. En el cluster_1 tenemos 16 de la clase 4 y 426 de la clase 2  _(imagen 2)_. En el cluster_2 tenemos 11 de la clase 2 y 78 de la clase 4 _(imagen 3)_. |
 | 5.0        |     100        | Euclidean Distance | 2           | Esta vez tenemos solamente dos clusters, cluster_0 con 246 elementos y el cluster_1 con 437 elementos. El cluster_0 tiene 22 elementos de la clase 2 y 224 de la clase 4_(imagen 4)_, mientras que el cluste_1 tiene 13 elementos de la clase 4 y 424 de la clase 2 _(imagen 5)_. |
-| 3.0        |     100         | Euclidean Distance | 2           | |
+| 3.0        |     100         | Euclidean Distance | 2           | Nuevamente podemos ver dos grandes clusters cluster_0 con 275 elementos y el cluster_1 con 408. El cluster_0 tiene 46 elementos de la clase 2 y 229 de la clase 4_(imagen 6)_, mientras que el cluste_1 tiene 5 elementos de la clase 4 y 403 de la clase 2 _(imagen 7)_. |
+| 7.0        |     100         | Euclidean Distance | 2           | Nuevamente podemos ver dos grandes clusters cluster_0 con 214 elementos y el cluster_1 con 469. El cluster_0 tiene 11 elementos de la clase 2 y 203 de la clase 4_(imagen 8)_, mientras que el cluste_1 tiene 34 elementos de la clase 4 y 435 de la clase 2 _(imagen 9)_. |
 
 
 ![](./img/14_dbscan_plot_1.PNG)
@@ -63,6 +64,18 @@ _Imagen 4: Cluster 0_
 ![](./img/14_dbscan_plot_5.PNG)
 _Imagen 5: Cluster 1_
 
+![](./img/14_dbscan_plot_6.PNG)
+_Imagen 6: Cluster 0_
+
+![](./img/14_dbscan_plot_7.PNG)
+_Imagen 7: Cluster 1_
+
+![](./img/14_dbscan_plot_8.PNG)
+_Imagen 8: Cluster 0_
+
+![](./img/14_dbscan_plot_9.PNG)
+_Imagen 9: Cluster 1_
+
 En el primer intento obtubimos muchos clusters con 1 solo dato, esto nos queria decir que estabamos siendo muy estrictos al momento de sperar los clusters.
 Para solucionar esto aumentamos la cantidad de datos necesarios para formar un cluster de 1 a 10, con esto generamos 3 clusters mejor separados. Dos de estos cluster lograban separar bien las clases 2 y 4 aunque en un 3er cluster no se pudo encontrar la caracteristica que los agrupaba. Para intentar eliminar este tercer cluster y ver que tan bien se separaban las dos clases se cambio a 100 la cantidad de datos minimos para pertenecer a un cluster. Al final pudimos ver que se pueden separar bien las clases con dos clusters.
 
@@ -73,3 +86,13 @@ Para solucionar esto aumentamos la cantidad de datos necesarios para formar un c
 |----------      | -------- | -------- |
 |**Cluster 0**   | 22       | 224      |
 |**Cluster 1**   | 424      |  4       | 
+
+
+**Matriz de resultados para Min Points 100 Epsilon 7.0**
+
+|                | Clase 2  | Clase 4  | 
+|----------      | -------- | -------- |
+|**Cluster 0**   | 11       | 203      |
+|**Cluster 1**   | 435      | 34       | 
+
+Para continuar se podria comparar los resultados obtenidos con K=3 en [K-Means Clustering]() y los obtenidos con epsilon 5.0 y 10 min points. Comprando estos dos podemos ver si los datos agrupados en el 3er cluster son los mismos e intentar buscar que tienen en comun. 
