@@ -34,6 +34,13 @@ __Seed = 2018__
 
 ![](./img/17_ensambles_rm.PNG)
 
+### Validation
+
+![](./img/17_ensambles_rm2.PNG)
+
+### Vote
+
+![](./img/17_ensambles_rm3.PNG)
 
 ## Experimentos
 
@@ -41,7 +48,7 @@ Comenzamos agregando clasificadores debiles como, Naive Bayes, K-nn y Decision T
 
 | Vote  | Accuracy         | 2 Recall | 4 Recall |
 |----| ---------------- | -------- | -------- |
-| Naive Bayes, K-NN, Decision Tree |  98.54% |  97.74%  |  100.00%  |
+| **Naive Bayes, K-NN, Decision Tree** |  **98.54%** |  **97.74%**  |  **100.00%**  |
 | Naive Bayes, K-NN, Decision Tree, Gradient Boosted Tree | 97.56% |  97.74%  |  97.22%  |
 | Naive Bayes, K-NN | 97.56% |  97.74%  |  97.22%  |
 | Naive Bayes, Decision Tree | 94.15% |  98.50%  |  86.11%  |
@@ -50,3 +57,13 @@ Comenzamos agregando clasificadores debiles como, Naive Bayes, K-nn y Decision T
 ![](./img/17_ensambles_rm_tree.PNG)
 
 Podemos ver que se consigue un muy buen modeo con buena accuracy, reacall y un arbol bastante complejo. Tambien podemos observar que el algoritmo mas influyente parece ser el Decision Tree.
+
+Reduciendo el maximal deept del  `Decision Tree` obtenemos el siguiente arbol y valores.
+
+![](./img/17_ensambles_rm_tree2.PNG)
+
+| Vote  | Accuracy         | 2 Recall | 4 Recall |
+|----| ---------------- | -------- | -------- |
+| Naive Bayes, K-NN, Decision Tree |  98.05% |  97.74% | 98.61%  |
+
+Vemos que la perdida en accuracy no es mucha y le agrega interpretabilidad al modelo ya que el nuevo arbol es mas facil de comprender.
