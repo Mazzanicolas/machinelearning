@@ -1,7 +1,7 @@
 # Height Estimation from Skeletal Remains 
  
 ![Height Estimation from Skeletal
-Remains](./2_src/img/banner.jpg) 
+Remains](./img/banner.jpg) 
 
 El objetivo de este proyecto es poder estimar la altura de un ser humano en base a los restos óseos. Para esto vamos a utilizar el dataset utilizado en un  proyecto de biomedicina en la University of Southern Denmark, titulado “[Heigh Estimation from Skeletal Remains](http://www.adbou.dk/fileadmin/adbou/projektopgaver/ADBOU_linear_regression_Mette_Wodx.pdf)” el cual contiene información de medidas de diferentes restos óseos antiguos encontrados en el pueblo Ribe de Dinamarca.
 
