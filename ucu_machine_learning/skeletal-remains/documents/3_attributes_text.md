@@ -317,7 +317,7 @@ La longitud del esqueleto se mide en la tumba (usando las definiciones presentad
 
 | Frontal Bone | Talus       |
 |:------------:|:-----------:|
-| ![Frontal Bone](./img/frontal_bone.gif) | ![Os Talus](./2_src/img/talus.gif) |
+| ![Frontal Bone](./img/frontal_bone.gif) | ![Os Talus](./img/talus.gif) |
 
 
 ####  Ocurrencias de los atributos
